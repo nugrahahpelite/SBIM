@@ -1,0 +1,394 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SOTallyCompare
+Process Start      : 08 Sep 2023 16:14:44
+
+
+vnQuery
+Select ta.*,mc.CompanyName,wh.WarehouseName,sw.SubWhsCode + ' - ' +sw.SubWhsName vSubWhsName,
+ (ta.SOStockQty1 - ta.SOScanQty1) vStockScan1, (ta.SOStockQty2 - ta.SOScanQty2) vStockScan2,
+            row_number()over(order by mb.BRGNAME)vDSeqNo,mb.BRGNAME,mb.BRGUNIT,
+            convert(varchar(11),ta.LastCompareDatetime,106)+' '+convert(varchar(8),ta.LastCompareDatetime,108)vLastCompareDatetime
+       From fnTbl_SsoTallyCompare(7,'nugraha')ta
+	         inner join DimCompany mc with(nolock) on mc.CompanyCode=ta.SOCompanyCode
+			 inner join Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=ta.SOCompanyCode and mb.BRGCODE=ta.BRGCODE
+			 inner join Sys_SubWarehouse_MA sw with(nolock) on sw.OID=ta.SOSubWarehouseOID
+			 inner join Sys_Warehouse_MA wh with(nolock) on wh.OID=ta.SOWarehouseOID
+ order by mb.BRGNAME
+
+08/09/2023 4:14:44 PM
+Jumlah Data = 114
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+1
+2
+3
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+
+Start Loop
+vnRow 0
+vnBrgCode BAD-07019
+Row 0 CAS
+vnRow 1
+vnBrgCode BAD-00144
+Row 1 CAS
+vnRow 2
+vnBrgCode BAD-06914
+Row 2 CAS
+vnRow 3
+vnBrgCode BAD-06702A
+Row 3 CAS
+vnRow 4
+vnBrgCode BAD-05995
+Row 4 CAS
+vnRow 5
+vnBrgCode BAD-05997
+Row 5 CAS
+vnRow 6
+vnBrgCode BAD-05998
+Row 6 CAS
+vnRow 7
+vnBrgCode BAD-06143
+Row 7 CAS
+vnRow 8
+vnBrgCode BAD-05996
+Row 8 CAS
+vnRow 9
+vnBrgCode BAD-06646
+Row 9 CAS
+vnRow 10
+vnBrgCode BAD-00520
+Row 10 CAS
+vnRow 11
+vnBrgCode BAD-00533
+Row 11 CAS
+vnRow 12
+vnBrgCode BAD-00546
+Row 12 CAS
+vnRow 13
+vnBrgCode BAD-00548
+Row 13 CAS
+vnRow 14
+vnBrgCode BAD-00574
+Row 14 CAS
+vnRow 15
+vnBrgCode BAD-00584
+Row 15 CAS
+vnRow 16
+vnBrgCode BAD-06408
+Row 16 CAS
+vnRow 17
+vnBrgCode BAD-06272
+Row 17 CAS
+vnRow 18
+vnBrgCode BAD-06102
+Row 18 CAS
+vnRow 19
+vnBrgCode BAD-06638
+Row 19 CAS
+vnRow 20
+vnBrgCode BAD-04640
+Row 20 CAS
+vnRow 21
+vnBrgCode BAD-04470
+Row 21 CAS
+vnRow 22
+vnBrgCode BAD-06910
+Row 22 CAS
+vnRow 23
+vnBrgCode BAD-06588
+Row 23 CAS
+vnRow 24
+vnBrgCode BAD-06217
+Row 24 CAS
+vnRow 25
+vnBrgCode BAD-06279
+Row 25 CAS
+vnRow 26
+vnBrgCode BAD-06862
+Row 26 CAS
+vnRow 27
+vnBrgCode BAD-01521
+Row 27 CAS
+vnRow 28
+vnBrgCode BAD-04503
+Row 28 CAS
+vnRow 29
+vnBrgCode BAD-06863
+Row 29 CAS
+vnRow 30
+vnBrgCode BAD-06864
+Row 30 CAS
+vnRow 31
+vnBrgCode BAD-07006
+Row 31 CAS
+vnRow 32
+vnBrgCode BAD-06269
+Row 32 CAS
+vnRow 33
+vnBrgCode BAD-06278
+Row 33 CAS
+vnRow 34
+vnBrgCode BAD-06270
+Row 34 CAS
+vnRow 35
+vnBrgCode BAD-06865
+Row 35 CAS
+vnRow 36
+vnBrgCode BAD-06867
+Row 36 CAS
+vnRow 37
+vnBrgCode BAD-06839
+Row 37 CAS
+vnRow 38
+vnBrgCode BAD-06068
+Row 38 CAS
+vnRow 39
+vnBrgCode BAD-06229
+Row 39 CAS
+vnRow 40
+vnBrgCode BAD-06230
+Row 40 CAS
+vnRow 41
+vnBrgCode BAD-06912
+Row 41 CAS
+vnRow 42
+vnBrgCode BAD-06840
+Row 42 CAS
+vnRow 43
+vnBrgCode BAD-06838
+Row 43 CAS
+vnRow 44
+vnBrgCode BAD-06911
+Row 44 CAS
+vnRow 45
+vnBrgCode BAD-06868
+Row 45 CAS
+vnRow 46
+vnBrgCode BAD-06585
+Row 46 CAS
+vnRow 47
+vnBrgCode BAD-06806
+Row 47 CAS
+vnRow 48
+vnBrgCode BAD-06917
+Row 48 CAS
+vnRow 49
+vnBrgCode BAD-04521
+Row 49 CAS
+vnRow 50
+vnBrgCode BAD-06771
+Row 50 CAS
+vnRow 51
+vnBrgCode BAD-06944
+Row 51 CAS
+vnRow 52
+vnBrgCode BAD-06943
+Row 52 CAS
+vnRow 53
+vnBrgCode BAD-06842
+Row 53 CAS
+vnRow 54
+vnBrgCode BAD-06341
+Row 54 CAS
+vnRow 55
+vnBrgCode BAD-06925
+Row 55 CAS
+vnRow 56
+vnBrgCode BAD-06325
+Row 56 CAS
+vnRow 57
+vnBrgCode BAD-061100
+Row 57 CAS
+vnRow 58
+vnBrgCode BAD-061101
+Row 58 CAS
+vnRow 59
+vnBrgCode BAD-06378
+Row 59 CAS
+vnRow 60
+vnBrgCode BAD-06131
+Row 60 CAS
+vnRow 61
+vnBrgCode BAD-00029
+Row 61 CAS
+vnRow 62
+vnBrgCode BAD-06756
+Row 62 CAS
+vnRow 63
+vnBrgCode BAD-06913
+Row 63 CAS
+vnRow 64
+vnBrgCode BAD-06222
+Row 64 CAS
+vnRow 65
+vnBrgCode BAD-06872
+Row 65 CAS
+vnRow 66
+vnBrgCode BAD-06871
+Row 66 CAS
+vnRow 67
+vnBrgCode BAD-06377
+Row 67 CAS
+vnRow 68
+vnBrgCode BAD-06924
+Row 68 CAS
+vnRow 69
+vnBrgCode BAD-06699
+Row 69 CAS
+vnRow 70
+vnBrgCode BAD-05960
+Row 70 CAS
+vnRow 71
+vnBrgCode BAD-06179
+Row 71 CAS
+vnRow 72
+vnBrgCode BAD-06921
+Row 72 CAS
+vnRow 73
+vnBrgCode BAD-06923
+Row 73 CAS
+vnRow 74
+vnBrgCode BAD-06380
+Row 74 CAS
+vnRow 75
+vnBrgCode BAD-06922
+Row 75 CAS
+vnRow 76
+vnBrgCode BAD-06767
+Row 76 CAS
+vnRow 77
+vnBrgCode BAD-06716
+Row 77 CAS
+vnRow 78
+vnBrgCode BAD-02706
+Row 78 CAS
+vnRow 79
+vnBrgCode BAD-06989
+Row 79 CAS
+vnRow 80
+vnBrgCode BAD-06985
+Row 80 CAS
+vnRow 81
+vnBrgCode BAD-06992
+Row 81 CAS
+vnRow 82
+vnBrgCode BAD-06990
+Row 82 CAS
+vnRow 83
+vnBrgCode BAD-06984
+Row 83 CAS
+vnRow 84
+vnBrgCode BAD-06987
+Row 84 CAS
+vnRow 85
+vnBrgCode BAD-06993
+Row 85 CAS
+vnRow 86
+vnBrgCode BAD-06991
+Row 86 CAS
+vnRow 87
+vnBrgCode BAD-06986
+Row 87 CAS
+vnRow 88
+vnBrgCode BAD-06379
+Row 88 CAS
+vnRow 89
+vnBrgCode BAD-06988
+Row 89 CAS
+vnRow 90
+vnBrgCode BAD-06231
+Row 90 CAS
+vnRow 91
+vnBrgCode BAD-06199
+Row 91 CAS
+vnRow 92
+vnBrgCode BAD-07003
+Row 92 CAS
+vnRow 93
+vnBrgCode BAD-07005
+Row 93 CAS
+vnRow 94
+vnBrgCode BAD-07002
+Row 94 CAS
+vnRow 95
+vnBrgCode BAD-07004
+Row 95 CAS
+vnRow 96
+vnBrgCode BAD-07021
+Row 96 CAS
+vnRow 97
+vnBrgCode BAD-07020
+Row 97 CAS
+vnRow 98
+vnBrgCode BAD-07022
+Row 98 CAS
+vnRow 99
+vnBrgCode BAD-06803
+Row 99 CAS
+vnRow 100
+vnBrgCode BAD-06375
+Row 100 CAS
+vnRow 101
+vnBrgCode BAD-06337
+Row 101 CAS
+vnRow 102
+vnBrgCode BAD-06339
+Row 102 CAS
+vnRow 103
+vnBrgCode BAD-06338
+Row 103 CAS
+vnRow 104
+vnBrgCode BAD-05658
+Row 104 CAS
+vnRow 105
+vnBrgCode BAD-06636
+Row 105 CAS
+vnRow 106
+vnBrgCode BAD-04638
+Row 106 CAS
+vnRow 107
+vnBrgCode BAD-05655
+Row 107 CAS
+vnRow 108
+vnBrgCode BAD-06580
+Row 108 CAS
+vnRow 109
+vnBrgCode BAD-06639
+Row 109 CAS
+vnRow 110
+vnBrgCode BAD-06637
+Row 110 CAS
+vnRow 111
+vnBrgCode BAD-06289
+Row 111 CAS
+vnRow 112
+vnBrgCode BAD-06808
+Row 112 CAS
+vnRow 113
+vnBrgCode BAD-06807
+Row 113 CAS
+End Loop
+
+Files Names SOTallyCompare-OID-7-14-20230908_161444.xlsx
+-------------------------------EOF-------------------------------

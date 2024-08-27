@@ -1,0 +1,43 @@
+Module WbfSsoPL
+Proses psPreparePL
+Process Start      : 06 Oct 2023 11:12:55
+
+Open SQL Connection....Start
+
+0.1
+vnQuery
+Select count(1) From Sys_SsoPLDetail_TR Where PLHOID=1 and (PLDQty=0 or PLDCtn=0)
+
+0.2
+vnQuery
+Select pld.PLHOID,pld.OID,pld.BRGCODE,pld.BRGNAME,poh.PO_NO
+From Sys_SsoPLDetail_TR pld
+     inner join Sys_SsoPODetail_TR pod on pod.OID=pld.PODOID
+  	  inner join Sys_SsoPOHeader_TR poh on poh.OID=pod.POHOID
+Where pld.PLHOID=1
+
+0.3
+vnQuery
+Select distinct sd.POHOID
+       From Sys_SsoPLDetail_TR pd
+	         inner join Sys_SsoPODetail_TR sd on sd.OID=pd.PODOID
+	  Where pd.PLHOID=1
+
+1
+vnQuery
+Update Sys_SsoPLHeader_TR set TransStatus=2,PreparedUserOID=50,PreparedDatetime=getdate() Where OID=1
+
+2
+pbuInsertStatusPL...Start
+pbuInsertStatusPL...End
+
+3
+Loop Update POHeader...Start
+
+3.0
+vnQuery
+Update Sys_SsoPOHeader_TR Set TransStatus=12 Where OID=2
+Loop Update POHeader...End
+Prepare Sukses
+Process End           : 06 Oct 2023 11:12:55
+---------------EOF-------------------------

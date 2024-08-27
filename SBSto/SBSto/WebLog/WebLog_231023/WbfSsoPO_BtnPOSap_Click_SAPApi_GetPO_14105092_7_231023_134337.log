@@ -1,0 +1,33 @@
+Module WbfSsoPO
+Proses BtnPOSap_Click_SAPApi_GetPO
+Process Start      : 23 Oct 2023 13:43:37
+
+
+vnDataFileNameOnly = WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_7_231023_134337
+vnDataFileName = C:\Data Baru\SB_WMS\SBStoApp\SBSto\SAPApiFolder\SAPApiFolder_231023\WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_7_231023_134337.txt
+
+vnQuery
+CREATE Table #Sys_SsoPO_Temp(
+[CompanyCode] [varchar](15) Not NULL,
+[PO_NO] [varchar](50) Not NULL,
+[JURNAL] [varchar](50) NULL,
+[PO_DATE] [DateTime] Not NULL,
+[SUB] [varchar](50) Not NULL,
+[BRG] [varchar](450) Not NULL,
+[GDGCODE] [varchar](50) Not NULL,
+[QTY] [numeric(18, 0)] Not NULL,
+[NAMA_SUPPLIER] [varchar](50) Not NULL,
+[NAMA_BARANG] [varchar](450) Not NULL,
+[JOBNAME] [varchar](15) Not NULL,
+[POFileXlsOID] [Int] NULL,
+[UploadSourceOID] [tinyint] Not NULL,
+[UploadDatetime] [DateTime] Not NULL
+)
+
+PROCESS TERMINATED...ERROR :
+Column, parameter, or variable #8: Cannot find data type numeric(18, 0).
+
+-----------------------ERROR-----------------------
+
+23 Oct 2023 13:43:37
+------------------------EOF------------------------

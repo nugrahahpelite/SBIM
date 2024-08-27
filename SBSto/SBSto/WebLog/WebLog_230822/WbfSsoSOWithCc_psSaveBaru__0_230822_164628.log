@@ -1,0 +1,29 @@
+Module WbfSsoSOWithCc
+Proses psSaveBaru
+Process Start      : 22 Aug 2023 16:46:28
+
+Open SQL Connection....Start
+Insert into Sys_SsoSOHeader_TR(OID,SONo,
+SOTypeOID,SOCutOff,
+SOCompanyCode,SOWarehouseOID,SOSubWarehouseOID,
+SOXlsFileName,SOXlsSheetName,
+SONote,
+TransCode,CreationUserOID,CreationDatetime,
+SOStockDownload)
+values(31,'SO/BAD//23/08/22/0001',
+3,'22 Aug 2023 00:00',
+'BAD',,,
+'','',
+'',
+'SSOH',14,getdate(),
+0)
+
+PROCESS TERMINATED...ERROR :
+Incorrect syntax near ','.
+
+-----------------------ERROR-----------------------
+
+22 Aug 2023 16:46:28
+Create Stock Opname Error
+
+------------------------EOF------------------------

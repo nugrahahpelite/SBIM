@@ -1,0 +1,58 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 20 Sep 2023 15:51:28
+
+
+vnQuery
+	select distinct	
+	mj.CompanyCode,whs.WarehouseName, whs.OID, DATEDIFF(HOUR,mj.UploadDatetime,skh.BackDatetime) as [Durasi_Start_to_End]	
+	, mj.NO_NOTA, mj.TANGGAL, mj.KODE_CUST, mj.CUSTOMER, mj.UploadDatetime	
+	, pch.PCLNo, pch.PCLDate, pch.PCLScheduleDate, pch.CreationDatetime as [Time_Create_Picklist], usr_pch.UserName, pch.PreparedDatetime	
+	, DATEDIFF(MINUTE,mj.UploadDatetime,pch.CreationDatetime) as [Durasi_Upload_to_Create_Picklist]	
+	, pck.PCKNo, pck.PCKDate, pck.CreationDatetime 'Picking_Created_Date_Time', pck.PickDoneDatetime, pch.PCLRefHOID, pch.PCLRefHNo	
+	, DATEDIFF(MINUTE,pch.CreationDatetime,pck.PickDoneDatetime) as [Durasi_Picklist_Created_to_Picking_Done]	
+	, DATEDIFF(MINUTE,mj.UploadDatetime,pck.PickDoneDatetime) as [Durasi_Upload_to_Picking_Done]	
+	, dsh.DSPNo, dsh.DSPDate, dsh.CreationDatetime 'Dispatch_Created_Date_Time', dsh.DispatchDoneDatetime 'Dispatch_Created_Date'	
+	, dsh.DriverConfirmDatetime 	
+	, DATEDIFF(MINUTE,pck.PickDoneDatetime,dsh.DriverConfirmDatetime) as [Durasi_Picking_Done_to_Dispatch]	
+	,drv.DcmDriverName,skh.BackDatetime, dsh.CancelledDatetime, pch.TransCode , pch.TransStatus, sstsm.TransStatusDescr	
+	from 	
+	(select	
+	ju.CompanyCode, ju.WarehouseOID, ju.NO_NOTA, ju.TANGGAL, ju.KODE_CUST, ju.CUSTOMER, max(ju.UploadDatetime) as uploadDatetime	
+	from Delivery_Monitoring.dbo.Sys_DcmJUAL	ju with(nolock)
+	group by CompanyCode, WarehouseOID, NO_NOTA, TANGGAL, KODE_CUST, CUSTOMER	
+	) as mj	
+	left join Sys_SsoPCLHeader_TR pch with(nolock) on pch.PCLRefHNo = mj.NO_NOTA	
+	left join Sys_SsoUser_MA usr_pch with(nolock) on usr_pch.OID = pch.CreationUserOID	
+	left join SB_DATAWH.dbo.Sys_Warehouse_MA whs with(nolock) on whs.OID = mj.WarehouseOID	
+	left join Sys_SsoPCKHeader_TR pck with(nolock) on pck.PCLHOID = pch.OID	
+	left join Sys_SsoDSPPick_TR dsp with(nolock) on dsp.PCKHOID= pck.OID	
+	left join Sys_SsoDSPHeader_TR dsh with(nolock) on dsh.OID= dsp.DSPHOID	
+	left join Delivery_Monitoring.dbo.Sys_DcmDriver_MA drv with(nolock) on drv.OID= dsh.DcmSchDriverOID	
+	left join Delivery_Monitoring.dbo.Sys_DcmScheduleDetail_TR skd with(nolock) on skd.NotaNo=mj.NO_NOTA and skd.SchDTypeOID=1	
+	left join Delivery_Monitoring.dbo.Sys_DcmScheduleHeader_TR skh with(nolock) on skh.OID=skd.DcmSchHOID	
+	LEFT JOIN Sys_SsoTransStatus_MA sstsm with(nolock) ON pch.TransCode = sstsm.TransCode AND pch.TransStatus = sstsm.TransStatus	
+Where 1=1 and LEFT(NO_NOTA,1) <> 'P'
+            and mj.CompanyCode = '2'
+ and mj.UploadDatetime is not null 
+ and pch.creationdatetime is not null 
+ and pch.PreparedDatetime is not null 
+ and pck.CreationDatetime is not null 
+ and pck.PickDoneDatetime is not null 
+ and dsh.CreationDatetime is not null 
+ and dsh.DispatchDoneDatetime is not null 
+ and dsh.DriverConfirmDatetime is not null 
+ ORDER BY mj.TANGGAL DESC  
+ and mj.UploadDatetime is not null 
+ and pch.creationdatetime is not null 
+ and pch.PreparedDatetime is not null 
+ and pck.CreationDatetime is not null 
+ and pck.PickDoneDatetime is not null 
+ and dsh.CreationDatetime is not null 
+ and dsh.DispatchDoneDatetime is not null 
+ and dsh.DriverConfirmDatetime is not null 
+ ORDER BY mj.TANGGAL DESC  
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Incorrect syntax near the keyword 'and'.
+-------------------------------EOF-------------------------------

@@ -1,0 +1,20 @@
+Module WbfSsoCSKU
+Proses psPrepareMsc
+Process Start      : 06 Oct 2023 17:08:19
+
+Open SQL Connection....Start
+
+0.1
+vnQuery
+Select count(1) From Sys_SsoCSKUStorageStock_TR Where CSKUHOID =14 and (QtyOnHand=0)
+
+1
+vnQuery
+Update Sys_SsoCSKUHeader_TR set TransStatus=2,PreparedUserOID=50,PreparedDatetime=getdate() Where OID=14
+
+2
+pbuInsertStatusCSKU...Start
+pbuInsertStatusCSKU...End
+Prepare Sukses
+Process End           : 06 Oct 2023 17:08:19
+---------------EOF-------------------------

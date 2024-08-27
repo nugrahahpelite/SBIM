@@ -1,0 +1,23 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 19 Sep 2023 18:15:00
+
+
+vnQuery
+Select 
+      ptw.BRGCODE,msb.BRGNAME,sto.vStorageInfoHtml,sum(ptw.vPtwQty)vPtwQty
+      From fnTbl_SsoPutaway_QtyAll('NUGRAHA') ptw
+           inner join SB_DATAWH.dbo.Sys_MstBarang_MA msb with(nolock) on msb.BRGCODE=ptw.BRGCODE and msb.CompanyCode=ptw.vPtwCompanyCode
+			inner join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sto on sto.vStorageOID=ptw.vPtwStorageOID
+			left outer join SB_DATAWH.dbo.Sys_Warehouse_MA mwh_d with(nolock) on mwh_d.OID=ptw.WarehouseOID
+Where 1=1
+            and ptw.vPtwCompanyCode='2'
+            and ptw.WarehouseOID=BAD
+            and ptw.BRGCODE like '%%' and msb.BRGNAME like '%%'
+            and ptw.vPtwDate = '09 Sep 2023'
+ Group by ptw.BRGCODE,msb.BRGNAME,sto.vStorageInfoHtml
+ Order by ptw.BRGCODE,msb.BRGNAME,sto.vStorageInfoHtml
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Invalid column name 'BAD'.
+-------------------------------EOF-------------------------------

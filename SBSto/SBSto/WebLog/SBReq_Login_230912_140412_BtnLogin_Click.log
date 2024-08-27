@@ -1,0 +1,9 @@
+SBRequest - LOGIN
+Process Start           : 12 Sep 2023 14:04:15
+Process Name            : BtnLogin_Click
+Request.UserHostAddress : ::1
+
+Request.UserHostAddress : 
+Cannot open database "nugraha_testing" requested by the login. The login failed.
+Login failed for user 'stockopname'.
+

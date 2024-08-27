@@ -1,0 +1,32 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SOTallyCompareDetail
+Process Start      : 08 Sep 2023 15:36:26
+
+
+vnQuery
+Select ta.*,stg.vStorageInfo,mc.CompanyName,wh.WarehouseName,sw.SubWhsCode,sw.SubWhsName,
+            row_number()over(order by mb.BRGNAME)vDSeqNo,mb.BRGNAME,mb.BRGUNIT
+       From fnTbl_SsoTallyCompareDetail(7,8,9,'nugraha')ta
+	         inner join DimCompany mc with(nolock) on mc.CompanyCode=ta.SOCompanyCode
+			 inner join Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=ta.SOCompanyCode and mb.BRGCODE=ta.BRGCODE
+			 inner join Sys_SubWarehouse_MA sw with(nolock) on sw.OID=ta.SOSubWarehouseOID
+			 inner join Sys_Warehouse_MA wh with(nolock) on wh.OID=ta.SOWarehouseOID
+			 inner join fnTbl_SsoStorageData('') stg on stg.vStorageOID=ta.vStorageOID
+ order by mb.BRGNAME,stg.vStorageInfo
+
+08/09/2023 3:36:26 PM
+Jumlah Data = 0
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+1
+Tidak Ada Data
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+There is no row at position 0.
+-------------------------------EOF-------------------------------

@@ -1,0 +1,115 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 09 Oct 2023 09:09:37
+
+
+vnQuery
+Select sm.vCompanyCode,sm.vKodeBarang,mb.BRGNAME,sm.vTotal_QtySisaInvoice,sm.vTotal_QtySisaStock,sm.vTotal_QtySelisih
+From (
+Select case when isnull(tb1.CompanyCode,'')='' then tb2.CompanyCode else tb1.CompanyCode end vCompanyCode,
+       case when isnull(tb1.KodeBarang,'')='' then tb2.BRGCODE else tb1.KodeBarang end vKodeBarang,
+	    isnull(tb1.vTotal_QtySisaInvoice,0)vTotal_QtySisaInvoice,
+	    isnull(tb2.vTotal_QtySisaStock,0) vTotal_QtySisaStock,
+	    isnull(tb1.vTotal_QtySisaInvoice,0) - isnull(tb2.vTotal_QtySisaStock,0) vTotal_QtySelisih
+  From fnTbl_DcmDOTitip_SisaInvoice() tb1
+       full join fnTbl_SsoDOTitip_SisaStorageStock()tb2 on tb2.CompanyCode=tb1.CompanyCode and tb2.BRGCODE=tb1.KodeBarang
+)sm
+       inner join Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=sm.vCompanyCode and mb.BRGCODE=sm.vKodeBarang
+ Where 1=1
+            and sm.vCompanyCode='BAD'
+       and isnull(sm.vTotal_QtySisaInvoice,0) - isnull(sm.vTotal_QtySisaStock,0)<>0
+Order by sm.vCompanyCode,sm.vKodeBarang
+
+09/10/2023 9:09:37 AM
+Jumlah Data = 78
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 BAD-04748      
+Row 1 BAD-05597      
+Row 2 BAD-05598      
+Row 3 BAD-05600      
+Row 4 BAD-05602      
+Row 5 BAD-05604      
+Row 6 BAD-05610      
+Row 7 BAD-05644      
+Row 8 BAD-05670      
+Row 9 BAD-05673      
+Row 10 BAD-05682      
+Row 11 BAD-05747      
+Row 12 BAD-05823      
+Row 13 BAD-05877      
+Row 14 BAD-05973      
+Row 15 BAD-05993      
+Row 16 BAD-06074      
+Row 17 BAD-06076      
+Row 18 BAD-06103      
+Row 19 BAD-06104      
+Row 20 BAD-06133      
+Row 21 BAD-06142      
+Row 22 BAD-06146      
+Row 23 BAD-06147      
+Row 24 BAD-06148      
+Row 25 BAD-06208      
+Row 26 BAD-06270      
+Row 27 BAD-06278      
+Row 28 BAD-06281      
+Row 29 BAD-06282      
+Row 30 BAD-06309      
+Row 31 BAD-06327      
+Row 32 BAD-06336      
+Row 33 BAD-06401      
+Row 34 BAD-06407      
+Row 35 BAD-06413      
+Row 36 BAD-06414      
+Row 37 BAD-06415      
+Row 38 BAD-06462      
+Row 39 BAD-06562      
+Row 40 BAD-06567      
+Row 41 BAD-06631      
+Row 42 BAD-06642      
+Row 43 BAD-06703      
+Row 44 BAD-06704      
+Row 45 BAD-06705      
+Row 46 BAD-06717      
+Row 47 BAD-06873      
+Row 48 BAD-06874      
+Row 49 BAD-06875      
+Row 50 BAD-06876      
+Row 51 BAD-06900      
+Row 52 BAD-06906      
+Row 53 BAD-06908      
+Row 54 BAD-06927      
+Row 55 BAD-06929      
+Row 56 BAD-06933      
+Row 57 BAD-06934      
+Row 58 BAD-06939      
+Row 59 BAD-06940      
+Row 60 BAD-06941      
+Row 61 BAD-06946      
+Row 62 BAD-06948      
+Row 63 BAD-06950      
+Row 64 BAD-07016      
+Row 65 BAD-07017      
+Row 66 BAD-07021      
+Row 67 BAD-07022      
+Row 68 BAD-07031
+Row 69 BAD-07032
+Row 70 BAD-07033
+Row 71 BAD-07034
+Row 72 BAD-07035
+Row 73 BAD-07036
+Row 74 BAD-07037
+Row 75 BAD-07038
+Row 76 BAD-07062      
+Row 77 BAD-07071      
+Files Names Monitoring_DO_Titip-43-20231009_090937.xlsx
+-------------------------------EOF-------------------------------

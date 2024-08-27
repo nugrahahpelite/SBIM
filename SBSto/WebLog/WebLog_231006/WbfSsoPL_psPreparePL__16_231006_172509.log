@@ -1,0 +1,43 @@
+Module WbfSsoPL
+Proses psPreparePL
+Process Start      : 06 Oct 2023 17:25:09
+
+Open SQL Connection....Start
+
+1
+vnQuery
+Select TransStatus From Sys_SsoPLHeader_TR Where OID=16
+
+1
+vnQuery
+Select count(1) From Sys_SsoPLBarangQRCode_TR Where PLHOID=16
+
+2
+vnQuery
+Select OID,RcvPONo,convert(varchar(11),RcvPODate,106)vRcvPODate From Sys_SsoRcvPOHeader_TR Where RcvPORefTypeOID=1 and RcvPORefOID=16
+
+2
+vnQuery
+Select pld.PLHOID,pld.OID,pld.BRGCODE,pld.BRGNAME,poh.PO_NO
+From Sys_SsoPLDetail_TR pld
+     inner join Sys_SsoPODetail_TR pod on pod.OID=pld.PODOID
+  	  inner join Sys_SsoPOHeader_TR poh on poh.OID=pod.POHOID
+Where pld.PLHOID=16
+
+3
+Loop Generate QRCode...Start
+
+4.0
+vnPLHOID = 16
+vnPLDOID  = 23023
+vnData = BAD-06950           
+SANSUI-YOKOHAMA-SA-5202I-YOKHMA//2DIN-GREEN-@4
+No.Terima:GR/BAD/PR/23/09/0001
+Tgl Terima:08 Sep 2023
+ID Terima:36
+fsGenBrgQRCode_PL...Start
+fsGenBrgQRCode_PL...End
+Loop Generate QRCode...End
+Prepare Sukses
+Process End           : 06 Oct 2023 17:25:09
+---------------EOF-------------------------

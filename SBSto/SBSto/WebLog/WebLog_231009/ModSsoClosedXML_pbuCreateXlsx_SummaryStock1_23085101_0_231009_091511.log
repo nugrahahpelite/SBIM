@@ -1,0 +1,8 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummaryStock1
+Process Start      : 09 Oct 2023 09:15:11
+
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Invalid column name 'BAD'.
+-------------------------------EOF-------------------------------

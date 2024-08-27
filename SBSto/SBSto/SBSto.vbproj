@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{53327AA2-34B1-4EFB-B0DB-217B2537D3BA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SBSto</RootNamespace>
+    <AssemblyName>SBSto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SBSto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SBSto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.87.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>MyObjects\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="GlobalUtil">
+      <HintPath>MyObjects\GlobalUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\APIProject\IMSTLM\ProductRegAPICall\ProductRegAPICall\MyObjects\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\APIProject\IMSTLM\ProductRegAPICall\ProductRegAPICall\MyObjects\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Barcode">
+      <HintPath>MyObjects\Spire.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CssFiles\CssBnsrp.css" />
+    <Content Include="CssFiles\CssDdMenu.css" />
+    <Content Include="Images\SBLogo.png" />
+    <Content Include="JScript\jquery-1.12.4.js" />
+    <Content Include="JScript\ui\1.11.4\jquery-ui-sunny.css" />
+    <Content Include="JScript\ui\1.11.4\jquery-ui.js" />
+    <Content Include="Master\WbfSsoBuildingLantaiMs.aspx" />
+    <Content Include="Master\WbfSsoBuildingLantaiZonaMs.aspx" />
+    <Content Include="Master\WbfSsoBuildingMs.aspx" />
+    <Content Include="Master\WbfSsoCustomerMs.aspx" />
+    <Content Include="Master\WbfSsoLantaiMs.aspx" />
+    <Content Include="Master\WbfSsoPaketMs.aspx" />
+    <Content Include="Master\WbfSsoProductMs.aspx" />
+    <Content Include="Master\WbfSsoStorageCompanyMs.aspx" />
+    <Content Include="Master\WbfSsoStorageMs.aspx" />
+    <Content Include="Master\WbfSsoStorageTypeMs.aspx" />
+    <Content Include="Master\WbfSsoSubWarehouseMs.aspx" />
+    <Content Include="Master\WbfSsoWarehouseMs.aspx" />
+    <Content Include="Master\WbfSsoZonaMs.aspx" />
+    <Content Include="Preview\WbfCrpViewer.aspx" />
+    <Content Include="Preview\WbfCrpViewerSmk.aspx" />
+    <Content Include="Reporting\WbfDmDOTSummary.aspx" />
+    <Content Include="Reporting\WbfDmInvSummary.aspx" />
+    <Content Include="Reporting\WbfSsoMonDOTitip.aspx" />
+    <Content Include="Reporting\WbfSsoMonPicklist.aspx" />
+    <Content Include="Reporting\WbfSsoMonQty.aspx" />
+    <Content Include="Reporting\WbfSsoMonStatusInvoice.aspx" />
+    <Content Include="Reporting\WbfSsoMonTransPM.aspx" />
+    <Content Include="Reporting\WbfSsoOrderStatus.aspx" />
+    <Content Include="Reporting\WbfSsoPtwDailyCheck.aspx" />
+    <Content Include="Reporting\WbfSsoPtwSumm.aspx" />
+    <Content Include="Reporting\WbfSsoSOStatus.aspx" />
+    <Content Include="Reporting\WbfSsoStockCard.aspx" />
+    <Content Include="Approval\WbfSsoStockKarantina.aspx" />
+    <Content Include="Reporting\WbfSsoStockPick.aspx" />
+    <Content Include="Reporting\WbfSsoStorageStock.aspx" />
+    <Content Include="Reporting\WbfSsoSummaryStock.aspx" />
+    <Content Include="SBSto.Master" />
+    <Content Include="CrpFiles\DtsSsoReport.xsc">
+      <DependentUpon>DtsSsoReport.xsd</DependentUpon>
+    </Content>
+    <None Include="CrpFiles\DtsSsoReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DtsSsoReport.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="CrpFiles\DtsSsoReport.xss">
+      <DependentUpon>DtsSsoReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Sso\WbfDmPerintahDOTDisplay.aspx" />
+    <Content Include="Sso\WbfSsoCSKU.aspx" />
+    <Content Include="Sso\WbfSsoDispatchDMDs.aspx" />
+    <Content Include="Sso\WbfSsoDispatchDs.aspx" />
+    <Content Include="Sso\WbfSsoDispatchRcvDs.aspx" />
+    <Content Include="Sso\WbfSsoJualDisplay.aspx" />
+    <Content Include="Sso\WbfSsoMoveLocDs.aspx" />
+    <Content Include="Sso\WbfSsoMoveLocWhDs.aspx" />
+    <Content Include="Sso\WbfSsoPickDs.aspx" />
+    <Content Include="Sso\WbfSsoPickList.aspx" />
+    <Content Include="Sso\WbfSsoPL.aspx" />
+    <Content Include="Sso\WbfSsoPO.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDs.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDsw.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDswDs.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDsw_Wh.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDtwDs.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayDtw_WhDs.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayKrDs.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayVoid.aspx" />
+    <Content Include="Sso\WbfSsoPutAwayWhDs.aspx" />
+    <Content Include="Sso\WbfSsoQRCode.aspx" />
+    <Content Include="Sso\WbfSsoQRCode_Receive.aspx" />
+    <Content Include="Sso\WbfSsoRcvKar.aspx" />
+    <Content Include="Sso\WbfSsoRcvMsc.aspx" />
+    <Content Include="Sso\WbfSsoRcvPO.aspx" />
+    <Content Include="Sso\WbfSsoReceiving.aspx" />
+    <Content Include="Sso\WbfSsoSalesOrder.aspx" />
+    <Content Include="Sso\WbfSsoSalesOrderCancel.aspx" />
+    <Content Include="Sso\WbfSsoSmTRB.aspx" />
+    <Content Include="Sso\WbfSsoSNRequestPrint.aspx" />
+    <Content Include="Sso\WbfSsoSO.aspx" />
+    <Content Include="Sso\WbfSsoSOCompare.aspx" />
+    <Content Include="Sso\WbfSsoSOutToSOut.aspx" />
+    <Content Include="Sso\WbfSsoSOWithCc.aspx" />
+    <Content Include="Sso\WbfSsoTransStatus.aspx" />
+    <Content Include="Sso\WbfSsoTRBDisplay.aspx" />
+    <Content Include="UserAdmin\WbfUserGroupMs.aspx" />
+    <Content Include="UserAdmin\WbfUserList.aspx" />
+    <Content Include="UserAdmin\WbfUserMs.aspx" />
+    <Content Include="WbfSBStoMain.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_115317_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_115318_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_135710_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_135744_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_135746_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_140230_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_140253_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_140931_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_140932_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141022_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141023_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141026_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141042_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141101_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141110_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141150_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141151_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_141159_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171758_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171805_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171807_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171808_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171811_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171812_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\SBPay_Preview_Error_221205_171814_pbPrevieCrpWebQueryPopWin.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psApproveSKK_14105092_71_221202_160808.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psApproveSKK_14105092_72_221202_161617.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psCloseSKK_14105092_71_221202_160938.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psCloseSKK_14105092_71_221202_161123.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psCloseSKK_14105092_72_221202_161647.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psCloseSKK_14105092_72_221202_162134.log" />
+    <Content Include="WebLog\WebLog_221202\WbfDriverDocument_psCloseSKK_14105092_72_221202_162215.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrpFiles\CrpBnsrphBarcodeSelectionQR.vb">
+      <DependentUpon>CrpBnsrphBarcodeSelectionQR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrpFiles\CrpBnsrpdBarcodeSelectionQR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpBnsrpdBarcodeSelectionQR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoDailyCheckPutw.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoDailyCheckPutw.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoPickList 20230822 Orig.vb">
+      <DependentUpon>CrpSsoPickList 20230822 Orig.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoPickList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoPickList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoPickListReserve_SR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoPickListReserve_SR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSmTRBSummary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSmTRBSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOCycleCount.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOCycleCount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOStatus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyCompare.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyCompare.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyCompareDetail2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyCompareDetail2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTally_Storage.vb">
+      <DependentUpon>CrpSsoSOTally_Storage.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTally.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTally.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyCompareDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyCompareDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyDetail.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyPick.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyPick.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSOTallyRcv.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSOTallyRcv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoStorage.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoStorage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\CrpSsoSummPutw.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSsoSummPutw.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrpFiles\DtsSsoReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DtsSsoReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="General\ModCrpViewer.vb" />
+    <Compile Include="General\ModDcm.vb" />
+    <Compile Include="General\ModGenBarcode.vb" />
+    <Compile Include="General\ModGeneral.vb" />
+    <Compile Include="General\ModHashCode.vb" />
+    <Compile Include="General\ModLDAP.vb" />
+    <Compile Include="General\ModSAPApi.vb" />
+    <Compile Include="General\ModSendEmail.vb" />
+    <Compile Include="General\ModSQLDB.vb" />
+    <Compile Include="General\ModSQLDBNon.vb" />
+    <Compile Include="General\ModSso.vb" />
+    <Compile Include="General\ModSsoClosedXML.vb" />
+    <Compile Include="General\ModUserAccess.vb" />
+    <Compile Include="General\ModWriteLog.vb" />
+    <Compile Include="Master\WbfSsoBuildingLantaiMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoBuildingLantaiMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoBuildingLantaiMs.aspx.vb">
+      <DependentUpon>WbfSsoBuildingLantaiMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoBuildingLantaiZonaMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoBuildingLantaiZonaMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoBuildingLantaiZonaMs.aspx.vb">
+      <DependentUpon>WbfSsoBuildingLantaiZonaMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoBuildingMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoBuildingMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoBuildingMs.aspx.vb">
+      <DependentUpon>WbfSsoBuildingMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoCustomerMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoCustomerMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoCustomerMs.aspx.vb">
+      <DependentUpon>WbfSsoCustomerMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoLantaiMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoLantaiMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoLantaiMs.aspx.vb">
+      <DependentUpon>WbfSsoLantaiMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoPaketMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPaketMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoPaketMs.aspx.vb">
+      <DependentUpon>WbfSsoPaketMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoProductMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoProductMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoProductMs.aspx.vb">
+      <DependentUpon>WbfSsoProductMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageCompanyMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoStorageCompanyMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageCompanyMs.aspx.vb">
+      <DependentUpon>WbfSsoStorageCompanyMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoStorageMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageMs.aspx.vb">
+      <DependentUpon>WbfSsoStorageMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageTypeMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoStorageTypeMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoStorageTypeMs.aspx.vb">
+      <DependentUpon>WbfSsoStorageTypeMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoSubWarehouseMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoSubWarehouseMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoSubWarehouseMs.aspx.vb">
+      <DependentUpon>WbfSsoSubWarehouseMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoWarehouseMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoWarehouseMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoWarehouseMs.aspx.vb">
+      <DependentUpon>WbfSsoWarehouseMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Master\WbfSsoZonaMs.aspx.designer.vb">
+      <DependentUpon>WbfSsoZonaMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\WbfSsoZonaMs.aspx.vb">
+      <DependentUpon>WbfSsoZonaMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyClass\ClsPurchaseOrderResponse.vb" />
+    <Compile Include="Preview\WbfCrpViewer.aspx.designer.vb">
+      <DependentUpon>WbfCrpViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\WbfCrpViewer.aspx.vb">
+      <DependentUpon>WbfCrpViewer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Preview\WbfCrpViewerSmk.aspx.designer.vb">
+      <DependentUpon>WbfCrpViewerSmk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preview\WbfCrpViewerSmk.aspx.vb">
+      <DependentUpon>WbfCrpViewerSmk.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfDmDOTSummary.aspx.designer.vb">
+      <DependentUpon>WbfDmDOTSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfDmDOTSummary.aspx.vb">
+      <DependentUpon>WbfDmDOTSummary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfDmInvSummary.aspx.designer.vb">
+      <DependentUpon>WbfDmInvSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfDmInvSummary.aspx.vb">
+      <DependentUpon>WbfDmInvSummary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonDOTitip.aspx.designer.vb">
+      <DependentUpon>WbfSsoMonDOTitip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonDOTitip.aspx.vb">
+      <DependentUpon>WbfSsoMonDOTitip.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonPicklist.aspx.designer.vb">
+      <DependentUpon>WbfSsoMonPicklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonPicklist.aspx.vb">
+      <DependentUpon>WbfSsoMonPicklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonQty.aspx.designer.vb">
+      <DependentUpon>WbfSsoMonQty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonQty.aspx.vb">
+      <DependentUpon>WbfSsoMonQty.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonStatusInvoice.aspx.designer.vb">
+      <DependentUpon>WbfSsoMonStatusInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonStatusInvoice.aspx.vb">
+      <DependentUpon>WbfSsoMonStatusInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonTransPM.aspx.designer.vb">
+      <DependentUpon>WbfSsoMonTransPM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoMonTransPM.aspx.vb">
+      <DependentUpon>WbfSsoMonTransPM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoOrderStatus.aspx.designer.vb">
+      <DependentUpon>WbfSsoOrderStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoOrderStatus.aspx.vb">
+      <DependentUpon>WbfSsoOrderStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoPtwDailyCheck.aspx.designer.vb">
+      <DependentUpon>WbfSsoPtwDailyCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoPtwDailyCheck.aspx.vb">
+      <DependentUpon>WbfSsoPtwDailyCheck.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoPtwSumm.aspx.designer.vb">
+      <DependentUpon>WbfSsoPtwSumm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoPtwSumm.aspx.vb">
+      <DependentUpon>WbfSsoPtwSumm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoSOStatus.aspx.designer.vb">
+      <DependentUpon>WbfSsoSOStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoSOStatus.aspx.vb">
+      <DependentUpon>WbfSsoSOStatus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStockCard.aspx.designer.vb">
+      <DependentUpon>WbfSsoStockCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStockCard.aspx.vb">
+      <DependentUpon>WbfSsoStockCard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Approval\WbfSsoStockKarantina.aspx.designer.vb">
+      <DependentUpon>WbfSsoStockKarantina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\WbfSsoStockKarantina.aspx.vb">
+      <DependentUpon>WbfSsoStockKarantina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStockPick.aspx.designer.vb">
+      <DependentUpon>WbfSsoStockPick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStockPick.aspx.vb">
+      <DependentUpon>WbfSsoStockPick.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStorageStock.aspx.designer.vb">
+      <DependentUpon>WbfSsoStorageStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoStorageStock.aspx.vb">
+      <DependentUpon>WbfSsoStorageStock.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoSummaryStock.aspx.designer.vb">
+      <DependentUpon>WbfSsoSummaryStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\WbfSsoSummaryStock.aspx.vb">
+      <DependentUpon>WbfSsoSummaryStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SBSto.Master.designer.vb">
+      <DependentUpon>SBSto.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SBSto.Master.vb">
+      <DependentUpon>SBSto.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfDmPerintahDOTDisplay.aspx.designer.vb">
+      <DependentUpon>WbfDmPerintahDOTDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfDmPerintahDOTDisplay.aspx.vb">
+      <DependentUpon>WbfDmPerintahDOTDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoCSKU.aspx.designer.vb">
+      <DependentUpon>WbfSsoCSKU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoCSKU.aspx.vb">
+      <DependentUpon>WbfSsoCSKU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchDMDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoDispatchDMDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchDMDs.aspx.vb">
+      <DependentUpon>WbfSsoDispatchDMDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoDispatchDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchDs.aspx.vb">
+      <DependentUpon>WbfSsoDispatchDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchRcvDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoDispatchRcvDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoDispatchRcvDs.aspx.vb">
+      <DependentUpon>WbfSsoDispatchRcvDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoJualDisplay.aspx.designer.vb">
+      <DependentUpon>WbfSsoJualDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoJualDisplay.aspx.vb">
+      <DependentUpon>WbfSsoJualDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoMoveLocDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoMoveLocDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoMoveLocDs.aspx.vb">
+      <DependentUpon>WbfSsoMoveLocDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoMoveLocWhDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoMoveLocWhDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoMoveLocWhDs.aspx.vb">
+      <DependentUpon>WbfSsoMoveLocWhDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPickDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPickDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPickDs.aspx.vb">
+      <DependentUpon>WbfSsoPickDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPickList.aspx.designer.vb">
+      <DependentUpon>WbfSsoPickList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPickList.aspx.vb">
+      <DependentUpon>WbfSsoPickList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPL.aspx.designer.vb">
+      <DependentUpon>WbfSsoPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPL.aspx.vb">
+      <DependentUpon>WbfSsoPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPO.aspx.designer.vb">
+      <DependentUpon>WbfSsoPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPO.aspx.vb">
+      <DependentUpon>WbfSsoPO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDsw.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDsw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDsw.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDsw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDswDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDswDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDswDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDswDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDsw_Wh.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDsw_Wh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDsw_Wh.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDsw_Wh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDtwDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDtwDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDtwDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDtwDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDtw_WhDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayDtw_WhDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayDtw_WhDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayDtw_WhDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayKrDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayKrDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayKrDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayKrDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayVoid.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayVoid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayVoid.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayVoid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayWhDs.aspx.designer.vb">
+      <DependentUpon>WbfSsoPutAwayWhDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoPutAwayWhDs.aspx.vb">
+      <DependentUpon>WbfSsoPutAwayWhDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoQRCode.aspx.designer.vb">
+      <DependentUpon>WbfSsoQRCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoQRCode.aspx.vb">
+      <DependentUpon>WbfSsoQRCode.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoQRCode_Receive.aspx.designer.vb">
+      <DependentUpon>WbfSsoQRCode_Receive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoQRCode_Receive.aspx.vb">
+      <DependentUpon>WbfSsoQRCode_Receive.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvKar.aspx.designer.vb">
+      <DependentUpon>WbfSsoRcvKar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvKar.aspx.vb">
+      <DependentUpon>WbfSsoRcvKar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvMsc.aspx.designer.vb">
+      <DependentUpon>WbfSsoRcvMsc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvMsc.aspx.vb">
+      <DependentUpon>WbfSsoRcvMsc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvPO.aspx.designer.vb">
+      <DependentUpon>WbfSsoRcvPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoRcvPO.aspx.vb">
+      <DependentUpon>WbfSsoRcvPO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoReceiving.aspx.designer.vb">
+      <DependentUpon>WbfSsoReceiving.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoReceiving.aspx.vb">
+      <DependentUpon>WbfSsoReceiving.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSalesOrder.aspx.designer.vb">
+      <DependentUpon>WbfSsoSalesOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSalesOrder.aspx.vb">
+      <DependentUpon>WbfSsoSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSalesOrderCancel.aspx.designer.vb">
+      <DependentUpon>WbfSsoSalesOrderCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSalesOrderCancel.aspx.vb">
+      <DependentUpon>WbfSsoSalesOrderCancel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSmTRB.aspx.designer.vb">
+      <DependentUpon>WbfSsoSmTRB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSmTRB.aspx.vb">
+      <DependentUpon>WbfSsoSmTRB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSNRequestPrint.aspx.designer.vb">
+      <DependentUpon>WbfSsoSNRequestPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSNRequestPrint.aspx.vb">
+      <DependentUpon>WbfSsoSNRequestPrint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSO.aspx.designer.vb">
+      <DependentUpon>WbfSsoSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSO.aspx.vb">
+      <DependentUpon>WbfSsoSO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOCompare.aspx.designer.vb">
+      <DependentUpon>WbfSsoSOCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOCompare.aspx.vb">
+      <DependentUpon>WbfSsoSOCompare.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOutToSOut.aspx.designer.vb">
+      <DependentUpon>WbfSsoSOutToSOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOutToSOut.aspx.vb">
+      <DependentUpon>WbfSsoSOutToSOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOWithCc.aspx.designer.vb">
+      <DependentUpon>WbfSsoSOWithCc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoSOWithCc.aspx.vb">
+      <DependentUpon>WbfSsoSOWithCc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoTransStatus.aspx.designer.vb">
+      <DependentUpon>WbfSsoTransStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoTransStatus.aspx.vb">
+      <DependentUpon>WbfSsoTransStatus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Sso\WbfSsoTRBDisplay.aspx.designer.vb">
+      <DependentUpon>WbfSsoTRBDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sso\WbfSsoTRBDisplay.aspx.vb">
+      <DependentUpon>WbfSsoTRBDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserGroupMs.aspx.designer.vb">
+      <DependentUpon>WbfUserGroupMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserGroupMs.aspx.vb">
+      <DependentUpon>WbfUserGroupMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserList.aspx.designer.vb">
+      <DependentUpon>WbfUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserList.aspx.vb">
+      <DependentUpon>WbfUserList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserMs.aspx.designer.vb">
+      <DependentUpon>WbfUserMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmin\WbfUserMs.aspx.vb">
+      <DependentUpon>WbfUserMs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WbfSBStoMain.aspx.designer.vb">
+      <DependentUpon>WbfSBStoMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WbfSBStoMain.aspx.vb">
+      <DependentUpon>WbfSBStoMain.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrpFiles\CrpBnsrphBarcodeSelectionQR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpBnsrphBarcodeSelectionQR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpBnsrpdBarcodeSelectionQR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpBnsrpdBarcodeSelectionQR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoDailyCheckPutw.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoDailyCheckPutw.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoPickList 20230822 Orig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoPickList 20230822 Orig.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoPickList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoPickList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoPickListReserve_SR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoPickListReserve_SR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSmTRBSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSmTRBSummary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOCycleCount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOCycleCount.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOStatus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyCompare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyCompare.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyCompareDetail2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyCompareDetail2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTally_Storage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTally_Storage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTally.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTally.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyCompareDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyCompareDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyDetail.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyPick.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyPick.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSOTallyRcv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSOTallyRcv.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoStorage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoStorage.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrpFiles\CrpSsoSummPutw.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSsoSummPutw.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QRDir\" />
+    <Folder Include="SAPApiFolder\" />
+    <Folder Include="XlsFolder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54673</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54673/Sso</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

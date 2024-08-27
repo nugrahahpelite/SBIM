@@ -1,0 +1,58 @@
+Module WbfSsoSOCompare
+Proses psReCompareSOStart
+Process Start      : 08 Sep 2023 14:31:08
+
+Open SQL Connection....Start
+
+1
+
+<----psRecompareSO......Start
+
+0
+Update Sys_SsoSOCompareD_TR set SOScanQty1=0,SOScanQty2=0 Where SOCHOID=7
+
+1
+Insert into Sys_SsoSOCompareD_TR
+(SOCHOID,BRGCODE)
+Select distinct 7 SOCHOID,BRGCODE From Sys_SsoSOScan_TR Where SOHOID=8 and SOScanDeleted=0
+ and not StorageOID in(Select sti.OID From Sys_Storage_MA sti Where sti.StorageTypeOID=1007)
+ and not BRGCODE in(Select b.BRGCODE From Sys_SsoSOCompareD_TR b Where b.SOCHOID=7)
+
+2
+Insert into Sys_SsoSOCompareD_TR
+(SOCHOID,BRGCODE)
+Select distinct 7 SOCHOID,BRGCODE From Sys_SsoSOScan_TR Where SOHOID=9 and SOScanDeleted=0
+ and not StorageOID in(Select sti.OID From Sys_Storage_MA sti Where sti.StorageTypeOID=1007)
+ and not BRGCODE in(Select b.BRGCODE From Sys_SsoSOCompareD_TR b Where b.SOCHOID=7)
+
+3
+Update scd set SOScanQty1=vSumSOScanQty
+       From Sys_SsoSOCompareD_TR scd
+			inner join (Select BRGCODE,sum(SOScanQty)vSumSOScanQty
+			              From Sys_SsoSOScan_TR with(nolock) where SOHOID=8 and abs(SOScanDeleted)=0
+                              and not StorageOID in(Select sti.OID From Sys_Storage_MA sti Where sti.StorageTypeOID=1007)
+			             group by BRGCODE)scn on scn.BRGCODE=scd.BRGCODE
+	  Where scd.SOCHOID=7
+
+4
+Update scd set SOScanQty2=vSumSOScanQty
+       From Sys_SsoSOCompareD_TR scd
+			inner join (Select BRGCODE,sum(SOScanQty)vSumSOScanQty
+			              From Sys_SsoSOScan_TR where SOHOID=9 and abs(SOScanDeleted)=0
+                              and not StorageOID in(Select sti.OID From Sys_Storage_MA sti Where sti.StorageTypeOID=1007)
+			             group by BRGCODE)scn on scn.BRGCODE=scd.BRGCODE
+	  Where scd.SOCHOID=7
+<----psRecompareSO......End
+
+2
+vnQuery
+Update Sys_SsoSOCompareH_TR set LastCompareUserOID=14,LastCompareDatetime=getdate() Where OID=7
+
+3
+Refresh Scan Qty 1-2...Start
+Refresh Scan Qty 1-2...End
+
+08 Sep 2023 14:31:09
+Create Stock Opname Sukses
+
+------------------------EOF------------------------

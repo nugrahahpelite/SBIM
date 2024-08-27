@@ -1,0 +1,52 @@
+Module WbfSsoPO
+Proses BtnXlsUpload_Click
+Process Start      : 23 Oct 2023 17:11:44
+
+Open SQL Connection....Start
+vnFileName : C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144 
+vnSheetName : Sheet 1
+FupXls.SaveAs(C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144 )...Start
+FupXls.SaveAs(C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144 )...End
+
+vnQuery
+CREATE Table #Sys_SsoPO_Temp(
+[CompanyCode] [varchar](15) Not NULL,
+[PO_NO] [varchar](50) Not NULL,
+[JURNAL] [varchar](50) NULL,
+[PO_DATE] [DateTime] Not NULL,
+[SUB] [varchar](50) Not NULL,
+[BRG] [varchar](450) Not NULL,
+[GDGCODE] [varchar](50) Not NULL,
+[QTY] [numeric](18, 0) Not NULL,
+[NAMA_SUPPLIER] [varchar](50) Not NULL,
+[NAMA_BARANG] [varchar](450) Not NULL,
+[JOBNAME] [varchar](15) Not NULL,
+[SAP_DocEntry] [int],
+[SAP_DocType] [varchar](50),
+[SAP_DocumentStatus] [varchar](50),
+[SAP_Cancelled] [varchar](50),
+[SAP_LineNum] [int],
+[UploadSourceOID] [tinyint] Not NULL,
+[POFileXlsOID] [Int] NULL,
+[UploadDatetime] [DateTime] Not NULL
+)
+
+-----------------------
+fsXlsImportData...Start
+vnQuery
+Delete #Sys_SsoPO_Temp
+vnQuery
+Select max(OID) From Sys_SsoPOFileXls_TR with(nolock)
+Insert into Sys_SsoPOFileXls_TR
+(OID,CompanyCode,UploadSourceOID,XlsFileName,UploadStartDatetime,UploadUserOID)
+Values
+(19,'BAD',1,'C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144 ','23 Oct 2023 17:11:44',7)
+vnPath : C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144
+vnXConnStr : Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Data Baru\SB_WMS\SBStoApp\SBSto\XlsFolder\SPPO_20231023_171144 ;Extended Properties=Excel 12.0 Xml;
+
+
+PROCESS TERMINATED...ERROR :
+The Microsoft Access database engine could not find the object 'Sheet 1$'. Make sure the object exists and that you spell its name and the path name correctly. If 'Sheet 1$' is not a local object, check your network connection or contact the server administrator.
+
+-----------------------ERROR-----------------------
+------------------------EOF------------------------

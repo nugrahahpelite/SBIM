@@ -1,0 +1,16 @@
+Module WbfCrpViewer
+Proses pbPrevieCrpWebQueryPopWin
+Process Start      : 22 Aug 2023 16:51:49
+
+Open SQL Connection....Start
+vbuCrpPreview Pdf
+vbuCrpFileName CrpSsoSOTally_Storage.rpt
+vnRptFolder C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\
+ERROR
+Incorrect syntax near the keyword 'From'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Process End           : 22 Aug 2023 16:51:49
+---------------EOF-------------------------

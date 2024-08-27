@@ -1,0 +1,12 @@
+Module WbfSsoCSKU
+Proses psPreparePL
+Process Start      : 06 Oct 2023 17:18:02
+
+Open SQL Connection....Start
+
+1
+vnQuery
+Select TransStatus From Sys_SsoPLHeader_TR Where OID=17
+Penerimaan Pembelian BELUM Diinput
+Process End           : 06 Oct 2023 17:18:02
+---------------EOF-------------------------

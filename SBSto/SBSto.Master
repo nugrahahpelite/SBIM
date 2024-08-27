@@ -1,0 +1,227 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SBSto.master.vb" Inherits="SBSto.SBSto" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="~/CssFiles/CssBnsrp.css" rel="stylesheet" type="text/css" />
+    <link href="~/CssFiles/CssDdMenu.css" rel="stylesheet" type="text/css" />
+    <link href="~/CssFiles/CssBnsrppObject.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="JScript/ui/1.11.4/jquery-ui-sunny.css" />
+    <script src="JScript/jquery-1.12.4.js"></script>
+    <script src="JScript/ui/1.11.4/jquery-ui.js"></script>
+
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin-left:2px;margin-top:5px">
+            <table class="myPanelGreyLight" style="width: 100%; border-spacing:0; height: 45px;">
+                <tr>
+                    <td style="vertical-align:central;width: 110px;height: 45px;"><img id="Img1" src="~/Images/SBLogo.png" runat="server" style="height: 45px; width: 86%" /></td>                    
+                    <td style="width: 1336px;height: 45px;"><p class="site-title" style="font-variant: normal; font-style: italic; font-weight: 400; font-size: xx-large; text-transform: capitalize; width: 980px;">
+                        <asp:Label ID="LblAppTitle" runat="server" Text="SB WMS"></asp:Label></p></td>
+                    <td><asp:Label ID="LblRootFolder" runat="server" Text="LblRootFolder" Visible="False"></asp:Label></td>
+                </tr>
+            </table>
+        </div>
+        <table style="width:100%;border:none">
+            <tr>
+                <td style="width:100%">
+                    <div id='cssmenu'>
+                    <ul>
+                       <li class='active has-sub'><a href='#'><span><script type="text/javascript">document.write('<%=Session("UserName")%>');</script></span></a>
+                          <ul>
+                              <script type="text/javascript">
+                                  var vnRootFolder = '<%=Session("RootFolder")%>';
+                                  var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                  var vnCurrentUrl = '';
+                                  if (vnCurrentFolder == 'UserAdmin') {
+                                      vnCurrentUrl = '';
+                                  }
+                                  else {
+                                      vnCurrentUrl = '' + vnRootFolder + 'UserAdmin/';
+                                  }
+                                  document.write('<li><a href="' + vnCurrentUrl + 'WbfChangePassword.aspx"><span>Ganti Password</span></a></li>');
+                                </script>
+                             <li><asp:LinkButton ID="LnkLogOut" runat="server" Font-Underline="False" CssClass="has-sub">Log Out</asp:LinkButton></li>
+                          </ul>
+                       </li>
+                       <li class='active has-sub'><a href='#'><span>MASTER</span></a>
+                           <ul>
+                                <script type="text/javascript">
+                                            var vnUserGroup = '<%=Session("UserGroup")%>';
+                                            if (vnUserGroup == 1) {
+                                                var vnRootFolder = '<%=Session("RootFolder")%>';
+
+                                            var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                            var vnCurrentUrl = '';
+                                            vnCurrentUrl = '' + vnRootFolder + 'Master/';
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoProductMs.aspx"><span>Barang</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoPaketMs.aspx"><span>Barang Paket</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoCustomerMs.aspx"><span>Customer</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoWarehouseMs.aspx"><span>Warehouse</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoSubWarehouseMs.aspx"><span>Sub Warehouse</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoBuildingMs.aspx"><span>Building</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoLantaiMs.aspx"><span>Lantai</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoZonaMs.aspx"><span>Zona</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoBuildingLantaiMs.aspx"><span>Building - Lantai</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoBuildingLantaiZonaMs.aspx"><span>Building - Lantai - Zona</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoStorageTypeMs.aspx"><span>Storage Type</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoStorageMs.aspx"><span>Storage Location</span></a></li>');
+                                                document.write('<li><a href="' + vnCurrentUrl + 'WbfSsoStorageCompanyMs.aspx"><span>Storage - Company</span></a></li>');
+
+                                            vnCurrentUrl = '';
+                                            var UAdm = '<%=Session("UserAdmin")%>';
+                                                if (vnCurrentFolder == 'UserAdmin') {
+                                                    vnCurrentUrl = '';
+                                                }
+                                                else {
+                                                    vnCurrentUrl = '' + vnRootFolder + 'UserAdmin/';
+                                                }
+
+                                                if (UAdm == 1) {
+                                                    document.write('<li><a href="' + vnCurrentUrl + 'WbfUserMs.aspx">User</a></li>');
+                                                    document.write('<li><a href="' + vnCurrentUrl + 'WbfUserList.aspx">User List</a></li>');
+                                                    document.write('<li><a href="' + vnCurrentUrl + 'WbfUserGroupMs.aspx">User Group</a></li>');
+                                                }
+                                            }
+                                </script>
+                            </ul>
+                       </li>
+                       <li class='active has-sub'><a href='#'><span>Activity</span></a>
+                           <ul>
+                                <script type="text/javascript">
+                                    var vnRootFolder = '<%=Session("RootFolder")%>';
+                                    var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                    var vnCurrentUrl = '';
+                                    if (vnCurrentFolder == '') {
+                                        vnCurrentUrl = '';
+                                    }
+                                    else {
+                                        vnCurrentUrl = '' + vnRootFolder + '';
+                                    }
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPO.aspx"><span>PO</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPL.aspx"><span>Packing List</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSalesOrder.aspx"><span>Sales Order</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoTRBDisplay.aspx"><span>TRB</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoJualDisplay.aspx"><span>Invoice</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfDmPerintahDOTDisplay.aspx"><span>Perintah Kirim DO Titip</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSalesOrderCancel.aspx"><span>Void Sales Order</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSmTRB.aspx"><span>Summary Barang untuk TRB</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPickList.aspx"><span>Pick List</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoRcvMsc.aspx"><span>Penerimaan Lain-lain</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoRcvKar.aspx"><span>Penerimaan Karantina</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSO.aspx"><span>Stock Opname</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSOWithCc.aspx"><span>Cycle Count</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSOCompare.aspx"><span>Stock Opname Compare</span></a></li>');                                    
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoQRCode.aspx"><span>Print QRCode Barang</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoQRCode_Receive.aspx"><span>Print QRCode Barang - Penerimaan Pembelian/Lain2</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSNRequestPrint.aspx"><span>Print SN Barang</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoCSKU.aspx"><span>Change SKU</span></a></li>');
+                                </script>
+                            </ul>
+                       </li>
+                       <li class='active has-sub'><a href='#'><span>WMS Mobile</span></a>
+                           <ul>
+                                <script type="text/javascript">
+                                    var vnRootFolder = '<%=Session("RootFolder")%>';
+                                    var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                    var vnCurrentUrl = '';
+                                    if (vnCurrentFolder == '') {
+                                        vnCurrentUrl = '';
+                                    }
+                                    else {
+                                        vnCurrentUrl = '' + vnRootFolder + '';
+                                    }
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoRcvPO.aspx"><span>Penerimaan</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayDs.aspx"><span>Putaway Gudang Sama</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayWhDs.aspx"><span>Putaway Antar Gudang</span></a></li>');
+
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayKrDs.aspx"><span>Putaway Karantina</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayDtwDs.aspx"><span>Putaway DO Titip</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayDtw_WhDs.aspx"><span>Putaway DO Titip Antar Gudang</span></a></li>');
+
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayDsw.aspx"><span>Putaway Penerimaan Dispatch Gudang Sama</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayDsw_Wh.aspx"><span>Putaway Penerimaan Dispatch Antar Gudang</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPutAwayVoid.aspx"><span>Putaway Picking yang Dibatalkan</span></a></li>');
+
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoMoveLocDs.aspx"><span>Pindah Lokasi Gudang Sama</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoMoveLocWhDs.aspx"><span>Pindah Lokasi Beda Gudang</span></a></li>');
+
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoPickDs.aspx"><span>Picking</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoDispatchDs.aspx"><span>Dispatch</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoDispatchRcvDs.aspx"><span>Penerimaan Dispatch</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoSOutToSOut.aspx"><span>Moving antar Staging Out</span></a></li>');
+                                </script>
+                            </ul>
+                       </li>
+
+                       <li class='active has-sub'><a href='#'><span>Approval</span></a>
+                           <ul>
+                                <script type="text/javascript">
+                                    var vnRootFolder = '<%=Session("RootFolder")%>';
+                                    var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                    var vnCurrentUrl = '';
+                                    if (vnCurrentFolder == '') {
+                                        vnCurrentUrl = '';
+                                    }
+                                    else {
+                                        vnCurrentUrl = '' + vnRootFolder + '';
+                                    }
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Sso/WbfSsoRcvPO.aspx"><span>Penerimaan</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Approval/WbfSsoStockKarantina.aspx"><span>Stock Karantina</span></a></li>');
+                                </script>
+                            </ul>
+                       </li>
+                       <li class='active has-sub'><a href='#'><span>Reporting</span></a>
+                           <ul>
+                                <script type="text/javascript">
+                                    var vnRootFolder = '<%=Session("RootFolder")%>';
+                                    var vnCurrentFolder = '<%=Session("CurrentFolder")%>';
+                                    var vnCurrentUrl = '';
+                                    if (vnCurrentFolder == '') {
+                                        vnCurrentUrl = '';
+                                    }
+                                    else {
+                                        vnCurrentUrl = '' + vnRootFolder + '';
+                                    }
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoStorageStock.aspx"><span>Stock Info</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoStockPick.aspx"><span>Stock Crossdock</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoStockCard.aspx"><span>Stock Card</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoMonQty.aspx"><span>Monitor Quantity Stock</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoMonDOTitip.aspx"><span>Monitor Stock DO Titip</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoPtwSumm.aspx"><span>Summary Putaway</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoPtwDailyCheck.aspx"><span>Putaway Daily Checking</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoMonPickList.aspx"><span>Monitoring Picklist</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoMonStatusInvoice.aspx"><span>Monitoring Status Invoice</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoMonTransPM.aspx"><span>Monitoring Transaksi</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoSummaryStock.aspx"><span>Summary Stock</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoOrderStatus.aspx"><span>Order Status</span></a></li>');
+                                    document.write('<li><a href="' + vnCurrentUrl + 'Reporting/WbfSsoSOStatus.aspx"><span>Summary Status Stock Opname</span></a></li>');
+                                </script>
+                            </ul>
+                       </li>
+                    </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; background-color:none;" >
+            <tr>
+                <td class="myPanelGreyLight" style="vertical-align:top;width:100%;height:750px">
+                    <asp:ContentPlaceHolder ID="CtpRight" runat="server">
+                        <!DOCTYPE html>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

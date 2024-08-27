@@ -1,0 +1,18 @@
+Module WbfSsoSOWithCc
+Proses psScanOpen
+Process Start      : 22 Aug 2023 15:22:41
+
+Open SQL Connection....Start
+
+0
+
+1
+vnQuery
+Update Sys_SsoSOHeader_TR set TransStatus=4,ScanOpenUserOID=14,ScanOpenDatetime=getdate() Where OID=30
+
+2
+pbuInsertStatusSSOH...Start
+pbuInsertStatusSSOH...End
+Scan Start Sukses
+Process End           : 22 Aug 2023 15:22:41
+---------------EOF-------------------------

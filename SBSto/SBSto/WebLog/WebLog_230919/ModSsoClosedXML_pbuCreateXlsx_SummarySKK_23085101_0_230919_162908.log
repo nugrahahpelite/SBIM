@@ -1,0 +1,58 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 19 Sep 2023 16:29:08
+
+
+vnQuery
+ SELECT * FROM (  Select pcl.OID vPCLHOID,pcl.PCLNo,pcl.PCLCompanyCode,msc.SchDTypeName,pcl.PCLRefHNo,
+		        pcl.WarehouseOID,mwh.WarehouseName,
+		        convert(varchar(11),pcl.CreationDatetime,106)+'<br />'+convert(varchar(11),pcl.CreationDatetime,108)vCreationDatetime,
+		        convert(varchar(11),pcl.PreparedDatetime,106)+'<br />'+convert(varchar(11),pcl.PreparedDatetime,108)vPreparedDatetime,
+		        sts_pcl.TransStatusDescr vTransStatusDescr_PCL,
+		        pck.PCKNo,convert(varchar(11),pck.PCKDate,106)vPCKDate,pck.StorageOID,sti.vStorageInfoHtml,sts_pck.TransStatusDescr vTransStatusDescr_PCK,
+		        dsp.DSPNo,convert(varchar(11),dsp.DSPDate,106)vDSPDate,mdr.DcmDriverName,mvh.VehicleNo,dsp.vTransStatusDescr_DSP,dsp.vCreateUser_DSP,
+		        dsr.DSRNo,convert(varchar(11),dsr.DSRDate,106)vDSRDate,dsr.vTransStatusDescr_DSR,dsr.vCreateUser_DSR,
+		        sgo.SGONo,convert(varchar(11),sgo.SGODate,106)vSGODate,sgo.vTransStatusDescr_SGO,sgo.vCreateUser_SGO,sgo_asal.vStorageInfo_Wh_Bd_Lt vStgOut_Asal,sgo_dest.vStorageInfo_Wh_Bd_Lt vStgOut_Dest,
+		        pcl.CreationDatetime
+		 From Sys_SsoPCLHeader_TR pcl with(nolock)
+	          inner join Delivery_Monitoring.dbo.Sys_DcmSchDType_MA msc with(nolock) on msc.OID=pcl.SchDTypeOID
+	          inner join SB_DATAWH.dbo.Sys_Warehouse_MA mwh with(nolock) on mwh.OID=pcl.WarehouseOID
+	          inner join Sys_SsoTransStatus_MA sts_pcl with(nolock) on sts_pcl.TransCode=pcl.TransCode and sts_pcl.TransStatus=pcl.TransStatus
+	          left outer join Sys_SsoPCKHeader_TR pck with(nolock) on pck.PCLHOID=pcl.OID
+	          left outer join Sys_SsoTransStatus_MA sts_pck with(nolock) on sts_pck.TransCode=pck.TransCode and sts_pck.TransStatus=pck.TransStatus
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sti on sti.vStorageOID=pck.StorageOID
+	          left outer join fnTbl_SsoDSPHeader_Pick() dsp on dsp.PCKHOID=pck.OID
+	          left outer join fnTbl_SsoDSRHeader_Pick() dsr on dsr.PCKHOID=pck.OID
+	          left outer join fnTbl_SsoSGOHeader_Pick() sgo on sgo.PCKHOID=pck.OID
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_asal on sgo_asal.vStorageOID=sgo.StorageOID
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_dest on sgo_dest.vStorageOID=sgo.StorageOID_Dest
+	          left outer join Delivery_Monitoring.dbo.Sys_DcmDriver_MA mdr with(nolock) on mdr.OID=dsp.DcmSchDriverOID
+	          left outer join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA mvh with(nolock) on mvh.OID=dsp.DcmVehicleOID
+	    Where pcl.SchDTypeOID in (1,5,7)
+	    UNION ALL
+	    Select pcl.OID vPCLHOID,pcl.PCLNo,pcl.PCLCompanyCode,msc.SchDTypeName,pcl.PCLRefHNo,
+	           pcl.WarehouseOID,mwh.WarehouseName,
+		       convert(varchar(11),pcl.CreationDatetime,106)+'<br />'+convert(varchar(11),pcl.CreationDatetime,108)vCreationDatetime,
+		       convert(varchar(11),pcl.PreparedDatetime,106)+'<br />'+convert(varchar(11),pcl.PreparedDatetime,108)vPreparedDatetime,
+	           sts_pcl.TransStatusDescr vTransStatusDescr_PCL,
+	           pck.PCKNo,convert(varchar(11),pck.PCKDate,106)vPCKDate,pck.StorageOID,sti.vStorageInfoHtml,sts_pck.TransStatusDescr vTransStatusDescr_PCK,
+		       ptw.vPtwNo DSPNo,convert(varchar(11),ptw.vPtwDate,106)vDSPDate,''DcmDriverName,''VehicleNo,ptw.vTransStatusDescr_Ptw,ptw.vCreateUser_Ptw,
+		       dsr.DSRNo,convert(varchar(11),dsr.DSRDate,106)vDSRDate,dsr.vTransStatusDescr_DSR,dsr.vCreateUser_DSR,
+		       sgo.SGONo,convert(varchar(11),sgo.SGODate,106)vSGODate,sgo.vTransStatusDescr_SGO,sgo.vCreateUser_SGO,sgo_asal.vStorageInfo_Wh_Bd_Lt vStgOut_Asal,sgo_dest.vStorageInfo_Wh_Bd_Lt vStgOut_Dest,
+		       pcl.CreationDatetime
+	      From Sys_SsoPCLHeader_TR pcl with(nolock)
+	           inner join Delivery_Monitoring.dbo.Sys_DcmSchDType_MA msc with(nolock) on msc.OID=pcl.SchDTypeOID
+	           inner join SB_DATAWH.dbo.Sys_Warehouse_MA mwh with(nolock) on mwh.OID=pcl.WarehouseOID
+	           inner join Sys_SsoTransStatus_MA sts_pcl with(nolock) on sts_pcl.TransCode=pcl.TransCode and sts_pcl.TransStatus=pcl.TransStatus
+	           left outer join Sys_SsoPCKHeader_TR pck with(nolock) on pck.PCLHOID=pcl.OID
+	           left outer join fnTbl_SsoDSRHeader_Pick() dsr on dsr.PCKHOID=pck.OID
+	           left outer join Sys_SsoTransStatus_MA sts_pck with(nolock) on sts_pck.TransCode=pck.TransCode and sts_pck.TransStatus=pck.TransStatus
+	           left outer join fnTbl_SsoSGOHeader_Pick() sgo on sgo.PCKHOID=pck.OID
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_asal on sgo_asal.vStorageOID=sgo.StorageOID
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_dest on sgo_dest.vStorageOID=sgo.StorageOID_Dest
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sti on sti.vStorageOID=pck.StorageOID
+	           left outer join fnTbl_SsoDT_Ptw_Header() ptw on ptw.PCKHOID=pck.OID
+		 Where pcl.SchDTypeOID = 8  ) tb 
+ Where 1 = 1 
+      And WarehouseOID =1
+ Order by CreationDatetime DESC

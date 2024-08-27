@@ -1,0 +1,16 @@
+Module WbfSsoCSKU
+Proses psPreparePL
+Process Start      : 06 Oct 2023 18:00:22
+
+Open SQL Connection....Start
+
+2
+vnQuery
+Select OID,RcvPONo,convert(varchar(11),RcvPODate,106)vRcvPODate From Sys_SsoRcvPOHeader_TR Where RcvPORefTypeOID=1 and RcvPORefOID=17
+
+-99
+ERROR RAISED
+There is no row at position 0.
+
+Process End           : 06 Oct 2023 18:00:22
+--------------------------------- EOF ---------------------------------

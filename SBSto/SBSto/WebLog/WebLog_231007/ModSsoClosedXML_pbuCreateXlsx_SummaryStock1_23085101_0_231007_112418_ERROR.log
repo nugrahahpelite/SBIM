@@ -1,0 +1,40 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummaryStock1
+Process Start      : 07 Oct 2023 11:24:18
+
+
+vnQuery
+	SELECT  top 1 [CompanyCode],[WarehouseName],[Order Status] vOrderStatus,[Ref No] vRefNo	
+	      ,[TANGGAL],[Priority] ,[Lead Time] vLeadTime ,[DO Titip] vDoTitip	
+	      ,[KODE_CUST],[CUSTOMER],[uploadDatetime]	
+	  ,[Picklist No] vPicklistNo,[Picklist Date] vPickListDate,[PL Created by]vPLCreate,[PreparedDatetime],[PL Status]	
+	  ,[Picking No],[Picking Created Date] vPickingCreate,[Picking Done] vPickingDone	
+	  ,[Dispatch/Putaway No] vDispatchNo,[Confirm Dispatch/Putaway Date] vDispatchConfirm,[Driver Confirm Date] vDriverConfirm	
+	      ,[Driver Name] vDriverName,[Driver Return Time] vDriverReturn	
+	      ,[ConcatCol1] ,[TransCode]	
+	  FROM [Delivery_Monitoring].[dbo].[vOrderTracing]	
+Where 1=1
+            and CompanyCode = 'BAD'
+            and WarehouseName = 'PRANCIS'
+
+Order by TANGGAL Desc
+
+07/10/2023 11:24:19 AM
+Jumlah Data = 1
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+
+Row 0 PRANCIS
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Column 'WvPickListDate' does not belong to table .
+-------------------------------EOF-------------------------------

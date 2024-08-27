@@ -1,0 +1,24 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_MonitoringPickList1
+Process Start      : 09 Oct 2023 09:00:23
+
+
+vnQuery
+	SELECT   [CompanyCode],[WarehouseName],[Order Status] vOrderStatus,[Ref No] vRefNo	
+	      ,[TANGGAL],[Priority] ,[Lead Time] vLeadTime ,[DO Titip] vDoTitip	
+	      ,[KODE_CUST],[CUSTOMER],[uploadDatetime]	
+	  ,[Picklist No] vPicklistNo,[Picklist Date] vPickListDate,[PL Created by]vPLCreate,[PreparedDatetime],[PL Status]	
+	  ,[Picking No],[Picking Created Date] vPickingCreate,[Picking Done] vPickingDone	
+	  ,[Dispatch/Putaway No] vDispatchNo,[Confirm Dispatch/Putaway Date] vDispatchConfirm,[Driver Confirm Date] vDriverConfirm	
+	      ,[Driver Name] vDriverName,[Driver Return Time] vDriverReturn	
+	      ,[ConcatCol1] ,[TransCode]	
+	  FROM vOrderTracing	PM
+Where 1=1
+            and CompanyCode = 'BAD'
+            and WarehouseName = 'PRANCIS'
+
+Order by TANGGAL Desc
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Invalid object name 'vOrderTracing'.
+-------------------------------EOF-------------------------------

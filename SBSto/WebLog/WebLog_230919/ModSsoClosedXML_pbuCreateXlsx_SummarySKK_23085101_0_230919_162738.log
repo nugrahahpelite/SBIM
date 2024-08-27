@@ -1,0 +1,27 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 19 Sep 2023 16:27:38
+
+
+vnQuery
+spSsoInvNotPickDone_ByCompanyWhsDate_Table 'BAD',2,'03 Sep 2023','17 Sep 2023'
+
+19/09/2023 4:27:38 PM
+Jumlah Data = 587
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+
+Row 0 2
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Column 'NO_NOTA' does not belong to table .
+-------------------------------EOF-------------------------------

@@ -1,0 +1,31 @@
+Module WbfCrpViewer
+Proses pbPrevieCrpWebQueryPopWin
+Process Start      : 08 Sep 2023 15:26:45
+
+Open SQL Connection....Start
+vbuCrpPreview Pdf
+vbuCrpFileName CrpSsoSOTallyCompareDetail.rpt
+vnRptFolder C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\
+
+Load Report C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\CrpSsoSOTallyCompareDetail.rpt...Start
+Load Report C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\CrpSsoSOTallyCompareDetail.rpt...End
+
+
+SetDataSource...Start
+SetDataSource...End
+
+0.2
+1
+2
+3
+4
+5
+6
+7
+0.4
+8
+9
+
+Show Report Berhasil
+Process End           : 08 Sep 2023 15:26:46
+---------------EOF-------------------------

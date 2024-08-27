@@ -1,0 +1,360 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 20 Sep 2023 14:19:25
+
+
+vnQuery
+Select PM.vTransOID,PM.vRefOID,SM.TransCode,SM.TransName,PM.vTransCompanyCode,PM.vTransNo,convert(varchar(11),PM.vTransDate,106)vTransDate,PM.vRefNo,
+     PM.vTransType,PM.WarehouseName,PM.vWarehouseName_Dest,PM.vTransNote,PM.TransStatusDescr,
+     PM.vCreation,PM.CreationDatetime
+From(
+
+Select PM.OID vTransOID,PM.RcvPORefOID vRefOID,PM.TransCode,PM.RcvPOCompanyCode vTransCompanyCode,PM.RcvPONo vTransNo,PM.RcvPODate vTransDate,PM.RcvPORefNo vRefNo,
+     RT.RcvPOTypeName vTransType,WM.WarehouseName,''vWarehouseName_Dest,''vTransNote,ST.TransStatusDescr,
+     convert(varchar(11),PM.CreationDatetime,106)+' '+convert(varchar(5),PM.CreationDatetime,108)+' '+ CR.UserName vCreation,PM.CreationDatetime
+From Sys_SsoRcvPOHeader_TR PM with(nolock)
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join Sys_SsoRcvPOType_MA RT with(nolock) on RT.OID=PM.RcvPORefTypeOID
+     inner join Sys_SsoTransStatus_MA ST with(nolock) on ST.TransStatus=PM.TransStatus and ST.TransCode=PM.TransCode
+     left outer join Sys_SsoUser_MA CR with(nolock) on CR.OID=PM.CreationUserOID
+Where 1=1 and RcvRefTypeOID<>0
+
+            and PM.WarehouseOID = 2
+            and PM.RcvPODate >= '05 Sep 2023'
+            and PM.RcvPODate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.RcvPOHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.RcvPONo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vMoveOID vTransOID,Null vRefOID,PM.TransCode,PM.vMoveCompanyCode vTransCompanyCode,PM.vMoveNo vTransNo,PM.vMoveDate vTransDate,''vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoMovement() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.vMoveDate >= '05 Sep 2023'
+            and PM.vMoveDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,PCLRefHOID vRefOID,PM.TransCode,PM.PCLCompanyCode vTransCompanyCode,PM.PCLNo vTransNo,PM.PCLDate vTransDate,PCLRefHNo vRefNo,
+     PM.SchDTypeName vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPicklist_Picking_Dispatch() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.PCLDate >= '05 Sep 2023'
+            and PM.PCLDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.PCKCompanyCode vTransCompanyCode,PM.PCKNo vTransNo,PM.PCKDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPCKHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.PCKDate >= '05 Sep 2023'
+            and PM.PCKDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,Null vRefOID,PM.TransCode,PM.DSPCompanyCode vTransCompanyCode,PM.DSPNo vTransNo,PM.DSPDate vTransDate,Null vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Driver = '+dm.DcmDriverName+'<br />Plat No = '+vm.VehicleNo vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoDSPHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmDriver_MA dm with(nolock) on dm.OID=PM.DcmSchDriverOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA vm with(nolock) on vm.OID=PM.DcmVehicleOID
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.DSPDate >= '05 Sep 2023'
+            and PM.DSPDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,DSPHOID vRefOID,PM.TransCode,PM.DSRCompanyCode vTransCompanyCode,PM.DSRNo vTransNo,PM.DSRDate vTransDate,DSPNo vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Gudang Asal='+ WA.WarehouseName +'<br />Driver = '+dm.DcmDriverName+'<br />Plat No = '+vm.VehicleNo vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoDSRHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WA with(nolock) on WA.OID=PM.vWarehouseOID_Asal
+     inner join Delivery_Monitoring.dbo.Sys_DcmDriver_MA dm with(nolock) on dm.OID=PM.DcmSchDriverOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA vm with(nolock) on vm.OID=PM.DcmVehicleOID
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.DSRDate >= '05 Sep 2023'
+            and PM.DSRDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,Null vRefOID,PM.TransCode,PM.SGOCompanyCode vTransCompanyCode,PM.SGONo vTransNo,PM.SGODate vTransDate,''vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Staging Out Asal ='+ SA.vStorageInfo_Wh_Bd_Lt +'<br />Staging Out Destination = '+ SD.vStorageInfo_Wh_Bd_Lt vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoSGOHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) SA on SA.vStorageOID=PM.StorageOID
+     inner join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) SD on SD.vStorageOID=PM.StorageOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.SGODate >= '05 Sep 2023'
+            and PM.SGODate <= '05 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_DT() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_PTV() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.DSRHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.DSRNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_DS() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 2
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+)PM
+     inner join Sys_SsoTransName_MA SM with(nolock)on SM.TransCode=PM.TransCode
+Order by PM.CreationDatetime,PM.vTransNo
+
+20/09/2023 2:19:26 PM
+Jumlah Data = 174
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 43564
+Row 1 43564
+Row 2 43567
+Row 3 43567
+Row 4 43569
+Row 5 43569
+Row 6 43570
+Row 7 43570
+Row 8 5373
+Row 9 5372
+Row 10 5371
+Row 11 43564
+Row 12 5374
+Row 13 43569
+Row 14 43567
+Row 15 5375
+Row 16 
+Row 17 
+Row 18 3
+Row 19 5379
+Row 20 5380
+Row 21 3
+Row 22 5388
+Row 23 5380
+Row 24 5388
+Row 25 5379
+Row 26 43721
+Row 27 43721
+Row 28 43722
+Row 29 43722
+Row 30 43721
+Row 31 43722
+Row 32 43570
+Row 33 5389
+Row 34 5389
+Row 35 
+Row 36 3
+Row 37 43570
+Row 38 43570
+Row 39 5410
+Row 40 5410
+Row 41 43825
+Row 42 43825
+Row 43 43825
+Row 44 5411
+Row 45 
+Row 46 5411
+Row 47 
+Row 48 
+Row 49 5428
+Row 50 5429
+Row 51 5430
+Row 52 5429
+Row 53 5431
+Row 54 5432
+Row 55 5428
+Row 56 5430
+Row 57 5431
+Row 58 5432
+Row 59 
+Row 60 5455
+Row 61 5455
+Row 62 
+Row 63 3
+Row 64 
+Row 65 
+Row 66 5459
+Row 67 1
+Row 68 17
+Row 69 2
+Row 70 20
+Row 71 16
+Row 72 5
+Row 73 6
+Row 74 15
+Row 75 10
+Row 76 11
+Row 77 19
+Row 78 18
+Row 79 9
+Row 80 14
+Row 81 12
+Row 82 3
+Row 83 7
+Row 84 4
+Row 85 5460
+Row 86 5461
+Row 87 5459
+Row 88 5460
+Row 89 
+Row 90 44051
+Row 91 44060
+Row 92 44061
+Row 93 44063
+Row 94 44063
+Row 95 44065
+Row 96 44065
+Row 97 44066
+Row 98 44066
+Row 99 44067
+Row 100 44067
+Row 101 43999
+Row 102 44068
+Row 103 44069
+Row 104 44069
+Row 105 44072
+Row 106 44080
+Row 107 44073
+Row 108 44094
+Row 109 44096
+Row 110 44097
+Row 111 44097
+Row 112 5461
+Row 113 
+Row 114 44065
+Row 115 44067
+Row 116 44066
+Row 117 44063
+Row 118 44094
+Row 119 43999
+Row 120 44068
+Row 121 44069
+Row 122 
+Row 123 44072
+Row 124 44096
+Row 125 44097
+Row 126 44051
+Row 127 44060
+Row 128 44061
+Row 129 
+Row 130 
+Row 131 4
+Row 132 44242
+Row 133 44244
+Row 134 44246
+Row 135 44247
+Row 136 3
+Row 137 5500
+Row 138 5501
+Row 139 5502
+Row 140 5503
+Row 141 5504
+Row 142 5505
+Row 143 5500
+Row 144 5502
+Row 145 5503
+Row 146 5501
+Row 147 
+Row 148 5505
+Row 149 23
+Row 150 5507
+Row 151 8
+Row 152 13
+Row 153 5507
+Row 154 5504
+Row 155 
+Row 156 
+Row 157 44242
+Row 158 44244
+Row 159 44247
+Row 160 44246
+Row 161 
+Row 162 44073
+Row 163 44080
+Row 164 44080
+Row 165 44073
+Row 166 
+Row 167 
+Row 168 5
+Row 169 5
+Row 170 5
+Row 171 5
+Row 172 5
+Row 173 5
+Files Names Monitoring_Transaksi-50-20230920_141926.xlsx
+-------------------------------EOF-------------------------------

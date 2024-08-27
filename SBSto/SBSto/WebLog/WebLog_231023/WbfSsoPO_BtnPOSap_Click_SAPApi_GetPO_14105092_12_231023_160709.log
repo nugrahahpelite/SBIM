@@ -1,0 +1,151 @@
+Module WbfSsoPO
+Proses BtnPOSap_Click_SAPApi_GetPO
+Process Start      : 23 Oct 2023 16:07:09
+
+
+vnDataFileNameOnly = WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_12_231023_160709
+vnDataFileName = C:\Data Baru\SB_WMS\SBStoApp\SBSto\SAPApiFolder\SAPApiFolder_231023\WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_12_231023_160709.txt
+
+vnQuery
+CREATE Table #Sys_SsoPO_Temp(
+[CompanyCode] [varchar](15) Not NULL,
+[PO_NO] [varchar](50) Not NULL,
+[JURNAL] [varchar](50) NULL,
+[PO_DATE] [DateTime] Not NULL,
+[SUB] [varchar](50) Not NULL,
+[BRG] [varchar](450) Not NULL,
+[GDGCODE] [varchar](50) Not NULL,
+[QTY] [numeric](18, 0) Not NULL,
+[NAMA_SUPPLIER] [varchar](50) Not NULL,
+[NAMA_BARANG] [varchar](450) Not NULL,
+[JOBNAME] [varchar](15) Not NULL,
+[DocEntry] [int] Not NULL,
+[DocType] [varchar](50) Not NULL,
+[DocumentStatus] [varchar](50) Not NULL,
+[Cancelled] [varchar](50) Not NULL,
+[UploadSourceOID] [tinyint] Not NULL,
+[POFileXlsOID] [Int] NULL,
+[UploadDatetime] [DateTime] Not NULL
+)
+
+-----------------------
+PO SAP...Start
+Company Code = BAD
+
+vnQuery
+Insert into Sys_SsoPOFileXls_TR(OID,CompanyCode,XlsFileName,UploadSourceOID,UploadStartDatetime,UploadUserOID,StatusSuccess,StatusMessage)
+values(12,'BAD','WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_12_231023_160709.txt',2,'23 Oct 2023 16:07:09',7,0,'Upload Start')
+
+<------------------------fbuSAPApi_GetPurchaseOrder
+23 Oct 2023 16:07:09
+
+<------------------------fbuSAP_Login
+23 Oct 2023 16:07:09
+
+<------------------------pbuSAP_GetApiLink
+23 Oct 2023 16:07:09
+
+vriModul = Login
+
+vnQuery = Select * From Sys_SAPApi_MA with(nolock) Where SAPApi_Modul='Login'
+
+23 Oct 2023 16:07:09
+<<========================pbuSAP_GetApiLink
+
+
+vnResponse_Login.Content
+{
+	"odata.metadata" : "https://sap.sumberberkat.com:51100/b1s/v1/$metadata#B1Sessions/@Element",
+	"SessionId" : "c7c0c3d8-7183-11ee-c000-fa163e9bec28-140556139288192-31304",
+	"Version" : "1000220",
+	"SessionTimeout" : 30
+}
+
+
+Return True
+23 Oct 2023 16:07:10
+<<========================fbuSAP_Login
+
+
+<------------------------pbuSAP_GetApiLink
+23 Oct 2023 16:07:10
+
+vriModul = Purchase Order
+
+vnQuery = Select * From Sys_SAPApi_MA with(nolock) Where SAPApi_Modul='Purchase Order'
+
+23 Oct 2023 16:07:10
+<<========================pbuSAP_GetApiLink
+
+
+vnResponse_PO.Content
+{
+	"odata.metadata" : "https://sap.sumberberkat.com:51100/b1s/v1/$metadata#PurchaseOrders",
+	"value" : []
+}
+
+
+
+<------------------------fbuSAP_Logout
+
+vnResponse_Logout.Content
+
+
+
+
+Return True
+<<=========================fbuSAP_Logout
+
+
+Return True
+23 Oct 2023 16:07:11
+<<===========================fbuSAPApi_GetPurchaseOrder
+
+
+vnQuery
+Delete #Sys_SsoPO_Temp Where isnull(JURNAL,'')<>''
+
+vnQuery
+Delete POD
+       From Sys_SsoPODetail_TR POD
+	         Inner Join Sys_SsoPOHeader_TR POH ON POH.OID=POD.POHOID
+	         Inner Join #Sys_SsoPO_Temp ABT ON ABT.CompanyCode=POH.CompanyCode AND ABT.PO_NO=POH.PO_NO AND ABT.BRG=POD.BRG
+	   Where POH.TransStatus=0
+
+vnQuery
+Delete POD
+       From Sys_SsoPO POD
+	         Inner Join Sys_SsoPOHeader_TR POH ON POH.OID=POD.POHOID
+	         Inner Join #Sys_SsoPO_Temp ABT ON ABT.CompanyCode=POH.CompanyCode AND ABT.PO_NO=POH.PO_NO AND ABT.BRG=POD.BRG
+	   Where POH.TransStatus=0
+
+vnQuery
+Delete POD
+       From Sys_SsoPOStatus_TR POD
+	         Inner Join Sys_SsoPOHeader_TR POH ON POH.OID=POD.POHOID
+	         Inner Join #Sys_SsoPO_Temp ABT ON ABT.CompanyCode=POH.CompanyCode AND ABT.PO_NO=POH.PO_NO
+	   Where POH.TransStatus=0
+
+vnQuery
+Delete POH
+       From Sys_SsoPOHeader_TR POH
+	         Inner Join #Sys_SsoPO_Temp ABT ON ABT.CompanyCode=POH.CompanyCode AND ABT.PO_NO=POH.PO_NO
+	   Where POH.TransStatus=0
+
+vnQuery
+Insert into Sys_SsoPO
+Select *,0 POHOID From #Sys_SsoPO_Temp ABT with(nolock) WHERE NOT ABT.PO_NO+ABT.BRG IN
+	   (Select AB.PO_NO+AB.BRG FROM Sys_SsoPO AB)
+
+vnQuery
+Select isnull(max(OID),0) From Sys_SsoPOHeader_TR with(nolock)
+
+vnQuery
+Update Sys_SsoPOFileXls_TR Set StatusSuccess=1,StatusMessage='Success',UploadEndDatetime=getdate() Where OID=12
+23 Oct 2023 16:07:11
+fbuSAPApi_GetPurchaseOrder...Success
+=======================
+
+
+23 Oct 2023 16:07:11
+------------------------EOF------------------------

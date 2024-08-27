@@ -1,0 +1,41 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_MonitoringPickList1
+Process Start      : 09 Oct 2023 13:39:15
+
+
+vnQuery
+	SELECT [CompanyCode],[WarehouseName],[Order Status] vOrderStatus,[Ref No] vRefNo	
+	      ,[TANGGAL],[Priority] ,[DO Titip] vDoTitip	
+	      ,[KODE_CUST],[CUSTOMER],[uploadDatetime]	
+	  ,[Picklist No] vPicklistNo,[Picklist Date] vPickListDate,[PL Created by]vPLCreate,[PreparedDatetime],[PL Status]	
+	  ,[Picking No],[Picking Created Date] vPickingCreate,[Picking Done] vPickingDone	
+	  ,[Dispatch/Putaway No] vDispatchNo,[Confirm Dispatch/Putaway Date] vDispatchConfirm,[Driver Confirm Date] vDriverConfirm	
+	      ,[Driver Name] vDriverName,[Driver Return Time] vDriverReturn	
+	  FROM Delivery_Monitoring.dbo.vOrderTracing PM
+Where 1=1
+            and CompanyCode = 'BAD'
+            and WarehouseName = 'KEPU'
+            and (isnull([Order Status],'') !='Cancelled') and (isnull([PL Status],'') != 'Cancelled' and isnull([PL Status],'') != 'Void') and ([Picking Created Date] is not null) and ([Picking Done] is not null) and ([Confirm Dispatch/Putaway Date] is NULL) and ([Driver Return Time] is null)  
+Order by TANGGAL Desc
+
+09/10/2023 1:39:16 PM
+Jumlah Data = 6
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 KEPU
+Row 1 KEPU
+Row 2 KEPU
+Row 3 KEPU
+Row 4 KEPU
+Row 5 KEPU
+Files Names Order Status-50-20231009_133916.xlsx
+-------------------------------EOF-------------------------------

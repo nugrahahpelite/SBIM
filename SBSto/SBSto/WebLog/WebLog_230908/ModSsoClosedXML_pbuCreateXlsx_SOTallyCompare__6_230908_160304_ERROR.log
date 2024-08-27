@@ -1,0 +1,22 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SOTallyCompare
+Process Start      : 08 Sep 2023 16:03:04
+
+
+vnQuery
+ (ta.SOStockQty1 - ta.SOScanQty1) vStockScan1, (ta.SOStockQty2 - ta.SOScanQty2) vStockScan2,
+            row_number()over(order by mb.BRGNAME)vDSeqNo,mb.BRGNAME,mb.BRGUNIT,
+            convert(varchar(11),ta.LastCompareDatetime,106)+' '+convert(varchar(8),ta.LastCompareDatetime,108)vLastCompareDatetime
+       From fnTbl_SsoTallyCompare(6,'nugraha')ta
+	         inner join DimCompany mc with(nolock) on mc.CompanyCode=ta.SOCompanyCode
+			 inner join Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=ta.SOCompanyCode and mb.BRGCODE=ta.BRGCODE
+			 inner join Sys_SubWarehouse_MA sw with(nolock) on sw.OID=ta.SOSubWarehouseOID
+			 inner join Sys_Warehouse_MA wh with(nolock) on wh.OID=ta.SOWarehouseOID
+ order by mb.BRGNAME
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Incorrect syntax near 'ta'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+-------------------------------EOF-------------------------------

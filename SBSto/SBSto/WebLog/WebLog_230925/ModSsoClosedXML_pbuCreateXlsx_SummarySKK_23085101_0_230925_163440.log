@@ -1,0 +1,128 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 25 Sep 2023 16:34:40
+
+
+vnQuery
+Select ptw.TransCode,stn.TransName,ptw.vPtwCompanyCode,ptw.vPtwNo,
+      convert(varchar(11),ptw.vPtwDate,106)vPtwDate,
+      mwh.WarehouseName,mwh_d.WarehouseName vWarehouseName_Dest,
+      ptw.PCKNo,ptw.PCLRefHNo,sts.TransStatusDescr,
+      ptw.RcvPOHOID,ptw.RcvPONo,
+      ptw.BRGCODE,msb.BRGNAME,ptw.vSumPtwScan1Qty,ptw.vPtwReceiveQty,ptw.vSumPtwScan2Qty,ptw.CreationDatetime
+      From fnTbl_SsoPutaway_Summary('NUGRAHA') ptw
+			inner join Sys_SsoTransName_MA stn with(nolock) on stn.TransCode=ptw.TransCode
+			inner join Sys_SsoTransStatus_MA sts with(nolock) on sts.TransCode=ptw.TransCode and sts.TransStatus=ptw.TransStatus
+           inner join SB_DATAWH.dbo.Sys_MstBarang_MA msb with(nolock) on msb.BRGCODE=ptw.BRGCODE and msb.CompanyCode=ptw.vPtwCompanyCode
+			inner join SB_DATAWH.dbo.Sys_Warehouse_MA mwh with(nolock) on mwh.OID=ptw.WarehouseOID
+			left outer join SB_DATAWH.dbo.Sys_Warehouse_MA mwh_d with(nolock) on mwh_d.OID=ptw.WarehouseOID_Dest
+Where 1=1
+            and msb.CompanyCode='BAD'
+            and msb.BRGCODE like '%%' and msb.BRGNAME like '%%'
+            and ptw.vPtwDate >= '01 Jul 2023'
+            and ptw.vPtwDate <= '25 Sep 2023'
+ Order by ptw.CreationDatetime DESC
+
+25/09/2023 4:34:40 PM
+Jumlah Data = 88
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 Putaway Gudang Sama
+Row 1 Putaway Gudang Sama
+Row 2 Putaway Gudang Sama
+Row 3 Putaway Gudang Sama
+Row 4 Putaway Gudang Sama
+Row 5 Putaway Gudang Sama
+Row 6 Putaway Gudang Sama
+Row 7 Putaway Gudang Sama
+Row 8 Putaway Gudang Sama
+Row 9 Putaway Gudang Sama
+Row 10 Putaway Gudang Sama
+Row 11 Putaway Gudang Sama
+Row 12 Putaway Gudang Sama
+Row 13 Putaway Gudang Sama
+Row 14 Putaway Gudang Sama
+Row 15 Putaway Gudang Sama
+Row 16 Putaway Gudang Sama
+Row 17 Putaway Gudang Sama
+Row 18 Putaway Gudang Sama
+Row 19 Putaway Gudang Sama
+Row 20 Putaway Gudang Sama
+Row 21 Putaway Gudang Sama
+Row 22 Putaway Gudang Sama
+Row 23 Putaway Gudang Sama
+Row 24 Putaway DO Titip Antar Gudang
+Row 25 Putaway Gudang Sama
+Row 26 Putaway Gudang Sama
+Row 27 Putaway Gudang Sama
+Row 28 Putaway Gudang Sama
+Row 29 Putaway Gudang Sama
+Row 30 Putaway Gudang Sama
+Row 31 Putaway Gudang Sama
+Row 32 Putaway Gudang Sama
+Row 33 Putaway Gudang Sama
+Row 34 Putaway Gudang Sama
+Row 35 Putaway Gudang Sama
+Row 36 Putaway Gudang Sama
+Row 37 Putaway Gudang Sama
+Row 38 Putaway Gudang Sama
+Row 39 Putaway Gudang Sama
+Row 40 Putaway Gudang Sama
+Row 41 Putaway Gudang Sama
+Row 42 Putaway Gudang Sama
+Row 43 Putaway Gudang Sama
+Row 44 Putaway Gudang Sama
+Row 45 Putaway Gudang Sama
+Row 46 Putaway Gudang Sama
+Row 47 Putaway Gudang Sama
+Row 48 Putaway Gudang Sama
+Row 49 Putaway Gudang Sama
+Row 50 Putaway Gudang Sama
+Row 51 Putaway Gudang Sama
+Row 52 Putaway Gudang Sama
+Row 53 Putaway Gudang Sama
+Row 54 Putaway Gudang Sama
+Row 55 Putaway DO Titip Antar Gudang
+Row 56 Putaway DO Titip Antar Gudang
+Row 57 Putaway Gudang Sama
+Row 58 Putaway Gudang Sama
+Row 59 Putaway DO Titip Antar Gudang
+Row 60 Putaway DO Titip Antar Gudang
+Row 61 Putaway DO Titip Antar Gudang
+Row 62 Putaway DO Titip Antar Gudang
+Row 63 Putaway Gudang Sama
+Row 64 Putaway Gudang Sama
+Row 65 Putaway Gudang Sama
+Row 66 Putaway Gudang Sama
+Row 67 Putaway Gudang Sama
+Row 68 Putaway DO Titip Antar Gudang
+Row 69 Putaway DO Titip Antar Gudang
+Row 70 Putaway DO Titip Antar Gudang
+Row 71 Putaway DO Titip Antar Gudang
+Row 72 Putaway DO Titip Antar Gudang
+Row 73 Putaway DO Titip Antar Gudang
+Row 74 Putaway DO Titip Antar Gudang
+Row 75 Putaway DO Titip Antar Gudang
+Row 76 Putaway DO Titip Antar Gudang
+Row 77 Putaway DO Titip Antar Gudang
+Row 78 Putaway Gudang Sama
+Row 79 Putaway Gudang Sama
+Row 80 Putaway Gudang Sama
+Row 81 Putaway Gudang Sama
+Row 82 Putaway Gudang Sama
+Row 83 Putaway Gudang Sama
+Row 84 Putaway Gudang Sama
+Row 85 Putaway Gudang Sama
+Row 86 Putaway Gudang Sama
+Row 87 Putaway Gudang Sama
+Files Names Summary Putaway-50-20230925_163440.xlsx
+-------------------------------EOF-------------------------------

@@ -1,0 +1,247 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_MonitoringPickList1
+Process Start      : 22 Sep 2023 14:36:02
+
+
+vnQuery
+ SELECT * FROM (  Select pcl.OID vPCLHOID,pcl.PCLNo,pcl.PCLCompanyCode,msc.SchDTypeName,pcl.PCLRefHNo,
+		        pcl.WarehouseOID,mwh.WarehouseName,
+		        convert(varchar(11),pcl.CreationDatetime,106)+'<br />'+convert(varchar(11),pcl.CreationDatetime,108)vCreationDatetime,
+		        convert(varchar(11),pcl.PreparedDatetime,106)+'<br />'+convert(varchar(11),pcl.PreparedDatetime,108)vPreparedDatetime,
+		        sts_pcl.TransStatusDescr vTransStatusDescr_PCL,
+		        pck.PCKNo,convert(varchar(11),pck.PCKDate,106)vPCKDate,pck.StorageOID,sti.vStorageInfoHtml,sts_pck.TransStatusDescr vTransStatusDescr_PCK,
+		        dsp.DSPNo,convert(varchar(11),dsp.DSPDate,106)vDSPDate,mdr.DcmDriverName,mvh.VehicleNo,dsp.vTransStatusDescr_DSP,dsp.vCreateUser_DSP,
+		        dsr.DSRNo,convert(varchar(11),dsr.DSRDate,106)vDSRDate,dsr.vTransStatusDescr_DSR,dsr.vCreateUser_DSR,
+		        sgo.SGONo,convert(varchar(11),sgo.SGODate,106)vSGODate,sgo.vTransStatusDescr_SGO,sgo.vCreateUser_SGO,sgo_asal.vStorageInfo_Wh_Bd_Lt vStgOut_Asal,sgo_dest.vStorageInfo_Wh_Bd_Lt vStgOut_Dest,
+		        pcl.CreationDatetime
+		 From Sys_SsoPCLHeader_TR pcl with(nolock)
+	          inner join Delivery_Monitoring.dbo.Sys_DcmSchDType_MA msc with(nolock) on msc.OID=pcl.SchDTypeOID
+	          inner join SB_DATAWH.dbo.Sys_Warehouse_MA mwh with(nolock) on mwh.OID=pcl.WarehouseOID
+	          inner join Sys_SsoTransStatus_MA sts_pcl with(nolock) on sts_pcl.TransCode=pcl.TransCode and sts_pcl.TransStatus=pcl.TransStatus
+	          left outer join Sys_SsoPCKHeader_TR pck with(nolock) on pck.PCLHOID=pcl.OID
+	          left outer join Sys_SsoTransStatus_MA sts_pck with(nolock) on sts_pck.TransCode=pck.TransCode and sts_pck.TransStatus=pck.TransStatus
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sti on sti.vStorageOID=pck.StorageOID
+	          left outer join fnTbl_SsoDSPHeader_Pick() dsp on dsp.PCKHOID=pck.OID
+	          left outer join fnTbl_SsoDSRHeader_Pick() dsr on dsr.PCKHOID=pck.OID
+	          left outer join fnTbl_SsoSGOHeader_Pick() sgo on sgo.PCKHOID=pck.OID
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_asal on sgo_asal.vStorageOID=sgo.StorageOID
+	          left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_dest on sgo_dest.vStorageOID=sgo.StorageOID_Dest
+	          left outer join Delivery_Monitoring.dbo.Sys_DcmDriver_MA mdr with(nolock) on mdr.OID=dsp.DcmSchDriverOID
+	          left outer join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA mvh with(nolock) on mvh.OID=dsp.DcmVehicleOID
+	    Where pcl.SchDTypeOID in (1,5,7)
+	    UNION ALL
+	    Select pcl.OID vPCLHOID,pcl.PCLNo,pcl.PCLCompanyCode,msc.SchDTypeName,pcl.PCLRefHNo,
+	           pcl.WarehouseOID,mwh.WarehouseName,
+		       convert(varchar(11),pcl.CreationDatetime,106)+'<br />'+convert(varchar(11),pcl.CreationDatetime,108)vCreationDatetime,
+		       convert(varchar(11),pcl.PreparedDatetime,106)+'<br />'+convert(varchar(11),pcl.PreparedDatetime,108)vPreparedDatetime,
+	           sts_pcl.TransStatusDescr vTransStatusDescr_PCL,
+	           pck.PCKNo,convert(varchar(11),pck.PCKDate,106)vPCKDate,pck.StorageOID,sti.vStorageInfoHtml,sts_pck.TransStatusDescr vTransStatusDescr_PCK,
+		       ptw.vPtwNo DSPNo,convert(varchar(11),ptw.vPtwDate,106)vDSPDate,''DcmDriverName,''VehicleNo,ptw.vTransStatusDescr_Ptw,ptw.vCreateUser_Ptw,
+		       dsr.DSRNo,convert(varchar(11),dsr.DSRDate,106)vDSRDate,dsr.vTransStatusDescr_DSR,dsr.vCreateUser_DSR,
+		       sgo.SGONo,convert(varchar(11),sgo.SGODate,106)vSGODate,sgo.vTransStatusDescr_SGO,sgo.vCreateUser_SGO,sgo_asal.vStorageInfo_Wh_Bd_Lt vStgOut_Asal,sgo_dest.vStorageInfo_Wh_Bd_Lt vStgOut_Dest,
+		       pcl.CreationDatetime
+	      From Sys_SsoPCLHeader_TR pcl with(nolock)
+	           inner join Delivery_Monitoring.dbo.Sys_DcmSchDType_MA msc with(nolock) on msc.OID=pcl.SchDTypeOID
+	           inner join SB_DATAWH.dbo.Sys_Warehouse_MA mwh with(nolock) on mwh.OID=pcl.WarehouseOID
+	           inner join Sys_SsoTransStatus_MA sts_pcl with(nolock) on sts_pcl.TransCode=pcl.TransCode and sts_pcl.TransStatus=pcl.TransStatus
+	           left outer join Sys_SsoPCKHeader_TR pck with(nolock) on pck.PCLHOID=pcl.OID
+	           left outer join fnTbl_SsoDSRHeader_Pick() dsr on dsr.PCKHOID=pck.OID
+	           left outer join Sys_SsoTransStatus_MA sts_pck with(nolock) on sts_pck.TransCode=pck.TransCode and sts_pck.TransStatus=pck.TransStatus
+	           left outer join fnTbl_SsoSGOHeader_Pick() sgo on sgo.PCKHOID=pck.OID
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_asal on sgo_asal.vStorageOID=sgo.StorageOID
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sgo_dest on sgo_dest.vStorageOID=sgo.StorageOID_Dest
+	           left outer join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) sti on sti.vStorageOID=pck.StorageOID
+	           left outer join fnTbl_SsoDT_Ptw_Header() ptw on ptw.PCKHOID=pck.OID
+		 Where pcl.SchDTypeOID = 8  ) tb 
+ Where 1 = 1 
+            and vCreationDatetime >= '20 Sep 2023'
+            and vCreationDatetime <= '22 Sep 2023'
+ Order by CreationDatetime DESC
+
+22/09/2023 2:36:02 PM
+Jumlah Data = 172
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 PICK/BAD/KP/23/09/0869
+Row 1 PICK/BAD/KP/23/09/0868
+Row 2 PICK/BAD/KP/23/09/0867
+Row 3 PICK/BAD/KP/23/09/0866
+Row 4 PICK/CAS/KP/23/09/0283
+Row 5 PICK/CAS/KP/23/09/0282
+Row 6 PICK/CAS/KP/23/09/0281
+Row 7 PICK/CAS/KP/23/09/0280
+Row 8 PICK/CAS/KP/23/09/0279
+Row 9 PICK/BAD/KP/23/09/0865
+Row 10 PICK/BAD/KP/23/09/0864
+Row 11 PICK/BAD/KP/23/09/0863
+Row 12 PICK/BAD/KP/23/09/0862
+Row 13 PICK/BAD/KP/23/09/0861
+Row 14 PICK/BAD/KP/23/09/0860
+Row 15 PICK/BAD/KP/23/09/0859
+Row 16 PICK/BAD/KP/23/09/0858
+Row 17 PICK/BAD/KP/23/09/0857
+Row 18 PICK/BAD/KP/23/09/0856
+Row 19 PICK/BAD/KP/23/09/0855
+Row 20 PICK/BAD/KP/23/09/0854
+Row 21 PICK/BAD/KP/23/09/0853
+Row 22 PICK/CAS/KP/23/09/0278
+Row 23 PICK/BAD/KP/23/09/0852
+Row 24 PICK/BAD/KP/23/09/0851
+Row 25 PICK/CAS/KP/23/09/0277
+Row 26 PICK/BAD/KP/23/09/0850
+Row 27 PICK/BAD/KP/23/09/0849
+Row 28 PICK/BAD/KP/23/09/0848
+Row 29 PICK/BAD/KP/23/09/0847
+Row 30 PICK/BAD/PR/23/09/0144
+Row 31 PICK/BAD/PR/23/09/0143
+Row 32 PICK/BAD/PR/23/09/0142
+Row 33 PICK/CAS/PR/23/09/0082
+Row 34 PICK/CAS/PR/23/09/0081
+Row 35 PICK/CAS/PR/23/09/0080
+Row 36 PICK/BAD/PR/23/09/0141
+Row 37 PICK/CAS/KP/23/09/0276
+Row 38 PICK/CAS/KP/23/09/0275
+Row 39 PICK/CAS/KP/23/09/0274
+Row 40 PICK/BAD/KP/23/09/0846
+Row 41 PICK/BAD/KP/23/09/0845
+Row 42 PICK/BAD/KP/23/09/0844
+Row 43 PICK/BAD/KP/23/09/0843
+Row 44 PICK/BAD/KP/23/09/0842
+Row 45 PICK/BAD/KP/23/09/0841
+Row 46 PICK/BAD/KP/23/09/0840
+Row 47 PICK/BAD/KP/23/09/0839
+Row 48 PICK/BAD/KP/23/09/0838
+Row 49 PICK/BAD/KP/23/09/0837
+Row 50 PICK/BAD/KP/23/09/0836
+Row 51 PICK/BAD/KP/23/09/0835
+Row 52 PICK/BAD/KP/23/09/0834
+Row 53 PICK/CAS/KP/23/09/0273
+Row 54 PICK/BAD/KP/23/09/0833
+Row 55 PICK/BAD/KP/23/09/0832
+Row 56 PICK/BAD/KP/23/09/0831
+Row 57 PICK/BAD/KP/23/09/0830
+Row 58 PICK/BAD/KP/23/09/0829
+Row 59 PICK/CAS/KP/23/09/0272
+Row 60 PICK/CAS/KP/23/09/0271
+Row 61 PICK/CAS/KP/23/09/0270
+Row 62 PICK/BAD/KP/23/09/0828
+Row 63 PICK/BAD/KP/23/09/0827
+Row 64 PICK/BAD/KP/23/09/0826
+Row 65 PICK/BAD/KP/23/09/0825
+Row 66 PICK/BAD/KP/23/09/0824
+Row 67 PICK/BAD/KP/23/09/0823
+Row 68 PICK/BAD/PR2/23/09/0050
+Row 69 PICK/BAD/PR2/23/09/0050
+Row 70 PICK/CAS/PR2/23/09/0020
+Row 71 PICK/CAS/PR2/23/09/0020
+Row 72 PICK/BAD/PR/23/09/0140
+Row 73 PICK/BAD/KP/23/09/0822
+Row 74 PICK/CAS/KP/23/09/0269
+Row 75 PICK/CAS/KP/23/09/0268
+Row 76 PICK/CAS/KP/23/09/0267
+Row 77 PICK/BAD/PR/23/09/0139
+Row 78 PICK/BAD/KP/23/09/0821
+Row 79 PICK/CAS/PR/23/09/0079
+Row 80 PICK/BAD/PR/23/09/0138
+Row 81 PICK/CAS/KP/23/09/0266
+Row 82 PICK/BAD/KP/23/09/0820
+Row 83 PICK/BAD/KP/23/09/0819
+Row 84 PICK/BAD/KP/23/09/0818
+Row 85 PICK/BAD/KP/23/09/0817
+Row 86 PICK/BAD/KP/23/09/0816
+Row 87 PICK/BAD/KP/23/09/0815
+Row 88 PICK/BAD/KP/23/09/0814
+Row 89 PICK/BAD/KP/23/09/0813
+Row 90 PICK/CAS/PR2/23/09/0019
+Row 91 PICK/CAS/PR2/23/09/0019
+Row 92 PICK/BAD/PR2/23/09/0049
+Row 93 PICK/BAD/PR2/23/09/0049
+Row 94 PICK/BAD/KP/23/09/0812
+Row 95 PICK/BAD/KP/23/09/0811
+Row 96 PICK/BAD/KP/23/09/0810
+Row 97 PICK/BAD/KP/23/09/0809
+Row 98 PICK/BAD/KP/23/09/0808
+Row 99 PICK/BAD/KP/23/09/0807
+Row 100 PICK/BAD/KP/23/09/0806
+Row 101 PICK/CAS/KP/23/09/0265
+Row 102 PICK/CAS/PR/23/09/0078
+Row 103 PICK/BAD/PR/23/09/0137
+Row 104 PICK/CAS/KP/23/09/0264
+Row 105 PICK/BAD/KP/23/09/0805
+Row 106 PICK/CAS/PR2/23/09/0018
+Row 107 PICK/CAS/PR2/23/09/0018
+Row 108 PICK/BAD/KP/23/09/0804
+Row 109 PICK/BAD/KP/23/09/0803
+Row 110 PICK/BAD/KP/23/09/0802
+Row 111 PICK/BAD/KP/23/09/0801
+Row 112 PICK/BAD/KP/23/09/0800
+Row 113 PICK/BAD/KP/23/09/0799
+Row 114 PICK/BAD/KP/23/09/0798
+Row 115 PICK/BAD/KP/23/09/0797
+Row 116 PICK/BAD/KP/23/09/0796
+Row 117 PICK/BAD/KP/23/09/0795
+Row 118 PICK/CAS/PR/23/09/0077
+Row 119 PICK/BAD/KP/23/09/0794
+Row 120 PICK/BAD/KP/23/09/0793
+Row 121 PICK/BAD/KP/23/09/0792
+Row 122 PICK/BAD/PR/23/09/0136
+Row 123 PICK/CAS/KP/23/09/0263
+Row 124 PICK/BAD/KP/23/09/0791
+Row 125 PICK/CAS/KP/23/09/0262
+Row 126 PICK/BAD/KP/23/09/0790
+Row 127 PICK/BAD/KP/23/09/0789
+Row 128 PICK/BAD/PR/23/09/0135
+Row 129 PICK/CAS/KP/23/09/0261
+Row 130 PICK/BAD/KP/23/09/0788
+Row 131 PICK/BAD/KP/23/09/0787
+Row 132 PICK/BAD/KP/23/09/0786
+Row 133 PICK/BAD/KP/23/09/0785
+Row 134 PICK/BAD/KP/23/09/0784
+Row 135 PICK/CAS/PR/23/09/0076
+Row 136 PICK/BAD/KP/23/09/0783
+Row 137 PICK/BAD/PR/23/09/0134
+Row 138 PICK/BAD/PR/23/09/0134
+Row 139 PICK/BAD/PR/23/09/0133
+Row 140 PICK/BAD/PR/23/09/0133
+Row 141 PICK/BAD/KP/23/09/0782
+Row 142 PICK/CAS/KP/23/09/0260
+Row 143 PICK/CAS/KP/23/09/0259
+Row 144 PICK/CAS/KP/23/09/0258
+Row 145 PICK/CAS/KP/23/09/0257
+Row 146 PICK/CAS/KP/23/09/0256
+Row 147 PICK/CAS/KP/23/09/0255
+Row 148 PICK/CAS/KP/23/09/0254
+Row 149 PICK/BAD/KP/23/09/0781
+Row 150 PICK/BAD/KP/23/09/0780
+Row 151 PICK/BAD/KP/23/09/0779
+Row 152 PICK/BAD/KP/23/09/0778
+Row 153 PICK/BAD/KP/23/09/0777
+Row 154 PICK/BAD/KP/23/09/0776
+Row 155 PICK/BAD/KP/23/09/0775
+Row 156 PICK/BAD/KP/23/09/0774
+Row 157 PICK/BAD/KP/23/09/0773
+Row 158 PICK/BAD/KP/23/09/0772
+Row 159 PICK/BAD/KP/23/09/0771
+Row 160 PICK/BAD/KP/23/09/0770
+Row 161 PICK/BAD/KP/23/09/0769
+Row 162 PICK/BAD/KP/23/09/0768
+Row 163 PICK/BAD/KP/23/09/0767
+Row 164 PICK/CAS/KP/23/09/0253
+Row 165 PICK/BAD/KP/23/09/0766
+Row 166 PICK/BAD/KP/23/09/0765
+Row 167 PICK/BAD/KP/23/09/0764
+Row 168 PICK/BAD/PR/23/09/0132
+Row 169 PICK/BAD/PR/23/09/0131
+Row 170 PICK/BAD/PR/23/09/0130
+Row 171 PICK/BAD/PR/23/09/0129
+Files Names Monitoring Picklist-50-20230922_143602.xlsx
+-------------------------------EOF-------------------------------

@@ -1,0 +1,10 @@
+LogFileName = WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_15_231023_162829
+
+
+{
+	"odata.metadata" : "https://sap.sumberberkat.com:51100/b1s/v1/$metadata#PurchaseOrders",
+	"value" : []
+}
+
+23 Oct 2023 16:28:33
+------------------------EOF------------------------

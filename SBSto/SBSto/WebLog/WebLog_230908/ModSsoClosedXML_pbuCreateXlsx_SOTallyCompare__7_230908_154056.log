@@ -1,0 +1,15 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SOTallyCompare
+Process Start      : 08 Sep 2023 15:40:56
+
+
+vnQuery
+Select ta.*,mc.CompanyName,wh.WarehouseName,sw.SubWhsCode + ' - ' +sw.SubWhsName vSubWhsName,
+            row_number()over(order by mb.BRGNAME)vDSeqNo,mb.BRGNAME,mb.BRGUNIT,
+            convert(varchar(11),ta.LastCompareDatetime,106)+' '+convert(varchar(8),ta.LastCompareDatetime,108)vLastCompareDatetime
+       From fnTbl_SsoTallyCompare(7,'nugraha')ta
+	         inner join DimCompany mc with(nolock) on mc.CompanyCode=ta.SOCompanyCode
+			 inner join Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=ta.SOCompanyCode and mb.BRGCODE=ta.BRGCODE
+			 inner join Sys_SubWarehouse_MA sw with(nolock) on sw.OID=ta.SOSubWarehouseOID
+			 inner join Sys_Warehouse_MA wh with(nolock) on wh.OID=ta.SOWarehouseOID
+ order by mb.BRGNAME

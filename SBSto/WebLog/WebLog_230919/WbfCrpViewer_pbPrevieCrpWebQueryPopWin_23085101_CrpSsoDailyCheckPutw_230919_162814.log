@@ -1,0 +1,12 @@
+Module WbfCrpViewer
+Proses pbPrevieCrpWebQueryPopWin
+Process Start      : 19 Sep 2023 16:28:14
+
+Open SQL Connection....Start
+vbuCrpPreview Pdf
+vbuCrpFileName CrpSsoDailyCheckPutw.rpt
+vnRptFolder C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\
+ERROR
+Invalid object name 'DimCompany'.
+Process End           : 19 Sep 2023 16:28:15
+---------------EOF-------------------------

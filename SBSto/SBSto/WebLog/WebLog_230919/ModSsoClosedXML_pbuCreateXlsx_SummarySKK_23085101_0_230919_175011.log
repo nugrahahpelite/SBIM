@@ -1,0 +1,44 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 19 Sep 2023 17:50:11
+
+
+vnQuery
+Select sm.vCompanyCode,sm.vKodeBarang,mb.BRGNAME,sm.vTotal_QtySisaInvoice,sm.vTotal_QtySisaStock,sm.vTotal_QtySelisih
+From (
+Select case when isnull(tb1.CompanyCode,'')='' then tb2.CompanyCode else tb1.CompanyCode end vCompanyCode,
+       case when isnull(tb1.KodeBarang,'')='' then tb2.BRGCODE else tb1.KodeBarang end vKodeBarang,
+	    isnull(tb1.vTotal_QtySisaInvoice,0)vTotal_QtySisaInvoice,
+	    isnull(tb2.vTotal_QtySisaStock,0) vTotal_QtySisaStock,
+	    isnull(tb1.vTotal_QtySisaInvoice,0) - isnull(tb2.vTotal_QtySisaStock,0) vTotal_QtySelisih
+  From Delivery_Monitoring.dbo.fnTbl_DcmDOTitip_SisaInvoice() tb1
+       full join fnTbl_SsoDOTitip_SisaStorageStock()tb2 on tb2.CompanyCode=tb1.CompanyCode and tb2.BRGCODE=tb1.KodeBarang
+)sm
+       inner join SB_DATAWH.dbo.Sys_MstBarang_MA mb with(nolock) on mb.CompanyCode=sm.vCompanyCode and mb.BRGCODE=sm.vKodeBarang
+ Where 1=1
+            and sm.vCompanyCode='BAD'
+       and isnull(sm.vTotal_QtySisaInvoice,0) - isnull(sm.vTotal_QtySisaStock,0)<>0
+Order by sm.vCompanyCode,sm.vKodeBarang
+
+19/09/2023 5:50:11 PM
+Jumlah Data = 7
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 BAD-05682      
+Row 1 BAD-06290
+Row 2 BAD-06292
+Row 3 BAD-06697
+Row 4 BAD-06698      
+Row 5 BAD-06907      
+Row 6 BAD-06950      
+Files Names Monitoring_DO_Titip-50-20230919_175011.xlsx
+-------------------------------EOF-------------------------------

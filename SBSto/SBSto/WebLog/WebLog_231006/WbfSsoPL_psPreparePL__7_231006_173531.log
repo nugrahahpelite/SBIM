@@ -1,0 +1,17 @@
+Module WbfSsoPL
+Proses psPreparePL
+Process Start      : 06 Oct 2023 17:35:31
+
+Open SQL Connection....Start
+
+1
+vnQuery
+Select TransStatus From Sys_SsoPLHeader_TR Where OID=7
+
+1
+vnQuery
+Select count(1) From Sys_SsoPLBarangQRCode_TR Where PLHOID=7
+
+QR Barang sudah ada
+Process End           : 06 Oct 2023 17:35:32
+---------------EOF-------------------------

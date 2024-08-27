@@ -1,0 +1,8542 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummaryStock1
+Process Start      : 07 Oct 2023 11:38:39
+
+
+vnQuery
+spSsoInvNotPickDone_ByCompanyWhsDate_Table 'BAD',2,'','05 Oct 2023'
+
+07/10/2023 11:38:40 AM
+Jumlah Data = 1217
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+
+Row 0 2
+BAD-00029
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1 2
+BAD-00103
+vQty_StockCard = 1564
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1564
+
+Row 2 2
+BAD-00114
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 3 2
+BAD-00129
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 4 2
+BAD-00144
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 5 2
+BAD-00515
+vQty_StockCard = 7160
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 7160
+
+Row 6 2
+BAD-00524
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 7 2
+BAD-00530
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 8 2
+BAD-00534
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 9 2
+BAD-00544
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 10 2
+BAD-00560
+vQty_StockCard = 80
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 80
+
+Row 11 2
+BAD-00561
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 12 2
+BAD-00562
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 13 2
+BAD-00563
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 14 2
+BAD-00564
+vQty_StockCard = 1000
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1000
+
+Row 15 2
+BAD-00566
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 16 2
+BAD-00567
+vQty_StockCard = 184
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 184
+
+Row 17 2
+BAD-00568
+vQty_StockCard = 125
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 125
+
+Row 18 2
+BAD-00569
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 19 2
+BAD-00571
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 20 2
+BAD-00572
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 21 2
+BAD-00573
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 22 2
+BAD-00574
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 23 2
+BAD-00575
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 24 2
+BAD-00576
+vQty_StockCard = 180
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 180
+
+Row 25 2
+BAD-00577
+vQty_StockCard = 70
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 70
+
+Row 26 2
+BAD-00579
+vQty_StockCard = 660
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 660
+
+Row 27 2
+BAD-00581
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 28 2
+BAD-00582
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 29 2
+BAD-00583
+vQty_StockCard = 48
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 48
+
+Row 30 2
+BAD-00584
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 31 2
+BAD-00585
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 32 2
+BAD-00586
+vQty_StockCard = 400
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 400
+
+Row 33 2
+BAD-00587
+vQty_StockCard = 528
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 528
+
+Row 34 2
+BAD-00588
+vQty_StockCard = 196
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 196
+
+Row 35 2
+BAD-00589
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 36 2
+BAD-00590
+vQty_StockCard = 110
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 110
+
+Row 37 2
+BAD-00591
+vQty_StockCard = 360
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 360
+
+Row 38 2
+BAD-00631
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 39 2
+BAD-00767
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 40 2
+BAD-00873
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 41 2
+BAD-01433
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 42 2
+BAD-01435
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 43 2
+BAD-01464
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 44 2
+BAD-01494
+vQty_StockCard = 15
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 15
+
+Row 45 2
+BAD-01500
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 46 2
+BAD-01506
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 47 2
+BAD-01519
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 48 2
+BAD-01521
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 49 2
+BAD-01578
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 50 2
+BAD-01596
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 51 2
+BAD-01597
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 52 2
+BAD-01598
+vQty_StockCard = 168
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 168
+
+Row 53 2
+BAD-01601
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 54 2
+BAD-01602
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 55 2
+BAD-01603
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 56 2
+BAD-01604
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 57 2
+BAD-01605
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 58 2
+BAD-01626
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 59 2
+BAD-01630
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 60 2
+BAD-02062
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 61 2
+BAD-02279
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 62 2
+BAD-02703
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 63 2
+BAD-02704
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 64 2
+BAD-02705
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 65 2
+BAD-02706
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 66 2
+BAD-02707
+vQty_StockCard = 948
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 948
+
+Row 67 2
+BAD-02721
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 68 2
+BAD-02971
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 69 2
+BAD-03248
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 70 2
+BAD-03258
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 71 2
+BAD-03273
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 72 2
+BAD-03296
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 73 2
+BAD-03315
+vQty_StockCard = 16
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 16
+
+Row 74 2
+BAD-03633
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 75 2
+BAD-03635
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 76 2
+BAD-03666
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 77 2
+BAD-03751
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 78 2
+BAD-04154
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 79 2
+BAD-04164
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 80 2
+BAD-04173
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 81 2
+BAD-04230
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 82 2
+BAD-04233
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 83 2
+BAD-04234
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 84 2
+BAD-04235
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 85 2
+BAD-04252
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 86 2
+BAD-04253
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 87 2
+BAD-04254
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 88 2
+BAD-04283
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 89 2
+BAD-04284
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 90 2
+BAD-04288
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 91 2
+BAD-04297
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 92 2
+BAD-04298
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 93 2
+BAD-04300
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 94 2
+BAD-04301
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 95 2
+BAD-04302
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 96 2
+BAD-04304
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 97 2
+BAD-04309
+vQty_StockCard = 52
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 52
+
+Row 98 2
+BAD-04312
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 99 2
+BAD-04335
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 100 2
+BAD-04336
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 101 2
+BAD-04337
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 102 2
+BAD-04339
+vQty_StockCard = 84
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 84
+
+Row 103 2
+BAD-04342
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 104 2
+BAD-04350
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 105 2
+BAD-04390
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 106 2
+BAD-04449
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 107 2
+BAD-04494
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 108 2
+BAD-04495
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 109 2
+BAD-04496
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 110 2
+BAD-04502
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 111 2
+BAD-04503
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 112 2
+BAD-04505
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 113 2
+BAD-04506
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 114 2
+BAD-04511
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 115 2
+BAD-04516
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 116 2
+BAD-04520
+vQty_StockCard = 900
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 900
+
+Row 117 2
+BAD-04521
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 118 2
+BAD-04522
+vQty_StockCard = 50
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 50
+
+Row 119 2
+BAD-04524
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 120 2
+BAD-04526
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 121 2
+BAD-04527
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 122 2
+BAD-04528
+vQty_StockCard = 250
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 250
+
+Row 123 2
+BAD-04529
+vQty_StockCard = 700
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 700
+
+Row 124 2
+BAD-04530
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 125 2
+BAD-04531
+vQty_StockCard = 300
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 300
+
+Row 126 2
+BAD-04552
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 127 2
+BAD-04565
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 128 2
+BAD-04567
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 129 2
+BAD-04568
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 130 2
+BAD-04584
+vQty_StockCard = 98
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 98
+
+Row 131 2
+BAD-04585
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 132 2
+BAD-04586
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 133 2
+BAD-04588
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 134 2
+BAD-04589
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 135 2
+BAD-04590
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 136 2
+BAD-04591
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 137 2
+BAD-04592
+vQty_StockCard = 420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 420
+
+Row 138 2
+BAD-04594
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 139 2
+BAD-04595
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 140 2
+BAD-04596
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 141 2
+BAD-04638
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 142 2
+BAD-04669
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 143 2
+BAD-04689
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 144 2
+BAD-04700
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 145 2
+BAD-04701
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 146 2
+BAD-04702
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 147 2
+BAD-04707
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 148 2
+BAD-04720
+vQty_StockCard = 132
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 132
+
+Row 149 2
+BAD-04722
+vQty_StockCard = 276
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 276
+
+Row 150 2
+BAD-04723
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 151 2
+BAD-04725
+vQty_StockCard = 30
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 30
+
+Row 152 2
+BAD-04726
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 153 2
+BAD-04728
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 154 2
+BAD-04747
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 155 2
+BAD-04748
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 156 2
+BAD-04787
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 157 2
+BAD-04790
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 158 2
+BAD-04796
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 159 2
+BAD-04823
+vQty_StockCard = 700
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 700
+
+Row 160 2
+BAD-04825
+vQty_StockCard = 1650
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1650
+
+Row 161 2
+BAD-04829
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 162 2
+BAD-04839
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 163 2
+BAD-04840
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 164 2
+BAD-04841
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 165 2
+BAD-04842
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 166 2
+BAD-04843
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 167 2
+BAD-04844
+vQty_StockCard = 400
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 400
+
+Row 168 2
+BAD-04853
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 169 2
+BAD-04856
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 170 2
+BAD-04862
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 171 2
+BAD-04869
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 172 2
+BAD-04896
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 173 2
+BAD-04907
+vQty_StockCard = 2650
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2650
+
+Row 174 2
+BAD-04908
+vQty_StockCard = 300
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 300
+
+Row 175 2
+BAD-04909
+vQty_StockCard = 296
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 296
+
+Row 176 2
+BAD-04910
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 177 2
+BAD-04911
+vQty_StockCard = 200
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 200
+
+Row 178 2
+BAD-04912
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 179 2
+BAD-04913
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 180 2
+BAD-04914
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 181 2
+BAD-04916
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 182 2
+BAD-04918
+vQty_StockCard = 205
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 205
+
+Row 183 2
+BAD-04919
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 184 2
+BAD-04921
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 185 2
+BAD-04922
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 186 2
+BAD-04926
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 187 2
+BAD-04927
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 188 2
+BAD-04928
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 189 2
+BAD-04931
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 190 2
+BAD-04932
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 191 2
+BAD-04933
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 192 2
+BAD-04934
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 193 2
+BAD-04935
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 194 2
+BAD-04936
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 195 2
+BAD-04983
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 196 2
+BAD-04984
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 197 2
+BAD-05005
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 198 2
+BAD-05062
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 199 2
+BAD-05089
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 200 2
+BAD-05104
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 201 2
+BAD-05105
+vQty_StockCard = 5400
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 5400
+
+Row 202 2
+BAD-05132
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 203 2
+BAD-05133
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 204 2
+BAD-05136
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 205 2
+BAD-05139
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 206 2
+BAD-05140
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 207 2
+BAD-05141
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 208 2
+BAD-05143
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 209 2
+BAD-05149
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 210 2
+BAD-05163
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 211 2
+BAD-05164
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 212 2
+BAD-05172
+vQty_StockCard = 13
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 13
+
+Row 213 2
+BAD-05177
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 214 2
+BAD-05189
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 215 2
+BAD-05232
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 216 2
+BAD-05271
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 217 2
+BAD-05272
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 218 2
+BAD-05273
+vQty_StockCard = 900
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 900
+
+Row 219 2
+BAD-05274
+vQty_StockCard = 180
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 180
+
+Row 220 2
+BAD-05275
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 221 2
+BAD-05277
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 222 2
+BAD-05278
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 223 2
+BAD-05284
+vQty_StockCard = 134
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 134
+
+Row 224 2
+BAD-05285
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 225 2
+BAD-05286
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 226 2
+BAD-05287
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 227 2
+BAD-05288
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 228 2
+BAD-05289
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 229 2
+BAD-05290
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 230 2
+BAD-05291
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 231 2
+BAD-05294
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 232 2
+BAD-05308
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 233 2
+BAD-05338
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 234 2
+BAD-05339
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 235 2
+BAD-05340
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 236 2
+BAD-05341
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 237 2
+BAD-05344
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 238 2
+BAD-05345
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 239 2
+BAD-05347
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 240 2
+BAD-05348
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 241 2
+BAD-05349
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 242 2
+BAD-05353
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 243 2
+BAD-05355
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 244 2
+BAD-05366
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 245 2
+BAD-05369
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 246 2
+BAD-05379
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 247 2
+BAD-05380
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 248 2
+BAD-05382
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 249 2
+BAD-05398
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 250 2
+BAD-05417
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 251 2
+BAD-05439
+vQty_StockCard = 1365
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1365
+
+Row 252 2
+BAD-05440
+vQty_StockCard = 280
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 280
+
+Row 253 2
+BAD-05441
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 254 2
+BAD-05449
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 255 2
+BAD-05459
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 256 2
+BAD-05460
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 257 2
+BAD-05499
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 258 2
+BAD-05501
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 259 2
+BAD-05502
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 260 2
+BAD-05503
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 261 2
+BAD-05504
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 262 2
+BAD-05531
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 263 2
+BAD-05544
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 264 2
+BAD-05557
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 265 2
+BAD-05562
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 266 2
+BAD-05565
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 267 2
+BAD-05567
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 268 2
+BAD-05568
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 269 2
+BAD-05569
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 270 2
+BAD-05570
+vQty_StockCard = 36
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 36
+
+Row 271 2
+BAD-05571
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 272 2
+BAD-05573
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 273 2
+BAD-05575
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 274 2
+BAD-05577
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 275 2
+BAD-05578
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 276 2
+BAD-05579
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 277 2
+BAD-05580
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 278 2
+BAD-05581
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 279 2
+BAD-05585
+vQty_StockCard = 49
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 49
+
+Row 280 2
+BAD-05589
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 281 2
+BAD-05590
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 282 2
+BAD-05591
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 283 2
+BAD-05592
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 284 2
+BAD-05597
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 285 2
+BAD-05598
+vQty_StockCard = 604
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 604
+
+Row 286 2
+BAD-05600
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 287 2
+BAD-05601
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 288 2
+BAD-05602
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 289 2
+BAD-05604
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 290 2
+BAD-05605
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 291 2
+BAD-05610
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 292 2
+BAD-05611
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 293 2
+BAD-05612
+vQty_StockCard = 84
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 84
+
+Row 294 2
+BAD-05614
+vQty_StockCard = 17
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 17
+
+Row 295 2
+BAD-05617
+vQty_StockCard = 8
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 8
+
+Row 296 2
+BAD-05618
+vQty_StockCard = 31
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 31
+
+Row 297 2
+BAD-05619
+vQty_StockCard = 11
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 11
+
+Row 298 2
+BAD-05620
+vQty_StockCard = 50
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 50
+
+Row 299 2
+BAD-05626
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 300 2
+BAD-05628
+vQty_StockCard = 210
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 210
+
+Row 301 2
+BAD-05629
+vQty_StockCard = 220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 220
+
+Row 302 2
+BAD-05630
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 303 2
+BAD-05631
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 304 2
+BAD-05634
+vQty_StockCard = 300
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 300
+
+Row 305 2
+BAD-05635
+vQty_StockCard = 800
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 800
+
+Row 306 2
+BAD-05637
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 307 2
+BAD-05641
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 308 2
+BAD-05642
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 309 2
+BAD-05644
+vQty_StockCard = 140
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 140
+
+Row 310 2
+BAD-05645
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 311 2
+BAD-05657
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 312 2
+BAD-05658
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 313 2
+BAD-05659
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 314 2
+BAD-05661
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 315 2
+BAD-05662
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 316 2
+BAD-05669
+vQty_StockCard = 46
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 46
+
+Row 317 2
+BAD-05670
+vQty_StockCard = 454
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 454
+
+Row 318 2
+BAD-05671
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 319 2
+BAD-05673
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 320 2
+BAD-05674
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 321 2
+BAD-05675
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 322 2
+BAD-05676
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 323 2
+BAD-05677
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 324 2
+BAD-05682
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 325 2
+BAD-05684
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 326 2
+BAD-05708
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 327 2
+BAD-05717
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 328 2
+BAD-05718
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 329 2
+BAD-05746
+vQty_StockCard = 135
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 135
+
+Row 330 2
+BAD-05747
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 331 2
+BAD-05748
+vQty_StockCard = 484
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 484
+
+Row 332 2
+BAD-05752
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 333 2
+BAD-05753
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 334 2
+BAD-05783
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 335 2
+BAD-05786
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 336 2
+BAD-05802
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 337 2
+BAD-05804
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 338 2
+BAD-05805
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 339 2
+BAD-05806
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 340 2
+BAD-05807
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 341 2
+BAD-05809
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 342 2
+BAD-05810
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 343 2
+BAD-05814
+vQty_StockCard = 340
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 340
+
+Row 344 2
+BAD-05815
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 345 2
+BAD-05823
+vQty_StockCard = 222
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 222
+
+Row 346 2
+BAD-05829
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 347 2
+BAD-05831
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 348 2
+BAD-05833
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 349 2
+BAD-05843
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 350 2
+BAD-05845
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 351 2
+BAD-05846
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 352 2
+BAD-05847
+vQty_StockCard = 10648
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 10648
+
+Row 353 2
+BAD-05851
+vQty_StockCard = 322
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 322
+
+Row 354 2
+BAD-05852
+vQty_StockCard = 348
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 348
+
+Row 355 2
+BAD-05854
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 356 2
+BAD-05855
+vQty_StockCard = 16
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 16
+
+Row 357 2
+BAD-05856
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 358 2
+BAD-05858
+vQty_StockCard = 48
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 48
+
+Row 359 2
+BAD-05859
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 360 2
+BAD-05861
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 361 2
+BAD-05862
+vQty_StockCard = 45
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 45
+
+Row 362 2
+BAD-05863
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 363 2
+BAD-05864
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 364 2
+BAD-05865
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 365 2
+BAD-05868
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 366 2
+BAD-05869
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 367 2
+BAD-05870
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 368 2
+BAD-05871
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 369 2
+BAD-05872
+vQty_StockCard = 160
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 160
+
+Row 370 2
+BAD-05873
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 371 2
+BAD-05874
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 372 2
+BAD-05875
+vQty_StockCard = 3
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3
+
+Row 373 2
+BAD-05876
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 374 2
+BAD-05877
+vQty_StockCard = 2736
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2736
+
+Row 375 2
+BAD-05878
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 376 2
+BAD-05879
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 377 2
+BAD-05881
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 378 2
+BAD-05885
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 379 2
+BAD-05890
+vQty_StockCard = 38
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 38
+
+Row 380 2
+BAD-05891
+vQty_StockCard = 92
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 92
+
+Row 381 2
+BAD-05892
+vQty_StockCard = 92
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 92
+
+Row 382 2
+BAD-05893
+vQty_StockCard = 64
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 64
+
+Row 383 2
+BAD-05895
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 384 2
+BAD-05896
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 385 2
+BAD-05897
+vQty_StockCard = 250
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 250
+
+Row 386 2
+BAD-05899
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 387 2
+BAD-05901
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 388 2
+BAD-05902
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 389 2
+BAD-05903
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 390 2
+BAD-05917
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 391 2
+BAD-05918
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 392 2
+BAD-05928
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 393 2
+BAD-05939
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 394 2
+BAD-05940
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 395 2
+BAD-05941
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 396 2
+BAD-05953
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 397 2
+BAD-05958
+vQty_StockCard = 10000
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 10000
+
+Row 398 2
+BAD-05959
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 399 2
+BAD-05964
+vQty_StockCard = 1600
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1600
+
+Row 400 2
+BAD-05966
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 401 2
+BAD-05970
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 402 2
+BAD-05971
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 403 2
+BAD-05972
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 404 2
+BAD-05973
+vQty_StockCard = 448
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 448
+
+Row 405 2
+BAD-05984
+vQty_StockCard = 1148
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1148
+
+Row 406 2
+BAD-05985
+vQty_StockCard = 12
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 12
+
+Row 407 2
+BAD-05993
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 408 2
+BAD-05994
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 409 2
+BAD-05999
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 410 2
+BAD-06000
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 411 2
+BAD-06001
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 412 2
+BAD-06002
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 413 2
+BAD-06003
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 414 2
+BAD-06004
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 415 2
+BAD-06005
+vQty_StockCard = 45
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 45
+
+Row 416 2
+BAD-06006
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 417 2
+BAD-06007
+vQty_StockCard = 1935
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1935
+
+Row 418 2
+BAD-06009
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 419 2
+BAD-06010
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 420 2
+BAD-06011
+vQty_StockCard = 600
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 600
+
+Row 421 2
+BAD-06012
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 422 2
+BAD-06013
+vQty_StockCard = 400
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 400
+
+Row 423 2
+BAD-06014
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 424 2
+BAD-06018
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 425 2
+BAD-06019
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 426 2
+BAD-06020
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 427 2
+BAD-06038
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 428 2
+BAD-06039
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 429 2
+BAD-06043
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 430 2
+BAD-06044
+vQty_StockCard = 88
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 88
+
+Row 431 2
+BAD-06052
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 432 2
+BAD-06061
+vQty_StockCard = 880
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 880
+
+Row 433 2
+BAD-06062
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 434 2
+BAD-06063
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 435 2
+BAD-06064
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 436 2
+BAD-06065
+vQty_StockCard = 640
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 640
+
+Row 437 2
+BAD-06066
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 438 2
+BAD-06067
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 439 2
+BAD-06074
+vQty_StockCard = 1260
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1260
+
+Row 440 2
+BAD-06075
+vQty_StockCard = 1450
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1450
+
+Row 441 2
+BAD-06076
+vQty_StockCard = 1200
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1200
+
+Row 442 2
+BAD-06077
+vQty_StockCard = 750
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 750
+
+Row 443 2
+BAD-06078
+vQty_StockCard = 90
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 90
+
+Row 444 2
+BAD-06079
+vQty_StockCard = 55
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 55
+
+Row 445 2
+BAD-06080
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 446 2
+BAD-06081
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 447 2
+BAD-06082
+vQty_StockCard = 160
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 160
+
+Row 448 2
+BAD-06083
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 449 2
+BAD-06084
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 450 2
+BAD-06085
+vQty_StockCard = 280
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 280
+
+Row 451 2
+BAD-06086
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 452 2
+BAD-06087
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 453 2
+BAD-06089
+vQty_StockCard = 152
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 152
+
+Row 454 2
+BAD-06090
+vQty_StockCard = 235
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 235
+
+Row 455 2
+BAD-06091
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 456 2
+BAD-06095
+vQty_StockCard = 380
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 380
+
+Row 457 2
+BAD-06101
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 458 2
+BAD-06103
+vQty_StockCard = 1220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1220
+
+Row 459 2
+BAD-06104
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 460 2
+BAD-06105
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 461 2
+BAD-06106
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 462 2
+BAD-06107
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 463 2
+BAD-06110
+vQty_StockCard = 91
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 91
+
+Row 464 2
+BAD-061101
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 465 2
+BAD-061102
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 466 2
+BAD-06117
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 467 2
+BAD-06121
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 468 2
+BAD-06122
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 469 2
+BAD-06123
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 470 2
+BAD-06124
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 471 2
+BAD-06125
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 472 2
+BAD-06126
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 473 2
+BAD-06130
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 474 2
+BAD-06131
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 475 2
+BAD-06132
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 476 2
+BAD-06133
+vQty_StockCard = 2740
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2740
+
+Row 477 2
+BAD-06137
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 478 2
+BAD-06138
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 479 2
+BAD-06139
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 480 2
+BAD-06140
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 481 2
+BAD-06141
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 482 2
+BAD-06142
+vQty_StockCard = 270
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 270
+
+Row 483 2
+BAD-06143
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 484 2
+BAD-06144
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 485 2
+BAD-06145
+vQty_StockCard = 1450
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1450
+
+Row 486 2
+BAD-06146
+vQty_StockCard = 1300
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1300
+
+Row 487 2
+BAD-06147
+vQty_StockCard = 750
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 750
+
+Row 488 2
+BAD-06148
+vQty_StockCard = 1000
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1000
+
+Row 489 2
+BAD-06149
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 490 2
+BAD-06151
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 491 2
+BAD-06155
+vQty_StockCard = 29
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 29
+
+Row 492 2
+BAD-06156
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 493 2
+BAD-06157
+vQty_StockCard = 138
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 138
+
+Row 494 2
+BAD-06158
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 495 2
+BAD-06159
+vQty_StockCard = 515
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 515
+
+Row 496 2
+BAD-06160
+vQty_StockCard = 315
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 315
+
+Row 497 2
+BAD-06161
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 498 2
+BAD-06162
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 499 2
+BAD-06163
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 500 2
+BAD-06164
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 501 2
+BAD-06165
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 502 2
+BAD-06166
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 503 2
+BAD-06168
+vQty_StockCard = 279
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 279
+
+Row 504 2
+BAD-06174
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 505 2
+BAD-06176
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 506 2
+BAD-06177
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 507 2
+BAD-06179
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 508 2
+BAD-06180
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 509 2
+BAD-06183
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 510 2
+BAD-06186
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 511 2
+BAD-06187
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 512 2
+BAD-06190
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 513 2
+BAD-06191
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 514 2
+BAD-06199
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 515 2
+BAD-06201A
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 516 2
+BAD-06203
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 517 2
+BAD-06204
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 518 2
+BAD-06205
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 519 2
+BAD-06206
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 520 2
+BAD-06207
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 521 2
+BAD-06208
+vQty_StockCard = 860
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 860
+
+Row 522 2
+BAD-06209
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 523 2
+BAD-06218
+vQty_StockCard = 196
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 196
+
+Row 524 2
+BAD-06219
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 525 2
+BAD-06220
+vQty_StockCard = 45
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 45
+
+Row 526 2
+BAD-06222
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 527 2
+BAD-06223
+vQty_StockCard = 152
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 152
+
+Row 528 2
+BAD-06224
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 529 2
+BAD-06225
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 530 2
+BAD-06227
+vQty_StockCard = 18
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 18
+
+Row 531 2
+BAD-06228
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 532 2
+BAD-06229
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 533 2
+BAD-06230
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 534 2
+BAD-06231
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 535 2
+BAD-06234
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 536 2
+BAD-06235
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 537 2
+BAD-06237
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 538 2
+BAD-06240
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 539 2
+BAD-06241
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 540 2
+BAD-06242
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 541 2
+BAD-06243
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 542 2
+BAD-06249
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 543 2
+BAD-06252
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 544 2
+BAD-06253
+vQty_StockCard = 22
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 22
+
+Row 545 2
+BAD-06254
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 546 2
+BAD-06255
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 547 2
+BAD-06256
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 548 2
+BAD-06258
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 549 2
+BAD-06259
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 550 2
+BAD-06261
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 551 2
+BAD-06262
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 552 2
+BAD-06268
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 553 2
+BAD-06269
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 554 2
+BAD-06270
+vQty_StockCard = 480
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 480
+
+Row 555 2
+BAD-06271
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 556 2
+BAD-06272
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 557 2
+BAD-06275
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 558 2
+BAD-06278
+vQty_StockCard = 4
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 4
+
+Row 559 2
+BAD-06279
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 560 2
+BAD-06280
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 561 2
+BAD-06281
+vQty_StockCard = 664
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 664
+
+Row 562 2
+BAD-06282
+vQty_StockCard = 432
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 432
+
+Row 563 2
+BAD-06283
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 564 2
+BAD-06284
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 565 2
+BAD-06293
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 566 2
+BAD-06294
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 567 2
+BAD-06296
+vQty_StockCard = 80
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 80
+
+Row 568 2
+BAD-06298
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 569 2
+BAD-06299
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 570 2
+BAD-06300
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 571 2
+BAD-06301
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 572 2
+BAD-06302
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 573 2
+BAD-06304
+vQty_StockCard = 750
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 750
+
+Row 574 2
+BAD-06305
+vQty_StockCard = 1560
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1560
+
+Row 575 2
+BAD-06308
+vQty_StockCard = 1039
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1039
+
+Row 576 2
+BAD-06309
+vQty_StockCard = 2075
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2075
+
+Row 577 2
+BAD-06310
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 578 2
+BAD-06311
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 579 2
+BAD-06312
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 580 2
+BAD-06313
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 581 2
+BAD-06314
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 582 2
+BAD-06315
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 583 2
+BAD-06316
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 584 2
+BAD-06317
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 585 2
+BAD-06319
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 586 2
+BAD-06320
+vQty_StockCard = 30
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 30
+
+Row 587 2
+BAD-06321
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 588 2
+BAD-06322
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 589 2
+BAD-06323
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 590 2
+BAD-06324
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 591 2
+BAD-06326
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 592 2
+BAD-06327
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 593 2
+BAD-06328
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 594 2
+BAD-06331
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 595 2
+BAD-06332
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 596 2
+BAD-06334
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 597 2
+BAD-06336
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 598 2
+BAD-06341
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 599 2
+BAD-06342
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 600 2
+BAD-06343
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 601 2
+BAD-06344
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 602 2
+BAD-06346
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 603 2
+BAD-06347
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 604 2
+BAD-06348
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 605 2
+BAD-06350
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 606 2
+BAD-06351
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 607 2
+BAD-06354
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 608 2
+BAD-06355
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 609 2
+BAD-06356
+vQty_StockCard = 275
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 275
+
+Row 610 2
+BAD-06357
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 611 2
+BAD-06362
+vQty_StockCard = 1240
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1240
+
+Row 612 2
+BAD-06363
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 613 2
+BAD-06364
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 614 2
+BAD-06366
+vQty_StockCard = 220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 220
+
+Row 615 2
+BAD-06367
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 616 2
+BAD-06368
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 617 2
+BAD-06369
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 618 2
+BAD-06370
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 619 2
+BAD-06371
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 620 2
+BAD-06375
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 621 2
+BAD-06376
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 622 2
+BAD-06377
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 623 2
+BAD-06378
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 624 2
+BAD-06379
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 625 2
+BAD-06381
+vQty_StockCard = 28
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 28
+
+Row 626 2
+BAD-06383
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 627 2
+BAD-06384
+vQty_StockCard = 23
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 23
+
+Row 628 2
+BAD-06385
+vQty_StockCard = 198
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 198
+
+Row 629 2
+BAD-06386
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 630 2
+BAD-06387
+vQty_StockCard = 53
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 53
+
+Row 631 2
+BAD-06388
+vQty_StockCard = 13
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 13
+
+Row 632 2
+BAD-06391
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 633 2
+BAD-06392
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 634 2
+BAD-06395
+vQty_StockCard = 220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 220
+
+Row 635 2
+BAD-06396
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 636 2
+BAD-06397
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 637 2
+BAD-06398
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 638 2
+BAD-06399
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 639 2
+BAD-06400
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 640 2
+BAD-06401
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 641 2
+BAD-06402
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 642 2
+BAD-06403
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 643 2
+BAD-06404
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 644 2
+BAD-06406
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 645 2
+BAD-06407
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 646 2
+BAD-06408
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 647 2
+BAD-06409
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 648 2
+BAD-06410
+vQty_StockCard = 280
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 280
+
+Row 649 2
+BAD-06411
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 650 2
+BAD-06412
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 651 2
+BAD-06413
+vQty_StockCard = 710
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 710
+
+Row 652 2
+BAD-06414
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 653 2
+BAD-06415
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 654 2
+BAD-06416
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 655 2
+BAD-06417
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 656 2
+BAD-06418
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 657 2
+BAD-06419
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 658 2
+BAD-06420
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 659 2
+BAD-06421
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 660 2
+BAD-06422
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 661 2
+BAD-06423
+vQty_StockCard = 3
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3
+
+Row 662 2
+BAD-06424
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 663 2
+BAD-06425
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 664 2
+BAD-06426
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 665 2
+BAD-06427
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 666 2
+BAD-06428
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 667 2
+BAD-06429
+vQty_StockCard = 22
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 22
+
+Row 668 2
+BAD-06430
+vQty_StockCard = 7
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 7
+
+Row 669 2
+BAD-06431
+vQty_StockCard = 72
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 72
+
+Row 670 2
+BAD-06432
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 671 2
+BAD-06433
+vQty_StockCard = 48
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 48
+
+Row 672 2
+BAD-06434
+vQty_StockCard = 73
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 73
+
+Row 673 2
+BAD-06435
+vQty_StockCard = 72
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 72
+
+Row 674 2
+BAD-06436
+vQty_StockCard = 176
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 176
+
+Row 675 2
+BAD-06437
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 676 2
+BAD-06438
+vQty_StockCard = 136
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 136
+
+Row 677 2
+BAD-06439
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 678 2
+BAD-06440
+vQty_StockCard = 28
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 28
+
+Row 679 2
+BAD-06441
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 680 2
+BAD-06442
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 681 2
+BAD-06443
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 682 2
+BAD-06444
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 683 2
+BAD-06445
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 684 2
+BAD-06446
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 685 2
+BAD-06447
+vQty_StockCard = 21
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 21
+
+Row 686 2
+BAD-06448
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 687 2
+BAD-06449
+vQty_StockCard = 125
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 125
+
+Row 688 2
+BAD-06450
+vQty_StockCard = 8
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 8
+
+Row 689 2
+BAD-06451
+vQty_StockCard = 26
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 26
+
+Row 690 2
+BAD-06452
+vQty_StockCard = 42
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 42
+
+Row 691 2
+BAD-06454
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 692 2
+BAD-06455
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 693 2
+BAD-06457
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 694 2
+BAD-06458
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 695 2
+BAD-06460
+vQty_StockCard = 25
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 25
+
+Row 696 2
+BAD-06461
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 697 2
+BAD-06462
+vQty_StockCard = 440
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 440
+
+Row 698 2
+BAD-06463
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 699 2
+BAD-06464
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 700 2
+BAD-06465
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 701 2
+BAD-06466
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 702 2
+BAD-06467
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 703 2
+BAD-06468
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 704 2
+BAD-06469
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 705 2
+BAD-06470
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 706 2
+BAD-06471
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 707 2
+BAD-06472
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 708 2
+BAD-06473
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 709 2
+BAD-06474
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 710 2
+BAD-06476
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 711 2
+BAD-06477
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 712 2
+BAD-06479
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 713 2
+BAD-06480
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 714 2
+BAD-06481
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 715 2
+BAD-06482
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 716 2
+BAD-06483
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 717 2
+BAD-06484
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 718 2
+BAD-06485
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 719 2
+BAD-06486
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 720 2
+BAD-06487
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 721 2
+BAD-06488
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 722 2
+BAD-06489
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 723 2
+BAD-06490
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 724 2
+BAD-06491
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 725 2
+BAD-06492
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 726 2
+BAD-06493
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 727 2
+BAD-06494
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 728 2
+BAD-06495
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 729 2
+BAD-06496
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 730 2
+BAD-06497
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 731 2
+BAD-06498
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 732 2
+BAD-06499
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 733 2
+BAD-06500
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 734 2
+BAD-06501
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 735 2
+BAD-06502
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 736 2
+BAD-06503
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 737 2
+BAD-06504
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 738 2
+BAD-06505
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 739 2
+BAD-06506
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 740 2
+BAD-06507
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 741 2
+BAD-06508
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 742 2
+BAD-06509
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 743 2
+BAD-06510
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 744 2
+BAD-06511
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 745 2
+BAD-06512
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 746 2
+BAD-06513
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 747 2
+BAD-06514
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 748 2
+BAD-06515
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 749 2
+BAD-06516
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 750 2
+BAD-06517
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 751 2
+BAD-06518
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 752 2
+BAD-06519
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 753 2
+BAD-06520
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 754 2
+BAD-06521
+vQty_StockCard = 117
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 117
+
+Row 755 2
+BAD-06522
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 756 2
+BAD-06523
+vQty_StockCard = 21
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 21
+
+Row 757 2
+BAD-06524
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 758 2
+BAD-06525
+vQty_StockCard = 62
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 62
+
+Row 759 2
+BAD-06526
+vQty_StockCard = 25
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 25
+
+Row 760 2
+BAD-06527
+vQty_StockCard = 25
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 25
+
+Row 761 2
+BAD-06528
+vQty_StockCard = 72
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 72
+
+Row 762 2
+BAD-06529
+vQty_StockCard = 112
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 112
+
+Row 763 2
+BAD-06530
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 764 2
+BAD-06531
+vQty_StockCard = 14
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 14
+
+Row 765 2
+BAD-06532
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 766 2
+BAD-06534
+vQty_StockCard = 51
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 51
+
+Row 767 2
+BAD-06535
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 768 2
+BAD-06536
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 769 2
+BAD-06537
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 770 2
+BAD-06538
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 771 2
+BAD-06539
+vQty_StockCard = 28
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 28
+
+Row 772 2
+BAD-06540
+vQty_StockCard = 5
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 5
+
+Row 773 2
+BAD-06541
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 774 2
+BAD-06542
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 775 2
+BAD-06543
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 776 2
+BAD-06544
+vQty_StockCard = 64
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 64
+
+Row 777 2
+BAD-06545
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 778 2
+BAD-06546
+vQty_StockCard = 220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 220
+
+Row 779 2
+BAD-06547
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 780 2
+BAD-06548
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 781 2
+BAD-06549
+vQty_StockCard = 96
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 96
+
+Row 782 2
+BAD-06550
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 783 2
+BAD-06553
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 784 2
+BAD-06560
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 785 2
+BAD-06561
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 786 2
+BAD-06562
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 787 2
+BAD-06563
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 788 2
+BAD-06564
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 789 2
+BAD-06565
+vQty_StockCard = 72
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 72
+
+Row 790 2
+BAD-06566
+vQty_StockCard = 36
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 36
+
+Row 791 2
+BAD-06567
+vQty_StockCard = 240
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 240
+
+Row 792 2
+BAD-06571
+vQty_StockCard = 131
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 131
+
+Row 793 2
+BAD-06572
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 794 2
+BAD-06573
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 795 2
+BAD-06574
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 796 2
+BAD-06575
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 797 2
+BAD-06576
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 798 2
+BAD-06577
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 799 2
+BAD-06578
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 800 2
+BAD-06579
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 801 2
+BAD-06580
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 802 2
+BAD-06581
+vQty_StockCard = 3
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3
+
+Row 803 2
+BAD-06582
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 804 2
+BAD-06583
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 805 2
+BAD-06584
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 806 2
+BAD-06585
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 807 2
+BAD-06588
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 808 2
+BAD-06589
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 809 2
+BAD-06590
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 810 2
+BAD-06592
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 811 2
+BAD-06593
+vQty_StockCard = 10
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 10
+
+Row 812 2
+BAD-06595
+vQty_StockCard = 10
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 10
+
+Row 813 2
+BAD-06596
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 814 2
+BAD-06597
+vQty_StockCard = 168
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 168
+
+Row 815 2
+BAD-06598
+vQty_StockCard = 8
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 8
+
+Row 816 2
+BAD-06599
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 817 2
+BAD-06600
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 818 2
+BAD-06601
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 819 2
+BAD-06602
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 820 2
+BAD-06603
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 821 2
+BAD-06604
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 822 2
+BAD-06605
+vQty_StockCard = 28
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 28
+
+Row 823 2
+BAD-06606
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 824 2
+BAD-06607
+vQty_StockCard = 264
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 264
+
+Row 825 2
+BAD-06608
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 826 2
+BAD-06610
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 827 2
+BAD-06611
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 828 2
+BAD-06612
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 829 2
+BAD-06613
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 830 2
+BAD-06614
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 831 2
+BAD-06615
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 832 2
+BAD-06616
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 833 2
+BAD-06619
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 834 2
+BAD-06621
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 835 2
+BAD-06622
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 836 2
+BAD-06623
+vQty_StockCard = 100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 100
+
+Row 837 2
+BAD-06624
+vQty_StockCard = 25
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 25
+
+Row 838 2
+BAD-06625
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 839 2
+BAD-06626
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 840 2
+BAD-06628
+vQty_StockCard = 160
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 160
+
+Row 841 2
+BAD-06629
+vQty_StockCard = 161
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 161
+
+Row 842 2
+BAD-06631
+vQty_StockCard = 8100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 8100
+
+Row 843 2
+BAD-06632
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 844 2
+BAD-06633
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 845 2
+BAD-06635
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 846 2
+BAD-06636
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 847 2
+BAD-06637
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 848 2
+BAD-06642
+vQty_StockCard = 448
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 448
+
+Row 849 2
+BAD-06647
+vQty_StockCard = 68
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 68
+
+Row 850 2
+BAD-06648
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 851 2
+BAD-06649
+vQty_StockCard = 24
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 24
+
+Row 852 2
+BAD-06650
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 853 2
+BAD-06652
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 854 2
+BAD-06653
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 855 2
+BAD-06654
+vQty_StockCard = 63
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 63
+
+Row 856 2
+BAD-06655
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 857 2
+BAD-06657
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 858 2
+BAD-06659
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 859 2
+BAD-06660
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 860 2
+BAD-06662
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 861 2
+BAD-06663
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 862 2
+BAD-06664
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 863 2
+BAD-06665
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 864 2
+BAD-06667
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 865 2
+BAD-06668
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 866 2
+BAD-06669
+vQty_StockCard = 26
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 26
+
+Row 867 2
+BAD-06670
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 868 2
+BAD-06671
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 869 2
+BAD-06672
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 870 2
+BAD-06673
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 871 2
+BAD-06677
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 872 2
+BAD-06679
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 873 2
+BAD-06680
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 874 2
+BAD-06682
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 875 2
+BAD-06683
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 876 2
+BAD-06684
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 877 2
+BAD-06685
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 878 2
+BAD-06687
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 879 2
+BAD-06688
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 880 2
+BAD-06689
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 881 2
+BAD-06690
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 882 2
+BAD-06691
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 883 2
+BAD-06692
+vQty_StockCard = 30
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 30
+
+Row 884 2
+BAD-06694
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 885 2
+BAD-06697
+vQty_StockCard = 2096
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2096
+
+Row 886 2
+BAD-06698
+vQty_StockCard = 6
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 6
+
+Row 887 2
+BAD-06699
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 888 2
+BAD-06700
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 889 2
+BAD-06700A
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 890 2
+BAD-06701
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 891 2
+BAD-06702
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 892 2
+BAD-06703
+vQty_StockCard = 1770
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1770
+
+Row 893 2
+BAD-06704
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 894 2
+BAD-06705
+vQty_StockCard = 2210
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2210
+
+Row 895 2
+BAD-06706
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 896 2
+BAD-06707
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 897 2
+BAD-06708
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 898 2
+BAD-06709
+vQty_StockCard = 250
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 250
+
+Row 899 2
+BAD-06710
+vQty_StockCard = 220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 220
+
+Row 900 2
+BAD-06711
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 901 2
+BAD-06713
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 902 2
+BAD-06714
+vQty_StockCard = 510
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 510
+
+Row 903 2
+BAD-06715
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 904 2
+BAD-06716
+vQty_StockCard = 3587
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3587
+
+Row 905 2
+BAD-06717
+vQty_StockCard = 104
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 104
+
+Row 906 2
+BAD-06718
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 907 2
+BAD-06719
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 908 2
+BAD-06720
+vQty_StockCard = 644
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 644
+
+Row 909 2
+BAD-06721
+vQty_StockCard = 792
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 792
+
+Row 910 2
+BAD-06722
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 911 2
+BAD-06724
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 912 2
+BAD-06725
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 913 2
+BAD-06726
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 914 2
+BAD-06727
+vQty_StockCard = 73
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 73
+
+Row 915 2
+BAD-06728
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 916 2
+BAD-06730
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 917 2
+BAD-06731
+vQty_StockCard = 64
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 64
+
+Row 918 2
+BAD-06732
+vQty_StockCard = 528
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 528
+
+Row 919 2
+BAD-06733
+vQty_StockCard = 27
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 27
+
+Row 920 2
+BAD-06734
+vQty_StockCard = 21
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 21
+
+Row 921 2
+BAD-06735
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 922 2
+BAD-06736
+vQty_StockCard = 70
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 70
+
+Row 923 2
+BAD-06737
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 924 2
+BAD-06738
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 925 2
+BAD-06739
+vQty_StockCard = 180
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 180
+
+Row 926 2
+BAD-06741
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 927 2
+BAD-06742
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 928 2
+BAD-06743
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 929 2
+BAD-06744
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 930 2
+BAD-06745
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 931 2
+BAD-06746
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 932 2
+BAD-06753
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 933 2
+BAD-06754
+vQty_StockCard = 420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 420
+
+Row 934 2
+BAD-06755
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 935 2
+BAD-06756
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 936 2
+BAD-06758
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 937 2
+BAD-06759
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 938 2
+BAD-06760
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 939 2
+BAD-06762
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 940 2
+BAD-06763
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 941 2
+BAD-06764
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 942 2
+BAD-06765
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 943 2
+BAD-06766
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 944 2
+BAD-06767
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 945 2
+BAD-06770
+vQty_StockCard = 48
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 48
+
+Row 946 2
+BAD-06771
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 947 2
+BAD-06772
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 948 2
+BAD-06773
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 949 2
+BAD-06774
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 950 2
+BAD-06775
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 951 2
+BAD-06776
+vQty_StockCard = 30
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 30
+
+Row 952 2
+BAD-06777
+vQty_StockCard = 8
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 8
+
+Row 953 2
+BAD-06778
+vQty_StockCard = 65
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 65
+
+Row 954 2
+BAD-06779
+vQty_StockCard = 14
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 14
+
+Row 955 2
+BAD-06780
+vQty_StockCard = 37
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 37
+
+Row 956 2
+BAD-06781
+vQty_StockCard = 123
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 123
+
+Row 957 2
+BAD-06782
+vQty_StockCard = 10
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 10
+
+Row 958 2
+BAD-06783
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 959 2
+BAD-06784
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 960 2
+BAD-06785
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 961 2
+BAD-06788
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 962 2
+BAD-06789
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 963 2
+BAD-06790
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 964 2
+BAD-06792
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 965 2
+BAD-06793
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 966 2
+BAD-06795
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 967 2
+BAD-06796
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 968 2
+BAD-06797
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 969 2
+BAD-06798
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 970 2
+BAD-06799
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 971 2
+BAD-06800
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 972 2
+BAD-06801
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 973 2
+BAD-06802
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 974 2
+BAD-06804
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 975 2
+BAD-06805
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 976 2
+BAD-06806
+vQty_StockCard = 21
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 21
+
+Row 977 2
+BAD-06807
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 978 2
+BAD-06808
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 979 2
+BAD-06809
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 980 2
+BAD-06810
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 981 2
+BAD-06811
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 982 2
+BAD-06812
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 983 2
+BAD-06813
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 984 2
+BAD-06814
+vQty_StockCard = 420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 420
+
+Row 985 2
+BAD-06815
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 986 2
+BAD-06816
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 987 2
+BAD-06817
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 988 2
+BAD-06818
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 989 2
+BAD-06819
+vQty_StockCard = 12
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 12
+
+Row 990 2
+BAD-06820
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 991 2
+BAD-06821
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 992 2
+BAD-06822
+vQty_StockCard = 16
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 16
+
+Row 993 2
+BAD-06823
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 994 2
+BAD-06824
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 995 2
+BAD-06825
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 996 2
+BAD-06826
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 997 2
+BAD-06827
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 998 2
+BAD-06828
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 999 2
+BAD-06829
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1000 2
+BAD-06830
+vQty_StockCard = 116
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 116
+
+Row 1001 2
+BAD-06831
+vQty_StockCard = 120
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 120
+
+Row 1002 2
+BAD-06832
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1003 2
+BAD-06833
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 1004 2
+BAD-06834
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1005 2
+BAD-06835
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1006 2
+BAD-06836
+vQty_StockCard = 20
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 20
+
+Row 1007 2
+BAD-06837
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1008 2
+BAD-06838
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1009 2
+BAD-06839
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1010 2
+BAD-06841
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1011 2
+BAD-06843
+vQty_StockCard = 472
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 472
+
+Row 1012 2
+BAD-06844
+vQty_StockCard = 248
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 248
+
+Row 1013 2
+BAD-06845
+vQty_StockCard = 214
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 214
+
+Row 1014 2
+BAD-06846
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1015 2
+BAD-06847
+vQty_StockCard = 71
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 71
+
+Row 1016 2
+BAD-06848
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1017 2
+BAD-06849
+vQty_StockCard = 16
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 16
+
+Row 1018 2
+BAD-06850
+vQty_StockCard = 275
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 275
+
+Row 1019 2
+BAD-06851
+vQty_StockCard = 472
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 472
+
+Row 1020 2
+BAD-06852
+vQty_StockCard = 284
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 284
+
+Row 1021 2
+BAD-06853
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1022 2
+BAD-06854
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1023 2
+BAD-06855
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1024 2
+BAD-06856
+vQty_StockCard = 800
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 800
+
+Row 1025 2
+BAD-06857
+vQty_StockCard = 950
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 950
+
+Row 1026 2
+BAD-06858
+vQty_StockCard = 300
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 300
+
+Row 1027 2
+BAD-06859
+vQty_StockCard = 150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 150
+
+Row 1028 2
+BAD-06860
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1029 2
+BAD-06861
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1030 2
+BAD-06868
+vQty_StockCard = 126
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 126
+
+Row 1031 2
+BAD-06870
+vQty_StockCard = 416
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 416
+
+Row 1032 2
+BAD-06873
+vQty_StockCard = 3860
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3860
+
+Row 1033 2
+BAD-06874
+vQty_StockCard = 3060
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3060
+
+Row 1034 2
+BAD-06875
+vQty_StockCard = 3280
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3280
+
+Row 1035 2
+BAD-06876
+vQty_StockCard = 4200
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 4200
+
+Row 1036 2
+BAD-06877
+vQty_StockCard = 1540
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1540
+
+Row 1037 2
+BAD-06878
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1038 2
+BAD-06879
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1039 2
+BAD-06880
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1040 2
+BAD-06881
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1041 2
+BAD-06882
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1042 2
+BAD-06883
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1043 2
+BAD-06884
+vQty_StockCard = 435
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 435
+
+Row 1044 2
+BAD-06885
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1045 2
+BAD-06886
+vQty_StockCard = 420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 420
+
+Row 1046 2
+BAD-06887
+vQty_StockCard = 18
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 18
+
+Row 1047 2
+BAD-06888
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1048 2
+BAD-06889
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1049 2
+BAD-06890
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1050 2
+BAD-06891
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1051 2
+BAD-06892
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1052 2
+BAD-06893
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1053 2
+BAD-06894
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1054 2
+BAD-06895
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1055 2
+BAD-06896
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1056 2
+BAD-06897
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1057 2
+BAD-06898
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1058 2
+BAD-06899
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1059 2
+BAD-06900
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1060 2
+BAD-06901
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1061 2
+BAD-06902
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1062 2
+BAD-06903
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1063 2
+BAD-06904
+vQty_StockCard = 904
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 904
+
+Row 1064 2
+BAD-06906
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1065 2
+BAD-06907
+vQty_StockCard = 7456
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 7456
+
+Row 1066 2
+BAD-06908
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1067 2
+BAD-06909
+vQty_StockCard = 9900
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 9900
+
+Row 1068 2
+BAD-06914
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1069 2
+BAD-06915
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1070 2
+BAD-06917
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1071 2
+BAD-06920
+vQty_StockCard = 468
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 468
+
+Row 1072 2
+BAD-06927
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1073 2
+BAD-06928
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1074 2
+BAD-06929
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1075 2
+BAD-06930
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1076 2
+BAD-06931
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1077 2
+BAD-06932
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1078 2
+BAD-06933
+vQty_StockCard = 356
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 356
+
+Row 1079 2
+BAD-06934
+vQty_StockCard = 52
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 52
+
+Row 1080 2
+BAD-06935
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1081 2
+BAD-06936
+vQty_StockCard = 74
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 74
+
+Row 1082 2
+BAD-06937
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1083 2
+BAD-06938
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1084 2
+BAD-06939
+vQty_StockCard = 200
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 200
+
+Row 1085 2
+BAD-06940
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 1086 2
+BAD-06941
+vQty_StockCard = 1850
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1850
+
+Row 1087 2
+BAD-06942
+vQty_StockCard = 40
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 40
+
+Row 1088 2
+BAD-06946
+vQty_StockCard = 240
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 240
+
+Row 1089 2
+BAD-06947
+vQty_StockCard = 319
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 319
+
+Row 1090 2
+BAD-06948
+vQty_StockCard = 1150
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1150
+
+Row 1091 2
+BAD-06949
+vQty_StockCard = 379
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 379
+
+Row 1092 2
+BAD-06950
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1093 2
+BAD-06951
+vQty_StockCard = 6864
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 6864
+
+Row 1094 2
+BAD-06952
+vQty_StockCard = 60
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 60
+
+Row 1095 2
+BAD-06953
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1096 2
+BAD-06954
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1097 2
+BAD-06955
+vQty_StockCard = 36
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 36
+
+Row 1098 2
+BAD-06956
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1099 2
+BAD-06958
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1100 2
+BAD-06959
+vQty_StockCard = 16
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 16
+
+Row 1101 2
+BAD-06960
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1102 2
+BAD-06961
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1103 2
+BAD-06962
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1104 2
+BAD-06963
+vQty_StockCard = 180
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 180
+
+Row 1105 2
+BAD-06964
+vQty_StockCard = 160
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 160
+
+Row 1106 2
+BAD-06965
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 1107 2
+BAD-06966
+vQty_StockCard = 64
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 64
+
+Row 1108 2
+BAD-06967
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1109 2
+BAD-06968
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1110 2
+BAD-06969
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1111 2
+BAD-06971
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1112 2
+BAD-06972
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1113 2
+BAD-06973
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1114 2
+BAD-06974
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1115 2
+BAD-06975
+vQty_StockCard = 32
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 32
+
+Row 1116 2
+BAD-06976
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1117 2
+BAD-06977
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1118 2
+BAD-06978
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1119 2
+BAD-06979
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1120 2
+BAD-06980
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1121 2
+BAD-06981
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1122 2
+BAD-06982
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1123 2
+BAD-06983
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1124 2
+BAD-06994
+vQty_StockCard = 2380
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2380
+
+Row 1125 2
+BAD-06995
+vQty_StockCard = 2420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2420
+
+Row 1126 2
+BAD-06996
+vQty_StockCard = 2560
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2560
+
+Row 1127 2
+BAD-06997
+vQty_StockCard = 2280
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2280
+
+Row 1128 2
+BAD-06998
+vQty_StockCard = 2870
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2870
+
+Row 1129 2
+BAD-06999
+vQty_StockCard = 3220
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 3220
+
+Row 1130 2
+BAD-07000
+vQty_StockCard = 4524
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 4524
+
+Row 1131 2
+BAD-07001
+vQty_StockCard = 948
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 948
+
+Row 1132 2
+BAD-07002
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1133 2
+BAD-07003
+vQty_StockCard = 31
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 31
+
+Row 1134 2
+BAD-07004
+vQty_StockCard = 412
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 412
+
+Row 1135 2
+BAD-07005
+vQty_StockCard = 680
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 680
+
+Row 1136 2
+BAD-07007
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1137 2
+BAD-07008
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1138 2
+BAD-07009
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1139 2
+BAD-07010
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1140 2
+BAD-07011
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1141 2
+BAD-07012
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1142 2
+BAD-07013
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1143 2
+BAD-07014
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1144 2
+BAD-07015
+vQty_StockCard = 6
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 6
+
+Row 1145 2
+BAD-07016
+vQty_StockCard = 852
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 852
+
+Row 1146 2
+BAD-07017
+vQty_StockCard = 924
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 924
+
+Row 1147 2
+BAD-07018
+vQty_StockCard = 77
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 77
+
+Row 1148 2
+BAD-07019
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1149 2
+BAD-07020
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1150 2
+BAD-07021
+vQty_StockCard = 34
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 34
+
+Row 1151 2
+BAD-07022
+vQty_StockCard = 480
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 480
+
+Row 1152 2
+BAD-07023
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1153 2
+BAD-07024
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1154 2
+BAD-07025
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1155 2
+BAD-07026
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1156 2
+BAD-07027
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1157 2
+BAD-07029
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1158 2
+BAD-07031
+vQty_StockCard = 252
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 252
+
+Row 1159 2
+BAD-07032
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1160 2
+BAD-07033
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1161 2
+BAD-07034
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1162 2
+BAD-07035
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1163 2
+BAD-07036
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1164 2
+BAD-07037
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1165 2
+BAD-07038
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1166 2
+BAD-07039
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1167 2
+BAD-07040
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1168 2
+BAD-07041
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1169 2
+BAD-07047
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1170 2
+BAD-07048
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1171 2
+BAD-07049
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1172 2
+BAD-07050
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1173 2
+BAD-07051
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1174 2
+BAD-07052
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1175 2
+BAD-07053
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1176 2
+BAD-07054
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1177 2
+BAD-07055
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1178 2
+BAD-07056
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1179 2
+BAD-07057
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1180 2
+BAD-07058
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1181 2
+BAD-07059
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1182 2
+BAD-07060
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1183 2
+BAD-07061
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1184 2
+BAD-07062
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1185 2
+BAD-07063
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1186 2
+BAD-07064
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1187 2
+BAD-07065
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1188 2
+BAD-07066
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1189 2
+BAD-07067
+vQty_StockCard = 496
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 496
+
+Row 1190 2
+BAD-07068
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1191 2
+BAD-07069
+vQty_StockCard = 2100
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2100
+
+Row 1192 2
+BAD-07070
+vQty_StockCard = 670
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 670
+
+Row 1193 2
+BAD-07071
+vQty_StockCard = 1420
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 1420
+
+Row 1194 2
+BAD-07072
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1195 2
+BAD-07073
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1196 2
+BAD-07074
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1197 2
+BAD-07075
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1198 2
+BAD-07076
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1199 2
+BAD-07077
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1200 2
+BAD-07078
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1201 2
+BAD-07079
+vQty_StockCard = 2784
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2784
+
+Row 1202 2
+BAD-07080
+vQty_StockCard = 2414
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 2414
+
+Row 1203 2
+BAD-07085
+vQty_StockCard = 496
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 496
+
+Row 1204 2
+BAD-07086
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1205 2
+BAD-07087
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1206 2
+BAD-07088
+vQty_StockCard = 498
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 498
+
+Row 1207 2
+BAD-07089
+vQty_StockCard = 496
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 496
+
+Row 1208 2
+BAD-07090
+vQty_StockCard = 484
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 484
+
+Row 1209 2
+BAD-07091
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1210 2
+BAD-07092
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1211 2
+BAD-07093
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1212 2
+BAD-07094P
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1213 2
+BAD-07098
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1214 2
+BAD-07099
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1215 2
+BAD-07099P
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+
+Row 1216 2
+BAD-07100
+vQty_StockCard = 0
+vQtyInv_Belum_PickingDone = 0
+vQtyTRB_Belum_PickingDone = 0
+vQty_StockCard_Winacc = 0
+Files Names Summary Stock-50-20231007_113840.xlsx
+-------------------------------EOF-------------------------------

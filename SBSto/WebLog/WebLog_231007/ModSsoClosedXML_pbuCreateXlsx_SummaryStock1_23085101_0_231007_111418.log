@@ -1,0 +1,12 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummaryStock1
+Process Start      : 07 Oct 2023 11:14:18
+
+
+vnQuery
+spSsoInvNotPickDone_ByCompanyWhsDate_Table 'BAD',2,'''
+TERJADI ERROR : LAPORKAN KE IT
+ERROR DESCRIPTION : 
+Unclosed quotation mark after the character string '''.
+Incorrect syntax near '''.
+-------------------------------EOF-------------------------------

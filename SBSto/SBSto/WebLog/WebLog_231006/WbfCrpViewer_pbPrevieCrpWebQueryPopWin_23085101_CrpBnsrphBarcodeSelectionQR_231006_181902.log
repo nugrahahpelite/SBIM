@@ -1,0 +1,12 @@
+Module WbfCrpViewer
+Proses pbPrevieCrpWebQueryPopWin
+Process Start      : 06 Oct 2023 18:19:02
+
+Open SQL Connection....Start
+vbuCrpPreview Pdf
+vbuCrpFileName CrpBnsrphBarcodeSelectionQR.rpt
+vnRptFolder C:\MyWorkspace\SB_IM\SBStoApp\SBSto\CrpFiles\
+ERROR
+Incorrect syntax near the keyword 'and'.
+Process End           : 06 Oct 2023 18:19:02
+---------------EOF-------------------------

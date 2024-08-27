@@ -1,0 +1,933 @@
+Module ModSsoClosedXML
+Proses pbuCreateXlsx_SummarySKK
+Process Start      : 20 Sep 2023 14:17:49
+
+
+vnQuery
+Select PM.vTransOID,PM.vRefOID,SM.TransCode,SM.TransName,PM.vTransCompanyCode,PM.vTransNo,convert(varchar(11),PM.vTransDate,106)vTransDate,PM.vRefNo,
+     PM.vTransType,PM.WarehouseName,PM.vWarehouseName_Dest,PM.vTransNote,PM.TransStatusDescr,
+     PM.vCreation,PM.CreationDatetime
+From(
+
+Select PM.OID vTransOID,PM.RcvPORefOID vRefOID,PM.TransCode,PM.RcvPOCompanyCode vTransCompanyCode,PM.RcvPONo vTransNo,PM.RcvPODate vTransDate,PM.RcvPORefNo vRefNo,
+     RT.RcvPOTypeName vTransType,WM.WarehouseName,''vWarehouseName_Dest,''vTransNote,ST.TransStatusDescr,
+     convert(varchar(11),PM.CreationDatetime,106)+' '+convert(varchar(5),PM.CreationDatetime,108)+' '+ CR.UserName vCreation,PM.CreationDatetime
+From Sys_SsoRcvPOHeader_TR PM with(nolock)
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join Sys_SsoRcvPOType_MA RT with(nolock) on RT.OID=PM.RcvPORefTypeOID
+     inner join Sys_SsoTransStatus_MA ST with(nolock) on ST.TransStatus=PM.TransStatus and ST.TransCode=PM.TransCode
+     left outer join Sys_SsoUser_MA CR with(nolock) on CR.OID=PM.CreationUserOID
+Where 1=1 and RcvRefTypeOID<>0
+
+            and PM.WarehouseOID = 1
+            and PM.RcvPODate >= '05 Sep 2023'
+            and PM.RcvPODate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.RcvPOHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.RcvPONo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vMoveOID vTransOID,Null vRefOID,PM.TransCode,PM.vMoveCompanyCode vTransCompanyCode,PM.vMoveNo vTransNo,PM.vMoveDate vTransDate,''vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoMovement() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.vMoveDate >= '05 Sep 2023'
+            and PM.vMoveDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,PCLRefHOID vRefOID,PM.TransCode,PM.PCLCompanyCode vTransCompanyCode,PM.PCLNo vTransNo,PM.PCLDate vTransDate,PCLRefHNo vRefNo,
+     PM.SchDTypeName vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html vTransNote,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPicklist_Picking_Dispatch() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.PCLDate >= '05 Sep 2023'
+            and PM.PCLDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.PCKCompanyCode vTransCompanyCode,PM.PCKNo vTransNo,PM.PCKDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPCKHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.PCKDate >= '05 Sep 2023'
+            and PM.PCKDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,Null vRefOID,PM.TransCode,PM.DSPCompanyCode vTransCompanyCode,PM.DSPNo vTransNo,PM.DSPDate vTransDate,Null vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Driver = '+dm.DcmDriverName+'<br />Plat No = '+vm.VehicleNo vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoDSPHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmDriver_MA dm with(nolock) on dm.OID=PM.DcmSchDriverOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA vm with(nolock) on vm.OID=PM.DcmVehicleOID
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.DSPDate >= '05 Sep 2023'
+            and PM.DSPDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,DSPHOID vRefOID,PM.TransCode,PM.DSRCompanyCode vTransCompanyCode,PM.DSRNo vTransNo,PM.DSRDate vTransDate,DSPNo vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Gudang Asal='+ WA.WarehouseName +'<br />Driver = '+dm.DcmDriverName+'<br />Plat No = '+vm.VehicleNo vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoDSRHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WA with(nolock) on WA.OID=PM.vWarehouseOID_Asal
+     inner join Delivery_Monitoring.dbo.Sys_DcmDriver_MA dm with(nolock) on dm.OID=PM.DcmSchDriverOID
+     inner join Delivery_Monitoring.dbo.Sys_DcmVehicle_MA vm with(nolock) on vm.OID=PM.DcmVehicleOID
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.DSRDate >= '05 Sep 2023'
+            and PM.DSRDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.OID vTransOID,Null vRefOID,PM.TransCode,PM.SGOCompanyCode vTransCompanyCode,PM.SGONo vTransNo,PM.SGODate vTransDate,''vRefNo,
+     ''vTransType,WM.WarehouseName,''vWarehouseName_Dest,'Staging Out Asal ='+ SA.vStorageInfo_Wh_Bd_Lt +'<br />Staging Out Destination = '+ SD.vStorageInfo_Wh_Bd_Lt vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoSGOHeader() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     inner join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) SA on SA.vStorageOID=PM.StorageOID
+     inner join SB_DATAWH.dbo.fnTbl_SsoStorageInfo(0) SD on SD.vStorageOID=PM.StorageOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.SGODate >= '05 Sep 2023'
+            and PM.SGODate <= '05 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_DT() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.PCLRefHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.PCLRefHNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,PM.vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_PTV() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+
+UNION ALL
+
+Select PM.vPtwOID vTransOID,PM.DSRHOID vRefOID,PM.TransCode,PM.vPtwCompanyCode vTransCompanyCode,PM.vPtwNo vTransNo,PM.vPtwDate vTransDate,PM.DSRNo vRefNo,
+     ''vTransType,WM.WarehouseName,WD.WarehouseName vWarehouseName_Dest,''vPCLRefHInfo_Html,PM.TransStatusDescr,
+     vCreation,PM.CreationDatetime
+From fnTbl_SsoPutaway_DS() PM
+     inner join SB_DATAWH.dbo.Sys_Warehouse_MA WM with(nolock) on WM.OID=PM.WarehouseOID
+     left outer join SB_DATAWH.dbo.Sys_Warehouse_MA WD with(nolock) on WD.OID=PM.WarehouseOID_Dest
+Where 1=1
+
+            and PM.WarehouseOID = 1
+            and PM.vPtwDate >= '05 Sep 2023'
+            and PM.vPtwDate <= '09 Sep 2023'
+)PM
+     inner join Sys_SsoTransName_MA SM with(nolock)on SM.TransCode=PM.TransCode
+Order by PM.CreationDatetime,PM.vTransNo
+
+20/09/2023 2:17:49 PM
+Jumlah Data = 747
+
+Proses : Persiapan Membuat File Xlsx...
+
+Proses : Creating Excel Workbook...
+
+Proses : Creating Excel Worksheet...
+
+Proses : Mempersiapkan Header Report...
+
+Proses : Mempersiapkan Column Header dan Column Format...
+Proses : Mengisi Data...
+Row 0 43551
+Row 1 
+Row 2 2
+Row 3 43535
+Row 4 43547
+Row 5 3
+Row 6 43523
+Row 7 43527
+Row 8 43532
+Row 9 3
+Row 10 43528
+Row 11 43539
+Row 12 
+Row 13 43534
+Row 14 43526
+Row 15 43553
+Row 16 43546
+Row 17 
+Row 18 43522
+Row 19 43538
+Row 20 43520
+Row 21 43519
+Row 22 43530
+Row 23 43531
+Row 24 43525
+Row 25 43600
+Row 26 43601
+Row 27 43601
+Row 28 43518
+Row 29 43504
+Row 30 43552
+Row 31 
+Row 32 
+Row 33 
+Row 34 43621
+Row 35 
+Row 36 43621
+Row 37 
+Row 38 
+Row 39 43626
+Row 40 43626
+Row 41 43524
+Row 42 43639
+Row 43 43640
+Row 44 43644
+Row 45 43647
+Row 46 43644
+Row 47 43648
+Row 48 43649
+Row 49 43650
+Row 50 43651
+Row 51 43417
+Row 52 43652
+Row 53 43655
+Row 54 43652
+Row 55 43516
+Row 56 43649
+Row 57 
+Row 58 43657
+Row 59 43663
+Row 60 43648
+Row 61 43666
+Row 62 
+Row 63 43647
+Row 64 43666
+Row 65 43669
+Row 66 
+Row 67 
+Row 68 43600
+Row 69 43537
+Row 70 43663
+Row 71 
+Row 72 
+Row 73 43669
+Row 74 
+Row 75 
+Row 76 43673
+Row 77 43655
+Row 78 43673
+Row 79 
+Row 80 43640
+Row 81 
+Row 82 
+Row 83 
+Row 84 
+Row 85 43409
+Row 86 
+Row 87 
+Row 88 
+Row 89 43409
+Row 90 
+Row 91 
+Row 92 
+Row 93 
+Row 94 7
+Row 95 
+Row 96 
+Row 97 
+Row 98 
+Row 99 
+Row 100 
+Row 101 
+Row 102 
+Row 103 9
+Row 104 43723
+Row 105 43727
+Row 106 43408
+Row 107 43723
+Row 108 43410
+Row 109 43727
+Row 110 43411
+Row 111 
+Row 112 4
+Row 113 5
+Row 114 
+Row 115 
+Row 116 
+Row 117 5
+Row 118 43749
+Row 119 43749
+Row 120 43752
+Row 121 43755
+Row 122 43757
+Row 123 43750
+Row 124 
+Row 125 
+Row 126 43755
+Row 127 43759
+Row 128 5
+Row 129 43760
+Row 130 43759
+Row 131 43757
+Row 132 
+Row 133 43763
+Row 134 43764
+Row 135 43765
+Row 136 43766
+Row 137 43767
+Row 138 43769
+Row 139 43770
+Row 140 43771
+Row 141 43764
+Row 142 5
+Row 143 43774
+Row 144 43767
+Row 145 
+Row 146 43763
+Row 147 43766
+Row 148 
+Row 149 43765
+Row 150 
+Row 151 43779
+Row 152 43750
+Row 153 43780
+Row 154 4
+Row 155 
+Row 156 
+Row 157 
+Row 158 
+Row 159 
+Row 160 
+Row 161 43621
+Row 162 43752
+Row 163 43621
+Row 164 43771
+Row 165 43760
+Row 166 
+Row 167 43774
+Row 168 4
+Row 169 43626
+Row 170 4
+Row 171 43626
+Row 172 43779
+Row 173 22
+Row 174 43780
+Row 175 
+Row 176 43651
+Row 177 43793
+Row 178 43794
+Row 179 43795
+Row 180 43639
+Row 181 43796
+Row 182 43797
+Row 183 43798
+Row 184 43798
+Row 185 
+Row 186 43601
+Row 187 6
+Row 188 43793
+Row 189 43601
+Row 190 
+Row 191 43657
+Row 192 
+Row 193 43797
+Row 194 
+Row 195 
+Row 196 
+Row 197 
+Row 198 
+Row 199 
+Row 200 
+Row 201 43768
+Row 202 43769
+Row 203 43768
+Row 204 43770
+Row 205 43794
+Row 206 43796
+Row 207 43795
+Row 208 43773
+Row 209 
+Row 210 43773
+Row 211 
+Row 212 
+Row 213 43845
+Row 214 43847
+Row 215 
+Row 216 43848
+Row 217 43848
+Row 218 43853
+Row 219 43854
+Row 220 
+Row 221 43845
+Row 222 
+Row 223 43853
+Row 224 43847
+Row 225 
+Row 226 
+Row 227 43854
+Row 228 
+Row 229 43875
+Row 230 43876
+Row 231 43877
+Row 232 43877
+Row 233 43878
+Row 234 43879
+Row 235 
+Row 236 43879
+Row 237 43880
+Row 238 43886
+Row 239 43887
+Row 240 43888
+Row 241 43889
+Row 242 43889
+Row 243 43887
+Row 244 
+Row 245 
+Row 246 43876
+Row 247 
+Row 248 43878
+Row 249 
+Row 250 
+Row 251 1
+Row 252 1
+Row 253 43900
+Row 254 43901
+Row 255 1
+Row 256 
+Row 257 
+Row 258 
+Row 259 
+Row 260 
+Row 261 
+Row 262 
+Row 263 
+Row 264 
+Row 265 36
+Row 266 43888
+Row 267 43886
+Row 268 1
+Row 269 43901
+Row 270 43879
+Row 271 43879
+Row 272 43963
+Row 273 3
+Row 274 43964
+Row 275 43962
+Row 276 4
+Row 277 43875
+Row 278 43965
+Row 279 6
+Row 280 1
+Row 281 43880
+Row 282 37
+Row 283 43965
+Row 284 35
+Row 285 43963
+Row 286 
+Row 287 43964
+Row 288 43973
+Row 289 7
+Row 290 43973
+Row 291 43974
+Row 292 43962
+Row 293 9
+Row 294 43900
+Row 295 43975
+Row 296 8
+Row 297 43975
+Row 298 43976
+Row 299 43977
+Row 300 43978
+Row 301 43978
+Row 302 1
+Row 303 43877
+Row 304 43749
+Row 305 43877
+Row 306 43666
+Row 307 43666
+Row 308 
+Row 309 43974
+Row 310 3
+Row 311 
+Row 312 4
+Row 313 43749
+Row 314 66
+Row 315 8
+Row 316 43545
+Row 317 10
+Row 318 43900
+Row 319 43977
+Row 320 43900
+Row 321 43978
+Row 322 43976
+Row 323 43798
+Row 324 43798
+Row 325 63
+Row 326 
+Row 327 62
+Row 328 43986
+Row 329 43987
+Row 330 43988
+Row 331 43989
+Row 332 43990
+Row 333 43991
+Row 334 43992
+Row 335 43991
+Row 336 43992
+Row 337 43988
+Row 338 43994
+Row 339 43986
+Row 340 43994
+Row 341 43987
+Row 342 43995
+Row 343 43989
+Row 344 43990
+Row 345 11
+Row 346 11
+Row 347 43978
+Row 348 11
+Row 349 43650
+Row 350 43995
+Row 351 44016
+Row 352 44017
+Row 353 44018
+Row 354 11
+Row 355 44019
+Row 356 44020
+Row 357 43973
+Row 358 12
+Row 359 44029
+Row 360 44030
+Row 361 43973
+Row 362 44031
+Row 363 44032
+Row 364 44033
+Row 365 43848
+Row 366 11
+Row 367 11
+Row 368 11
+Row 369 3
+Row 370 44040
+Row 371 44041
+Row 372 44042
+Row 373 44020
+Row 374 1
+Row 375 44017
+Row 376 44016
+Row 377 44049
+Row 378 44050
+Row 379 44033
+Row 380 44052
+Row 381 44054
+Row 382 44042
+Row 383 44054
+Row 384 44052
+Row 385 
+Row 386 44029
+Row 387 44057
+Row 388 
+Row 389 44019
+Row 390 
+Row 391 
+Row 392 44032
+Row 393 44041
+Row 394 44040
+Row 395 44019
+Row 396 44031
+Row 397 43848
+Row 398 44019
+Row 399 
+Row 400 44049
+Row 401 43975
+Row 402 43975
+Row 403 
+Row 404 
+Row 405 
+Row 406 44113
+Row 407 
+Row 408 44114
+Row 409 44115
+Row 410 44116
+Row 411 
+Row 412 44117
+Row 413 44118
+Row 414 44119
+Row 415 
+Row 416 44119
+Row 417 44121
+Row 418 
+Row 419 44122
+Row 420 
+Row 421 
+Row 422 
+Row 423 
+Row 424 44164
+Row 425 44165
+Row 426 70
+Row 427 44121
+Row 428 44122
+Row 429 13
+Row 430 44116
+Row 431 44115
+Row 432 44164
+Row 433 44117
+Row 434 44118
+Row 435 44165
+Row 436 44114
+Row 437 44181
+Row 438 
+Row 439 44182
+Row 440 44183
+Row 441 44184
+Row 442 44185
+Row 443 43995
+Row 444 44180
+Row 445 44186
+Row 446 44187
+Row 447 
+Row 448 44113
+Row 449 43995
+Row 450 
+Row 451 44184
+Row 452 
+Row 453 
+Row 454 44183
+Row 455 44185
+Row 456 44181
+Row 457 
+Row 458 44189
+Row 459 44190
+Row 460 44018
+Row 461 44180
+Row 462 44182
+Row 463 44186
+Row 464 44187
+Row 465 
+Row 466 44057
+Row 467 44119
+Row 468 44119
+Row 469 44190
+Row 470 
+Row 471 44214
+Row 472 44190
+Row 473 44215
+Row 474 44189
+Row 475 44215
+Row 476 
+Row 477 93
+Row 478 
+Row 479 
+Row 480 
+Row 481 
+Row 482 44190
+Row 483 
+Row 484 
+Row 485 
+Row 486 
+Row 487 
+Row 488 
+Row 489 44292
+Row 490 44293
+Row 491 44295
+Row 492 44293
+Row 493 44295
+Row 494 
+Row 495 
+Row 496 
+Row 497 
+Row 498 44317
+Row 499 44318
+Row 500 44318
+Row 501 44322
+Row 502 44325
+Row 503 44328
+Row 504 44328
+Row 505 44329
+Row 506 44330
+Row 507 44331
+Row 508 
+Row 509 44331
+Row 510 44333
+Row 511 44333
+Row 512 44334
+Row 513 
+Row 514 
+Row 515 
+Row 516 1
+Row 517 44325
+Row 518 44322
+Row 519 44317
+Row 520 100
+Row 521 44363
+Row 522 44365
+Row 523 44367
+Row 524 44368
+Row 525 44369
+Row 526 44370
+Row 527 44371
+Row 528 44334
+Row 529 44372
+Row 530 44373
+Row 531 44374
+Row 532 44375
+Row 533 44376
+Row 534 44377
+Row 535 44363
+Row 536 44369
+Row 537 44365
+Row 538 44372
+Row 539 
+Row 540 
+Row 541 44387
+Row 542 44388
+Row 543 44389
+Row 544 44368
+Row 545 44371
+Row 546 5508
+Row 547 44388
+Row 548 44387
+Row 549 44367
+Row 550 44395
+Row 551 5508
+Row 552 44396
+Row 553 99
+Row 554 44389
+Row 555 44398
+Row 556 44399
+Row 557 44400
+Row 558 44401
+Row 559 44402
+Row 560 
+Row 561 44396
+Row 562 44395
+Row 563 
+Row 564 
+Row 565 
+Row 566 44404
+Row 567 44423
+Row 568 44425
+Row 569 44427
+Row 570 44424
+Row 571 44429
+Row 572 44430
+Row 573 0
+Row 574 44431
+Row 575 44399
+Row 576 44427
+Row 577 44430
+Row 578 44424
+Row 579 44402
+Row 580 44401
+Row 581 44431
+Row 582 5514
+Row 583 5515
+Row 584 44398
+Row 585 44425
+Row 586 44429
+Row 587 44438
+Row 588 44437
+Row 589 44400
+Row 590 44423
+Row 591 44439
+Row 592 44437
+Row 593 124
+Row 594 44404
+Row 595 44438
+Row 596 122
+Row 597 44439
+Row 598 121
+Row 599 0
+Row 600 0
+Row 601 0
+Row 602 
+Row 603 5515
+Row 604 5514
+Row 605 18
+Row 606 44462
+Row 607 0
+Row 608 
+Row 609 44469
+Row 610 44470
+Row 611 44471
+Row 612 
+Row 613 44472
+Row 614 44473
+Row 615 44474
+Row 616 44474
+Row 617 44475
+Row 618 44476
+Row 619 44477
+Row 620 
+Row 621 
+Row 622 11
+Row 623 17
+Row 624 44334
+Row 625 44334
+Row 626 18
+Row 627 0
+Row 628 0
+Row 629 18
+Row 630 
+Row 631 44486
+Row 632 
+Row 633 44488
+Row 634 44485
+Row 635 44489
+Row 636 44490
+Row 637 44491
+Row 638 44483
+Row 639 1
+Row 640 44484
+Row 641 44493
+Row 642 
+Row 643 44494
+Row 644 44495
+Row 645 6
+Row 646 44497
+Row 647 44214
+Row 648 44500
+Row 649 19
+Row 650 44488
+Row 651 12
+Row 652 44472
+Row 653 44473
+Row 654 
+Row 655 44476
+Row 656 44030
+Row 657 
+Row 658 44477
+Row 659 44486
+Row 660 
+Row 661 44510
+Row 662 44490
+Row 663 44494
+Row 664 44328
+Row 665 44328
+Row 666 
+Row 667 
+Row 668 44491
+Row 669 44292
+Row 670 44399
+Row 671 44524
+Row 672 44525
+Row 673 44526
+Row 674 44527
+Row 675 44528
+Row 676 44529
+Row 677 44510
+Row 678 44530
+Row 679 44370
+Row 680 44377
+Row 681 
+Row 682 44050
+Row 683 44493
+Row 684 
+Row 685 44374
+Row 686 
+Row 687 
+Row 688 44376
+Row 689 
+Row 690 44527
+Row 691 44529
+Row 692 44528
+Row 693 44318
+Row 694 44462
+Row 695 44318
+Row 696 44470
+Row 697 44500
+Row 698 44524
+Row 699 44469
+Row 700 
+Row 701 44526
+Row 702 44497
+Row 703 44471
+Row 704 44373
+Row 705 44485
+Row 706 44489
+Row 707 44539
+Row 708 44540
+Row 709 44541
+Row 710 44542
+Row 711 44543
+Row 712 44544
+Row 713 44545
+Row 714 44546
+Row 715 44475
+Row 716 
+Row 717 44329
+Row 718 44330
+Row 719 44495
+Row 720 44333
+Row 721 44375
+Row 722 44474
+Row 723 44333
+Row 724 44547
+Row 725 44474
+Row 726 44399
+Row 727 44331
+Row 728 44331
+Row 729 44551
+Row 730 
+Row 731 
+Row 732 
+Row 733 44484
+Row 734 44483
+Row 735 44547
+Row 736 
+Row 737 44551
+Row 738 44559
+Row 739 44560
+Row 740 44525
+Row 741 
+Row 742 
+Row 743 44530
+Row 744 
+Row 745 
+Row 746 
+Files Names Monitoring_Transaksi-50-20230920_141749.xlsx
+-------------------------------EOF-------------------------------

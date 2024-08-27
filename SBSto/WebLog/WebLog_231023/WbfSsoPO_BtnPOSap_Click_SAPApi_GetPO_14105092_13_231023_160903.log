@@ -1,0 +1,87 @@
+Module WbfSsoPO
+Proses BtnPOSap_Click_SAPApi_GetPO
+Process Start      : 23 Oct 2023 16:09:03
+
+
+vnDataFileNameOnly = WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_13_231023_160903
+vnDataFileName = C:\Data Baru\SB_WMS\SBStoApp\SBSto\SAPApiFolder\SAPApiFolder_231023\WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_13_231023_160903.txt
+
+vnQuery
+CREATE Table #Sys_SsoPO_Temp(
+[CompanyCode] [varchar](15) Not NULL,
+[PO_NO] [varchar](50) Not NULL,
+[JURNAL] [varchar](50) NULL,
+[PO_DATE] [DateTime] Not NULL,
+[SUB] [varchar](50) Not NULL,
+[BRG] [varchar](450) Not NULL,
+[GDGCODE] [varchar](50) Not NULL,
+[QTY] [numeric](18, 0) Not NULL,
+[NAMA_SUPPLIER] [varchar](50) Not NULL,
+[NAMA_BARANG] [varchar](450) Not NULL,
+[JOBNAME] [varchar](15) Not NULL,
+[DocEntry] [int] Not NULL,
+[DocType] [varchar](50) Not NULL,
+[DocumentStatus] [varchar](50) Not NULL,
+[Cancelled] [varchar](50) Not NULL,
+[UploadSourceOID] [tinyint] Not NULL,
+[POFileXlsOID] [Int] NULL,
+[UploadDatetime] [DateTime] Not NULL
+)
+
+-----------------------
+PO SAP...Start
+Company Code = BAD
+
+vnQuery
+Insert into Sys_SsoPOFileXls_TR(OID,CompanyCode,XlsFileName,UploadSourceOID,UploadStartDatetime,UploadUserOID,StatusSuccess,StatusMessage)
+values(13,'BAD','WbfSsoPO_BtnPOSap_Click_SAPApi_GetPO_14105092_13_231023_160903.txt',2,'23 Oct 2023 16:09:03',7,0,'Upload Start')
+
+<------------------------fbuSAPApi_GetPurchaseOrder
+23 Oct 2023 16:09:03
+
+<------------------------fbuSAP_Login
+23 Oct 2023 16:09:03
+
+<------------------------pbuSAP_GetApiLink
+23 Oct 2023 16:09:03
+
+vriModul = Login
+
+vnQuery = Select * From Sys_SAPApi_MA with(nolock) Where SAPApi_Modul='Login'
+
+23 Oct 2023 16:09:03
+<<========================pbuSAP_GetApiLink
+
+
+vnResponse_Login.Content
+{
+	"odata.metadata" : "https://sap.sumberberkat.com:51100/b1s/v1/$metadata#B1Sessions/@Element",
+	"SessionId" : "0bfacdf0-7184-11ee-c000-fa163e9bec28-140238226282112-1874",
+	"Version" : "1000220",
+	"SessionTimeout" : 30
+}
+
+
+Return True
+23 Oct 2023 16:09:05
+<<========================fbuSAP_Login
+
+
+<------------------------pbuSAP_GetApiLink
+23 Oct 2023 16:09:05
+
+vriModul = Purchase Order
+
+vnQuery = Select * From Sys_SAPApi_MA with(nolock) Where SAPApi_Modul='Purchase Order'
+
+23 Oct 2023 16:09:05
+<<========================pbuSAP_GetApiLink
+
+
+vnResponse_PO.Content
+{
+	"odata.metadata" : "https://sap.sumberberkat.com:51100/b1s/v1/$metadata#PurchaseOrders",
+	"value" : []
+}
+
+

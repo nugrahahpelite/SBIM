@@ -1,0 +1,69 @@
+Module WbfSsoPickList
+Proses psPreparePCL
+Process Start      : 22 Aug 2023 16:50:03
+
+Open SQL Connection....Start
+
+0.1
+vnQuery
+Select TransStatus From Sys_SsoPCLHeader_TR with(nolock) Where OID=52
+
+1
+vnQuery
+Update Sys_SsoPCLHeader_TR set TransStatus=2,PreparedUserOID=14,PreparedDatetime=getdate() Where OID=52
+
+2
+pbuInsertStatusPCL...Start
+pbuInsertStatusPCL...End
+
+3
+vnQuery
+Execute spSsoReservePicklist 52
+
+3.1
+vnQuery
+Select count(1) From Sys_SsoPCLReserve_TR with(nolock) Where PCLHOID=52
+
+4
+<-----psUpdateQtyOnPicklist
+22 Aug 2023 16:50:03
+vriPCLRefHOID = 31
+
+vnQuery
+Begin
+	Declare @vnRefHOID int
+	Set @vnRefHOID = 31
+	Declare @cr cursor,@vnBrgCode varchar(45),@vnQtyPCLD int,@vnNotaDOID int
+	Set @cr = cursor for Select distinct nd.KodeBarang From Sys_DcmNotaDetail_TR nd with(nolock) Where nd.NotaHOID=@vnRefHOID
+	Open @cr
+	Fetch @cr into @vnBrgCode
+	While @@FETCH_STATUS = 0
+		Begin
+			Select @vnQtyPCLD  = isnull(sum(dt.PCLDQty),0)
+				From Sys_SsoPCLDetail_TR dt with(nolock)
+					 inner join Sys_SsoPCLHeader_TR dh with(nolock) on dh.OID=dt.PCLHOID
+				Where dh.SchDTypeOID in(1,8) and dh.PCLRefHOID=@vnRefHOID and dh.TransStatus > 0 and dt.BRGCODE=@vnBrgCode
+			Select top 1 @vnNotaDOID = OID From Sys_DcmNotaDetail_TR nd with(nolock) Where nd.NotaHOID=@vnRefHOID and nd.KodeBarang = @vnBrgCode
+			Update Sys_DcmNotaDetail_TR Set QtyOnPickList=@vnQtyPCLD  Where OID = @vnNotaDOID and NotaHOID=@vnRefHOID and KodeBarang = @vnBrgCode
+			Fetch @cr into @vnBrgCode
+		End
+	Close @cr
+	Deallocate @cr
+End
+
+vnQuery
+
+vnCheck = 0
+
+vnQuery
+Update Sys_DcmNotaHeader_TR set IsPickListClosed=1 where OID=31
+
+vnQuery
+Update Sys_DcmJUAL set IsPickListClosed=1 where NO_NOTA='INV/2306/BD0062' and CompanyCode='BAD'
+22 Aug 2023 16:50:03
+<<====psUpdateQtyOnPicklist
+
+5
+Prepare Sukses
+Process End           : 22 Aug 2023 16:50:03
+---------------EOF-------------------------

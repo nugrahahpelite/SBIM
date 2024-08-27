@@ -1,0 +1,25 @@
+Module WbfSsoCSKU
+Proses psPrepareMsc
+Process Start      : 06 Oct 2023 16:54:55
+
+Open SQL Connection....Start
+
+0.1
+vnQuery
+Select count(1) From Sys_SsoCSKUStorageStock_TR Where CSKUHOID =17 and (QtyOnHand=0)
+
+0.2
+vnQuery
+SELECT * FROM fnTbl_SsoValApproveCSKU('BAD','BAD-06734') 
+
+3
+vnQuery
+Execute spSsoApprove_CSKU 17
+
+-99
+ERROR RAISED
+Violation of UNIQUE KEY constraint 'Un_Sys_SsoStorageStock_MA'. Cannot insert duplicate key in object 'dbo.Sys_SsoStorageStock_MA'. The duplicate key value is (5437, BAD, 1, BAD-06732).
+The statement has been terminated.
+
+Process End           : 06 Oct 2023 16:54:56
+--------------------------------- EOF ---------------------------------
